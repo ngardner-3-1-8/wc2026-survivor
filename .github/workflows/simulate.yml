@@ -2,7 +2,7 @@ name: Simulate & Deploy
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # 6am UTC daily
+    - cron: "0 6 * * *"
 
   workflow_dispatch:
     inputs:
@@ -10,10 +10,6 @@ on:
         description: "Number of simulations"
         required: false
         default: "50000"
-      skip_scrape:
-        description: "Skip FBref scrape (use existing ratings)"
-        required: false
-        default: "false"
 
   push:
     branches: [main]
@@ -24,7 +20,7 @@ on:
 
 jobs:
   simulate:
-    name: Scrape, Simulate & Deploy
+    name: Simulate & Deploy
     runs-on: ubuntu-latest
 
     permissions:
@@ -50,20 +46,9 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r simulator/requirements.txt
 
-      # ── Step 1: Scrape FBref for live ratings ──────────────────────────────
-      # continue-on-error: true means if FBref is down or blocks the runner,
-      # the simulation still runs with the existing hardcoded ratings.
-      # The scraper patches wc2026_simulator.py in-place with fresh att/defe values.
-      - name: Scrape FBref ratings
-        if: ${{ github.event.inputs.skip_scrape != 'true' }}
-        run: |
-          cd simulator
-          python fbref_scraper.py \
-            --simulator wc2026_simulator.py \
-            --cache-dir /tmp/fbref_cache
-        continue-on-error: true
-
-      # ── Step 2: Run simulation & export JSON ───────────────────────────────
+      # NOTE: FBref blocks GitHub Actions IPs (datacenter ranges).
+      # To update ratings, run fbref_scraper.py locally on your Mac,
+      # then push the updated wc2026_simulator.py to trigger a new deploy.
       - name: Run simulation & export JSON
         run: |
           cd simulator
@@ -71,16 +56,14 @@ jobs:
             --sims ${{ github.event.inputs.sims || '50000' }} \
             --out-dir ../public/data
 
-      # ── Step 3: Commit updated JSON back to repo ───────────────────────────
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update simulation data [skip ci]"
-          file_pattern: "public/data/*.json simulator/wc2026_simulator.py"
+          file_pattern: "public/data/*.json"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
 
-      # ── Step 4: Build React app ────────────────────────────────────────────
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -103,7 +86,6 @@ jobs:
         env:
           VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/' }}
 
-      # ── Step 5: Deploy to GitHub Pages ─────────────────────────────────────
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

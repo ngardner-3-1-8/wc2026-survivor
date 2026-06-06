@@ -223,14 +223,12 @@ def polite_get(url: str, cache: PageCache, session: requests.Session) -> str:
 
             elif resp.status_code == 403:
                 print(
-                    "\n✗ FBref returned 403 Forbidden.\n"
-                    "  Likely causes:\n"
-                    "    1. VPN / corporate proxy — try disabling it.\n"
-                    "    2. IP flagged for fast crawling — wait 10 min.\n"
-                    "    3. FBref changed their blocking rules.\n"
-                    "  Tip: run with --dry-run to use cached/fallback ratings.\n"
+                    "\n⚠ FBref returned 403 Forbidden.\n"
+                    "  This is expected when running from CI/cloud environments.\n"
+                    "  Simulation will continue with existing hardcoded ratings.\n"
+                    "  To update ratings, run fbref_scraper.py locally on your Mac.\n"
                 )
-                sys.exit(1)
+                sys.exit(0)   # exit cleanly so CI pipeline continues
 
             elif resp.status_code == 429:
                 delay = RETRY_BASE_DELAY * (2 ** (attempt - 1))
