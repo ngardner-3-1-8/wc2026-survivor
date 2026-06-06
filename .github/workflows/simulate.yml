@@ -1,19 +1,20 @@
 name: Simulate & Deploy
 
 on:
-  # Run daily at 06:00 UTC (2am ET) — well before anyone checks morning picks
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 6 * * *"   # 6am UTC daily
 
-  # Allow manual trigger from GitHub UI (Actions tab → Run workflow)
   workflow_dispatch:
     inputs:
       sims:
         description: "Number of simulations"
         required: false
         default: "50000"
+      skip_scrape:
+        description: "Skip FBref scrape (use existing ratings)"
+        required: false
+        default: "false"
 
-  # Also re-deploy when simulator code changes
   push:
     branches: [main]
     paths:
@@ -22,12 +23,18 @@ on:
       - ".github/workflows/**"
 
 jobs:
-  # ─────────────────────────────────────────
-  # Job 1: Run the Python simulation
-  # ─────────────────────────────────────────
   simulate:
-    name: Run Monte Carlo Simulation
+    name: Scrape, Simulate & Deploy
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repo
@@ -43,6 +50,20 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r simulator/requirements.txt
 
+      # ── Step 1: Scrape FBref for live ratings ──────────────────────────────
+      # continue-on-error: true means if FBref is down or blocks the runner,
+      # the simulation still runs with the existing hardcoded ratings.
+      # The scraper patches wc2026_simulator.py in-place with fresh att/defe values.
+      - name: Scrape FBref ratings
+        if: ${{ github.event.inputs.skip_scrape != 'true' }}
+        run: |
+          cd simulator
+          python fbref_scraper.py \
+            --simulator wc2026_simulator.py \
+            --cache-dir /tmp/fbref_cache
+        continue-on-error: true
+
+      # ── Step 2: Run simulation & export JSON ───────────────────────────────
       - name: Run simulation & export JSON
         run: |
           cd simulator
@@ -50,40 +71,16 @@ jobs:
             --sims ${{ github.event.inputs.sims || '50000' }} \
             --out-dir ../public/data
 
+      # ── Step 3: Commit updated JSON back to repo ───────────────────────────
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update simulation data [skip ci]"
-          file_pattern: "public/data/*.json"
+          file_pattern: "public/data/*.json simulator/wc2026_simulator.py"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
 
-  # ─────────────────────────────────────────
-  # Job 2: Build & deploy the React app
-  # Runs after simulate (or independently on web-only changes)
-  # ─────────────────────────────────────────
-  deploy:
-    name: Build & Deploy to GitHub Pages
-    runs-on: ubuntu-latest
-    needs: simulate   # wait for fresh JSON before building
-
-    # Required for GitHub Pages deployment
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          # Fetch the latest commit (including the JSON just committed above)
-          ref: main
-
+      # ── Step 4: Build React app ────────────────────────────────────────────
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -104,11 +101,9 @@ jobs:
         run: npm run build
         working-directory: web
         env:
-          # Vite base path must match your GitHub Pages repo name
-          # e.g. if your repo is github.com/yourname/wc2026-survivor
-          # set this to /wc2026-survivor/
           VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/' }}
 
+      # ── Step 5: Deploy to GitHub Pages ─────────────────────────────────────
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
