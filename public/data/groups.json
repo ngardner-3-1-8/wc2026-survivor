@@ -1,0 +1,1154 @@
+{
+  "A": {
+    "teams": [
+      {
+        "name": "USA",
+        "fifa_rank": 13,
+        "avg_pts": 4.89,
+        "avg_gf": 4.57,
+        "avg_ga": 3.42,
+        "avg_gd": 1.15,
+        "advance_pct": 80.1
+      },
+      {
+        "name": "Mexico",
+        "fifa_rank": 16,
+        "avg_pts": 4.61,
+        "avg_gf": 4.26,
+        "avg_ga": 3.55,
+        "avg_gd": 0.71,
+        "advance_pct": 75.6
+      },
+      {
+        "name": "Canada",
+        "fifa_rank": 48,
+        "avg_pts": 4.11,
+        "avg_gf": 3.83,
+        "avg_ga": 3.82,
+        "avg_gd": 0.01,
+        "advance_pct": 70.3
+      },
+      {
+        "name": "Honduras",
+        "fifa_rank": 80,
+        "avg_pts": 2.76,
+        "avg_gf": 2.8,
+        "avg_ga": 4.67,
+        "avg_gd": -1.87,
+        "advance_pct": 43.6
+      }
+    ],
+    "matches": [
+      {
+        "home": "Canada",
+        "away": "USA",
+        "home_win_pct": 42.4,
+        "draw_pct": 29.4,
+        "away_win_pct": 28.2,
+        "xgf": 1.51,
+        "xga": 1.2
+      },
+      {
+        "home": "Canada",
+        "away": "Mexico",
+        "home_win_pct": 39.9,
+        "draw_pct": 28.3,
+        "away_win_pct": 31.8,
+        "xgf": 1.36,
+        "xga": 1.2
+      },
+      {
+        "home": "Canada",
+        "away": "Honduras",
+        "home_win_pct": 49.2,
+        "draw_pct": 25.7,
+        "away_win_pct": 25.1,
+        "xgf": 1.43,
+        "xga": 0.95
+      },
+      {
+        "home": "Honduras",
+        "away": "USA",
+        "home_win_pct": 55.3,
+        "draw_pct": 24.1,
+        "away_win_pct": 20.6,
+        "xgf": 1.65,
+        "xga": 0.91
+      },
+      {
+        "home": "Honduras",
+        "away": "Mexico",
+        "home_win_pct": 52.8,
+        "draw_pct": 26.2,
+        "away_win_pct": 21.0,
+        "xgf": 1.59,
+        "xga": 0.94
+      },
+      {
+        "home": "Mexico",
+        "away": "USA",
+        "home_win_pct": 37.7,
+        "draw_pct": 29.4,
+        "away_win_pct": 32.9,
+        "xgf": 1.41,
+        "xga": 1.31
+      }
+    ]
+  },
+  "B": {
+    "teams": [
+      {
+        "name": "Spain",
+        "fifa_rank": 2,
+        "avg_pts": 4.94,
+        "avg_gf": 4.48,
+        "avg_ga": 3.27,
+        "avg_gd": 1.21,
+        "advance_pct": 79.4
+      },
+      {
+        "name": "Belgium",
+        "fifa_rank": 3,
+        "avg_pts": 4.06,
+        "avg_gf": 3.78,
+        "avg_ga": 3.84,
+        "avg_gd": -0.06,
+        "advance_pct": 68.2
+      },
+      {
+        "name": "Croatia",
+        "fifa_rank": 10,
+        "avg_pts": 3.81,
+        "avg_gf": 3.59,
+        "avg_ga": 3.95,
+        "avg_gd": -0.36,
+        "advance_pct": 61.4
+      },
+      {
+        "name": "Morocco",
+        "fifa_rank": 14,
+        "avg_pts": 3.57,
+        "avg_gf": 3.26,
+        "avg_ga": 4.04,
+        "avg_gd": -0.78,
+        "advance_pct": 58.9
+      }
+    ],
+    "matches": [
+      {
+        "home": "Belgium",
+        "away": "Spain",
+        "home_win_pct": 44.6,
+        "draw_pct": 25.3,
+        "away_win_pct": 30.1,
+        "xgf": 1.47,
+        "xga": 1.15
+      },
+      {
+        "home": "Belgium",
+        "away": "Croatia",
+        "home_win_pct": 33.7,
+        "draw_pct": 27.2,
+        "away_win_pct": 39.1,
+        "xgf": 1.24,
+        "xga": 1.33
+      },
+      {
+        "home": "Belgium",
+        "away": "Morocco",
+        "home_win_pct": 31.9,
+        "draw_pct": 29.4,
+        "away_win_pct": 38.7,
+        "xgf": 1.14,
+        "xga": 1.31
+      },
+      {
+        "home": "Croatia",
+        "away": "Spain",
+        "home_win_pct": 44.4,
+        "draw_pct": 29.0,
+        "away_win_pct": 26.6,
+        "xgf": 1.5,
+        "xga": 1.12
+      },
+      {
+        "home": "Croatia",
+        "away": "Morocco",
+        "home_win_pct": 38.9,
+        "draw_pct": 27.3,
+        "away_win_pct": 33.8,
+        "xgf": 1.23,
+        "xga": 1.12
+      },
+      {
+        "home": "Morocco",
+        "away": "Spain",
+        "home_win_pct": 49.4,
+        "draw_pct": 24.4,
+        "away_win_pct": 26.2,
+        "xgf": 1.5,
+        "xga": 1.0
+      }
+    ]
+  },
+  "C": {
+    "teams": [
+      {
+        "name": "France",
+        "fifa_rank": 2,
+        "avg_pts": 5.79,
+        "avg_gf": 5.46,
+        "avg_ga": 2.93,
+        "avg_gd": 2.53,
+        "advance_pct": 89.8
+      },
+      {
+        "name": "England",
+        "fifa_rank": 5,
+        "avg_pts": 5.18,
+        "avg_gf": 4.71,
+        "avg_ga": 3.2,
+        "avg_gd": 1.52,
+        "advance_pct": 84.7
+      },
+      {
+        "name": "Australia",
+        "fifa_rank": 23,
+        "avg_pts": 2.89,
+        "avg_gf": 2.96,
+        "avg_ga": 4.82,
+        "avg_gd": -1.85,
+        "advance_pct": 45.2
+      },
+      {
+        "name": "Algeria",
+        "fifa_rank": 55,
+        "avg_pts": 2.69,
+        "avg_gf": 2.82,
+        "avg_ga": 5.01,
+        "avg_gd": -2.19,
+        "advance_pct": 43.4
+      }
+    ],
+    "matches": [
+      {
+        "home": "Algeria",
+        "away": "England",
+        "home_win_pct": 59.1,
+        "draw_pct": 23.0,
+        "away_win_pct": 17.9,
+        "xgf": 1.76,
+        "xga": 0.87
+      },
+      {
+        "home": "Algeria",
+        "away": "France",
+        "home_win_pct": 63.8,
+        "draw_pct": 22.4,
+        "away_win_pct": 13.8,
+        "xgf": 2.02,
+        "xga": 0.84
+      },
+      {
+        "home": "Algeria",
+        "away": "Australia",
+        "home_win_pct": 37.9,
+        "draw_pct": 29.1,
+        "away_win_pct": 33.0,
+        "xgf": 1.24,
+        "xga": 1.11
+      },
+      {
+        "home": "Australia",
+        "away": "England",
+        "home_win_pct": 55.9,
+        "draw_pct": 25.3,
+        "away_win_pct": 18.8,
+        "xgf": 1.7,
+        "xga": 0.89
+      },
+      {
+        "home": "Australia",
+        "away": "France",
+        "home_win_pct": 65.1,
+        "draw_pct": 20.0,
+        "away_win_pct": 14.9,
+        "xgf": 2.0,
+        "xga": 0.84
+      },
+      {
+        "home": "England",
+        "away": "France",
+        "home_win_pct": 33.0,
+        "draw_pct": 25.6,
+        "away_win_pct": 41.4,
+        "xgf": 1.26,
+        "xga": 1.44
+      }
+    ]
+  },
+  "D": {
+    "teams": [
+      {
+        "name": "Argentina",
+        "fifa_rank": 1,
+        "avg_pts": 5.41,
+        "avg_gf": 5.09,
+        "avg_ga": 3.12,
+        "avg_gd": 1.97,
+        "advance_pct": 85.8
+      },
+      {
+        "name": "Brazil",
+        "fifa_rank": 4,
+        "avg_pts": 4.89,
+        "avg_gf": 4.66,
+        "avg_ga": 3.48,
+        "avg_gd": 1.18,
+        "advance_pct": 80.4
+      },
+      {
+        "name": "Colombia",
+        "fifa_rank": 9,
+        "avg_pts": 3.54,
+        "avg_gf": 3.59,
+        "avg_ga": 4.41,
+        "avg_gd": -0.82,
+        "advance_pct": 58.6
+      },
+      {
+        "name": "Ecuador",
+        "fifa_rank": 32,
+        "avg_pts": 2.6,
+        "avg_gf": 2.92,
+        "avg_ga": 5.25,
+        "avg_gd": -2.33,
+        "advance_pct": 39.0
+      }
+    ],
+    "matches": [
+      {
+        "home": "Argentina",
+        "away": "Brazil",
+        "home_win_pct": 29.9,
+        "draw_pct": 29.6,
+        "away_win_pct": 40.5,
+        "xgf": 1.21,
+        "xga": 1.43
+      },
+      {
+        "home": "Argentina",
+        "away": "Colombia",
+        "home_win_pct": 53.4,
+        "draw_pct": 26.1,
+        "away_win_pct": 20.5,
+        "xgf": 1.72,
+        "xga": 1.0
+      },
+      {
+        "home": "Argentina",
+        "away": "Ecuador",
+        "home_win_pct": 61.1,
+        "draw_pct": 20.4,
+        "away_win_pct": 18.5,
+        "xgf": 1.94,
+        "xga": 0.91
+      },
+      {
+        "home": "Brazil",
+        "away": "Colombia",
+        "home_win_pct": 48.2,
+        "draw_pct": 25.1,
+        "away_win_pct": 26.7,
+        "xgf": 1.59,
+        "xga": 1.13
+      },
+      {
+        "home": "Brazil",
+        "away": "Ecuador",
+        "home_win_pct": 58.7,
+        "draw_pct": 24.4,
+        "away_win_pct": 16.9,
+        "xgf": 1.86,
+        "xga": 0.92
+      },
+      {
+        "home": "Colombia",
+        "away": "Ecuador",
+        "home_win_pct": 44.1,
+        "draw_pct": 29.4,
+        "away_win_pct": 26.5,
+        "xgf": 1.45,
+        "xga": 1.09
+      }
+    ]
+  },
+  "E": {
+    "teams": [
+      {
+        "name": "Germany",
+        "fifa_rank": 6,
+        "avg_pts": 4.91,
+        "avg_gf": 4.56,
+        "avg_ga": 3.35,
+        "avg_gd": 1.21,
+        "advance_pct": 79.4
+      },
+      {
+        "name": "Netherlands",
+        "fifa_rank": 7,
+        "avg_pts": 4.72,
+        "avg_gf": 4.38,
+        "avg_ga": 3.55,
+        "avg_gd": 0.83,
+        "advance_pct": 76.9
+      },
+      {
+        "name": "Japan",
+        "fifa_rank": 18,
+        "avg_pts": 3.65,
+        "avg_gf": 3.52,
+        "avg_ga": 4.19,
+        "avg_gd": -0.68,
+        "advance_pct": 59.4
+      },
+      {
+        "name": "Senegal",
+        "fifa_rank": 20,
+        "avg_pts": 3.05,
+        "avg_gf": 3.19,
+        "avg_ga": 4.56,
+        "avg_gd": -1.37,
+        "advance_pct": 49.8
+      }
+    ],
+    "matches": [
+      {
+        "home": "Germany",
+        "away": "Netherlands",
+        "home_win_pct": 38.7,
+        "draw_pct": 27.4,
+        "away_win_pct": 33.9,
+        "xgf": 1.42,
+        "xga": 1.27
+      },
+      {
+        "home": "Germany",
+        "away": "Japan",
+        "home_win_pct": 46.7,
+        "draw_pct": 27.1,
+        "away_win_pct": 26.2,
+        "xgf": 1.51,
+        "xga": 1.04
+      },
+      {
+        "home": "Germany",
+        "away": "Senegal",
+        "home_win_pct": 51.1,
+        "draw_pct": 26.8,
+        "away_win_pct": 22.1,
+        "xgf": 1.64,
+        "xga": 1.04
+      },
+      {
+        "home": "Japan",
+        "away": "Netherlands",
+        "home_win_pct": 44.5,
+        "draw_pct": 27.6,
+        "away_win_pct": 27.9,
+        "xgf": 1.52,
+        "xga": 1.15
+      },
+      {
+        "home": "Japan",
+        "away": "Senegal",
+        "home_win_pct": 38.7,
+        "draw_pct": 31.5,
+        "away_win_pct": 29.8,
+        "xgf": 1.32,
+        "xga": 1.17
+      },
+      {
+        "home": "Netherlands",
+        "away": "Senegal",
+        "home_win_pct": 52.0,
+        "draw_pct": 26.3,
+        "away_win_pct": 21.7,
+        "xgf": 1.6,
+        "xga": 0.99
+      }
+    ]
+  },
+  "F": {
+    "teams": [
+      {
+        "name": "Portugal",
+        "fifa_rank": 6,
+        "avg_pts": 5.11,
+        "avg_gf": 4.87,
+        "avg_ga": 3.31,
+        "avg_gd": 1.56,
+        "advance_pct": 83.1
+      },
+      {
+        "name": "Uruguay",
+        "fifa_rank": 15,
+        "avg_pts": 4.39,
+        "avg_gf": 4.12,
+        "avg_ga": 3.72,
+        "avg_gd": 0.41,
+        "advance_pct": 71.8
+      },
+      {
+        "name": "South Korea",
+        "fifa_rank": 22,
+        "avg_pts": 3.63,
+        "avg_gf": 3.49,
+        "avg_ga": 4.26,
+        "avg_gd": -0.77,
+        "advance_pct": 59.5
+      },
+      {
+        "name": "Poland",
+        "fifa_rank": 28,
+        "avg_pts": 3.29,
+        "avg_gf": 3.37,
+        "avg_ga": 4.57,
+        "avg_gd": -1.19,
+        "advance_pct": 52.9
+      }
+    ],
+    "matches": [
+      {
+        "home": "Poland",
+        "away": "Portugal",
+        "home_win_pct": 51.9,
+        "draw_pct": 25.2,
+        "away_win_pct": 22.9,
+        "xgf": 1.75,
+        "xga": 1.06
+      },
+      {
+        "home": "Poland",
+        "away": "Uruguay",
+        "home_win_pct": 47.8,
+        "draw_pct": 25.0,
+        "away_win_pct": 27.2,
+        "xgf": 1.51,
+        "xga": 1.09
+      },
+      {
+        "home": "Poland",
+        "away": "South Korea",
+        "home_win_pct": 38.2,
+        "draw_pct": 28.5,
+        "away_win_pct": 33.3,
+        "xgf": 1.31,
+        "xga": 1.22
+      },
+      {
+        "home": "Portugal",
+        "away": "Uruguay",
+        "home_win_pct": 44.4,
+        "draw_pct": 25.5,
+        "away_win_pct": 30.1,
+        "xgf": 1.51,
+        "xga": 1.18
+      },
+      {
+        "home": "Portugal",
+        "away": "South Korea",
+        "home_win_pct": 48.3,
+        "draw_pct": 26.7,
+        "away_win_pct": 25.0,
+        "xgf": 1.61,
+        "xga": 1.06
+      },
+      {
+        "home": "South Korea",
+        "away": "Uruguay",
+        "home_win_pct": 42.4,
+        "draw_pct": 27.2,
+        "away_win_pct": 30.4,
+        "xgf": 1.44,
+        "xga": 1.11
+      }
+    ]
+  },
+  "G": {
+    "teams": [
+      {
+        "name": "Italy",
+        "fifa_rank": 9,
+        "avg_pts": 5.11,
+        "avg_gf": 4.59,
+        "avg_ga": 3.12,
+        "avg_gd": 1.48,
+        "advance_pct": 82.2
+      },
+      {
+        "name": "Switzerland",
+        "fifa_rank": 19,
+        "avg_pts": 4.23,
+        "avg_gf": 3.93,
+        "avg_ga": 3.73,
+        "avg_gd": 0.2,
+        "advance_pct": 71.6
+      },
+      {
+        "name": "Serbia",
+        "fifa_rank": 26,
+        "avg_pts": 3.91,
+        "avg_gf": 3.65,
+        "avg_ga": 3.86,
+        "avg_gd": -0.21,
+        "advance_pct": 65.0
+      },
+      {
+        "name": "Cameroon",
+        "fifa_rank": 41,
+        "avg_pts": 3.08,
+        "avg_gf": 3.02,
+        "avg_ga": 4.49,
+        "avg_gd": -1.47,
+        "advance_pct": 48.4
+      }
+    ],
+    "matches": [
+      {
+        "home": "Cameroon",
+        "away": "Italy",
+        "home_win_pct": 52.1,
+        "draw_pct": 26.1,
+        "away_win_pct": 21.8,
+        "xgf": 1.62,
+        "xga": 0.93
+      },
+      {
+        "home": "Cameroon",
+        "away": "Switzerland",
+        "home_win_pct": 45.6,
+        "draw_pct": 29.2,
+        "away_win_pct": 25.2,
+        "xgf": 1.48,
+        "xga": 1.05
+      },
+      {
+        "home": "Cameroon",
+        "away": "Serbia",
+        "home_win_pct": 43.4,
+        "draw_pct": 29.1,
+        "away_win_pct": 27.5,
+        "xgf": 1.39,
+        "xga": 1.04
+      },
+      {
+        "home": "Italy",
+        "away": "Switzerland",
+        "home_win_pct": 43.4,
+        "draw_pct": 27.5,
+        "away_win_pct": 29.1,
+        "xgf": 1.45,
+        "xga": 1.15
+      },
+      {
+        "home": "Italy",
+        "away": "Serbia",
+        "home_win_pct": 48.0,
+        "draw_pct": 26.6,
+        "away_win_pct": 25.4,
+        "xgf": 1.52,
+        "xga": 1.04
+      },
+      {
+        "home": "Serbia",
+        "away": "Switzerland",
+        "home_win_pct": 37.7,
+        "draw_pct": 29.0,
+        "away_win_pct": 33.3,
+        "xgf": 1.3,
+        "xga": 1.23
+      }
+    ]
+  },
+  "H": {
+    "teams": [
+      {
+        "name": "Denmark",
+        "fifa_rank": 21,
+        "avg_pts": 5.12,
+        "avg_gf": 4.51,
+        "avg_ga": 3.05,
+        "avg_gd": 1.46,
+        "advance_pct": 83.8
+      },
+      {
+        "name": "Austria",
+        "fifa_rank": 25,
+        "avg_pts": 4.63,
+        "avg_gf": 4.1,
+        "avg_ga": 3.36,
+        "avg_gd": 0.74,
+        "advance_pct": 76.1
+      },
+      {
+        "name": "Tunisia",
+        "fifa_rank": 34,
+        "avg_pts": 3.52,
+        "avg_gf": 3.26,
+        "avg_ga": 4.09,
+        "avg_gd": -0.83,
+        "advance_pct": 58.3
+      },
+      {
+        "name": "Costa Rica",
+        "fifa_rank": 50,
+        "avg_pts": 3.12,
+        "avg_gf": 2.93,
+        "avg_ga": 4.3,
+        "avg_gd": -1.37,
+        "advance_pct": 50.6
+      }
+    ],
+    "matches": [
+      {
+        "home": "Austria",
+        "away": "Denmark",
+        "home_win_pct": 41.4,
+        "draw_pct": 25.0,
+        "away_win_pct": 33.6,
+        "xgf": 1.36,
+        "xga": 1.17
+      },
+      {
+        "home": "Austria",
+        "away": "Tunisia",
+        "home_win_pct": 44.7,
+        "draw_pct": 27.7,
+        "away_win_pct": 27.6,
+        "xgf": 1.45,
+        "xga": 1.06
+      },
+      {
+        "home": "Austria",
+        "away": "Costa Rica",
+        "home_win_pct": 49.0,
+        "draw_pct": 28.1,
+        "away_win_pct": 22.9,
+        "xgf": 1.48,
+        "xga": 0.93
+      },
+      {
+        "home": "Costa Rica",
+        "away": "Denmark",
+        "home_win_pct": 53.6,
+        "draw_pct": 24.1,
+        "away_win_pct": 22.3,
+        "xgf": 1.58,
+        "xga": 0.91
+      },
+      {
+        "home": "Costa Rica",
+        "away": "Tunisia",
+        "home_win_pct": 38.8,
+        "draw_pct": 29.5,
+        "away_win_pct": 31.7,
+        "xgf": 1.23,
+        "xga": 1.08
+      },
+      {
+        "home": "Denmark",
+        "away": "Tunisia",
+        "home_win_pct": 50.3,
+        "draw_pct": 27.0,
+        "away_win_pct": 22.7,
+        "xgf": 1.56,
+        "xga": 0.96
+      }
+    ]
+  },
+  "I": {
+    "teams": [
+      {
+        "name": "Egypt",
+        "fifa_rank": 35,
+        "avg_pts": 4.34,
+        "avg_gf": 3.88,
+        "avg_ga": 3.48,
+        "avg_gd": 0.4,
+        "advance_pct": 69.8
+      },
+      {
+        "name": "Nigeria",
+        "fifa_rank": 39,
+        "avg_pts": 4.21,
+        "avg_gf": 3.74,
+        "avg_ga": 3.62,
+        "avg_gd": 0.12,
+        "advance_pct": 71.0
+      },
+      {
+        "name": "Iran",
+        "fifa_rank": 22,
+        "avg_pts": 3.94,
+        "avg_gf": 3.57,
+        "avg_ga": 3.65,
+        "avg_gd": -0.08,
+        "advance_pct": 63.6
+      },
+      {
+        "name": "South Africa",
+        "fifa_rank": 60,
+        "avg_pts": 3.76,
+        "avg_gf": 3.35,
+        "avg_ga": 3.8,
+        "avg_gd": -0.44,
+        "advance_pct": 60.6
+      }
+    ],
+    "matches": [
+      {
+        "home": "Egypt",
+        "away": "Iran",
+        "home_win_pct": 32.4,
+        "draw_pct": 28.9,
+        "away_win_pct": 38.7,
+        "xgf": 1.18,
+        "xga": 1.28
+      },
+      {
+        "home": "Egypt",
+        "away": "South Africa",
+        "home_win_pct": 30.8,
+        "draw_pct": 27.7,
+        "away_win_pct": 41.5,
+        "xgf": 1.11,
+        "xga": 1.35
+      },
+      {
+        "home": "Egypt",
+        "away": "Nigeria",
+        "home_win_pct": 34.1,
+        "draw_pct": 30.3,
+        "away_win_pct": 35.6,
+        "xgf": 1.19,
+        "xga": 1.25
+      },
+      {
+        "home": "Iran",
+        "away": "South Africa",
+        "home_win_pct": 36.9,
+        "draw_pct": 29.8,
+        "away_win_pct": 33.3,
+        "xgf": 1.18,
+        "xga": 1.08
+      },
+      {
+        "home": "Iran",
+        "away": "Nigeria",
+        "home_win_pct": 32.7,
+        "draw_pct": 29.1,
+        "away_win_pct": 38.2,
+        "xgf": 1.21,
+        "xga": 1.28
+      },
+      {
+        "home": "Nigeria",
+        "away": "South Africa",
+        "home_win_pct": 32.7,
+        "draw_pct": 28.6,
+        "away_win_pct": 38.7,
+        "xgf": 1.16,
+        "xga": 1.27
+      }
+    ]
+  },
+  "J": {
+    "teams": [
+      {
+        "name": "Chile",
+        "fifa_rank": 30,
+        "avg_pts": 5.09,
+        "avg_gf": 4.42,
+        "avg_ga": 2.98,
+        "avg_gd": 1.44,
+        "advance_pct": 82.3
+      },
+      {
+        "name": "Peru",
+        "fifa_rank": 45,
+        "avg_pts": 4.07,
+        "avg_gf": 3.5,
+        "avg_ga": 3.49,
+        "avg_gd": 0.01,
+        "advance_pct": 67.9
+      },
+      {
+        "name": "Venezuela",
+        "fifa_rank": 57,
+        "avg_pts": 3.93,
+        "avg_gf": 3.4,
+        "avg_ga": 3.66,
+        "avg_gd": -0.25,
+        "advance_pct": 64.4
+      },
+      {
+        "name": "Bolivia",
+        "fifa_rank": 85,
+        "avg_pts": 3.16,
+        "avg_gf": 2.92,
+        "avg_ga": 4.12,
+        "avg_gd": -1.2,
+        "advance_pct": 51.0
+      }
+    ],
+    "matches": [
+      {
+        "home": "Bolivia",
+        "away": "Chile",
+        "home_win_pct": 55.7,
+        "draw_pct": 24.1,
+        "away_win_pct": 20.2,
+        "xgf": 1.59,
+        "xga": 0.86
+      },
+      {
+        "home": "Bolivia",
+        "away": "Peru",
+        "home_win_pct": 25.9,
+        "draw_pct": 31.7,
+        "away_win_pct": 42.4,
+        "xgf": 1.01,
+        "xga": 1.31
+      },
+      {
+        "home": "Bolivia",
+        "away": "Venezuela",
+        "home_win_pct": 30.4,
+        "draw_pct": 30.6,
+        "away_win_pct": 39.0,
+        "xgf": 1.05,
+        "xga": 1.23
+      },
+      {
+        "home": "Chile",
+        "away": "Peru",
+        "home_win_pct": 41.5,
+        "draw_pct": 31.1,
+        "away_win_pct": 27.4,
+        "xgf": 1.37,
+        "xga": 1.05
+      },
+      {
+        "home": "Chile",
+        "away": "Venezuela",
+        "home_win_pct": 45.0,
+        "draw_pct": 27.0,
+        "away_win_pct": 28.0,
+        "xgf": 1.46,
+        "xga": 1.07
+      },
+      {
+        "home": "Peru",
+        "away": "Venezuela",
+        "home_win_pct": 34.4,
+        "draw_pct": 31.1,
+        "away_win_pct": 34.5,
+        "xgf": 1.14,
+        "xga": 1.11
+      }
+    ]
+  },
+  "K": {
+    "teams": [
+      {
+        "name": "Saudi Arabia",
+        "fifa_rank": 57,
+        "avg_pts": 4.58,
+        "avg_gf": 3.94,
+        "avg_ga": 3.24,
+        "avg_gd": 0.7,
+        "advance_pct": 74.7
+      },
+      {
+        "name": "Ghana",
+        "fifa_rank": 62,
+        "avg_pts": 4.23,
+        "avg_gf": 3.76,
+        "avg_ga": 3.53,
+        "avg_gd": 0.23,
+        "advance_pct": 71.2
+      },
+      {
+        "name": "Qatar",
+        "fifa_rank": 38,
+        "avg_pts": 3.82,
+        "avg_gf": 3.41,
+        "avg_ga": 3.76,
+        "avg_gd": -0.35,
+        "advance_pct": 62.9
+      },
+      {
+        "name": "IR Iraq",
+        "fifa_rank": 70,
+        "avg_pts": 3.61,
+        "avg_gf": 3.19,
+        "avg_ga": 3.77,
+        "avg_gd": -0.58,
+        "advance_pct": 60.4
+      }
+    ],
+    "matches": [
+      {
+        "home": "Ghana",
+        "away": "Saudi Arabia",
+        "home_win_pct": 37.5,
+        "draw_pct": 28.6,
+        "away_win_pct": 33.9,
+        "xgf": 1.26,
+        "xga": 1.21
+      },
+      {
+        "home": "Ghana",
+        "away": "Qatar",
+        "home_win_pct": 33.1,
+        "draw_pct": 29.3,
+        "away_win_pct": 37.6,
+        "xgf": 1.19,
+        "xga": 1.29
+      },
+      {
+        "home": "Ghana",
+        "away": "IR Iraq",
+        "home_win_pct": 40.5,
+        "draw_pct": 29.4,
+        "away_win_pct": 30.1,
+        "xgf": 1.27,
+        "xga": 1.08
+      },
+      {
+        "home": "IR Iraq",
+        "away": "Saudi Arabia",
+        "home_win_pct": 43.7,
+        "draw_pct": 29.3,
+        "away_win_pct": 27.0,
+        "xgf": 1.34,
+        "xga": 0.98
+      },
+      {
+        "home": "IR Iraq",
+        "away": "Qatar",
+        "home_win_pct": 35.9,
+        "draw_pct": 30.6,
+        "away_win_pct": 33.5,
+        "xgf": 1.17,
+        "xga": 1.14
+      },
+      {
+        "home": "Qatar",
+        "away": "Saudi Arabia",
+        "home_win_pct": 42.6,
+        "draw_pct": 28.8,
+        "away_win_pct": 28.6,
+        "xgf": 1.33,
+        "xga": 1.05
+      }
+    ]
+  },
+  "L": {
+    "teams": [
+      {
+        "name": "Uzbekistan",
+        "fifa_rank": 75,
+        "avg_pts": 4.45,
+        "avg_gf": 3.67,
+        "avg_ga": 3.1,
+        "avg_gd": 0.57,
+        "advance_pct": 73.6
+      },
+      {
+        "name": "Panama",
+        "fifa_rank": 72,
+        "avg_pts": 4.02,
+        "avg_gf": 3.37,
+        "avg_ga": 3.42,
+        "avg_gd": -0.05,
+        "advance_pct": 66.2
+      },
+      {
+        "name": "New Zealand",
+        "fifa_rank": 90,
+        "avg_pts": 3.95,
+        "avg_gf": 3.2,
+        "avg_ga": 3.26,
+        "avg_gd": -0.06,
+        "advance_pct": 65.1
+      },
+      {
+        "name": "Indonesia",
+        "fifa_rank": 130,
+        "avg_pts": 3.73,
+        "avg_gf": 3.1,
+        "avg_ga": 3.57,
+        "avg_gd": -0.46,
+        "advance_pct": 62.1
+      }
+    ],
+    "matches": [
+      {
+        "home": "Indonesia",
+        "away": "New Zealand",
+        "home_win_pct": 37.5,
+        "draw_pct": 29.9,
+        "away_win_pct": 32.6,
+        "xgf": 1.1,
+        "xga": 1.0
+      },
+      {
+        "home": "Indonesia",
+        "away": "Uzbekistan",
+        "home_win_pct": 40.3,
+        "draw_pct": 30.3,
+        "away_win_pct": 29.4,
+        "xgf": 1.26,
+        "xga": 1.04
+      },
+      {
+        "home": "Indonesia",
+        "away": "Panama",
+        "home_win_pct": 31.9,
+        "draw_pct": 31.2,
+        "away_win_pct": 36.9,
+        "xgf": 1.07,
+        "xga": 1.21
+      },
+      {
+        "home": "New Zealand",
+        "away": "Uzbekistan",
+        "home_win_pct": 28.5,
+        "draw_pct": 34.0,
+        "away_win_pct": 37.5,
+        "xgf": 1.0,
+        "xga": 1.16
+      },
+      {
+        "home": "New Zealand",
+        "away": "Panama",
+        "home_win_pct": 33.9,
+        "draw_pct": 31.0,
+        "away_win_pct": 35.1,
+        "xgf": 1.1,
+        "xga": 1.1
+      },
+      {
+        "home": "Panama",
+        "away": "Uzbekistan",
+        "home_win_pct": 39.3,
+        "draw_pct": 29.1,
+        "away_win_pct": 31.6,
+        "xgf": 1.25,
+        "xga": 1.06
+      }
+    ]
+  }
+}
