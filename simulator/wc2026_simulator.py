@@ -730,8 +730,9 @@ def compute_public_pick_pcts(
 #    CONTRARIAN — maximise pick% discount, subject to survival > threshold
 # ---------------------------------------------------------------------------
 
-# Minimum survival probability to be considered for any EV pick
-MIN_SURVIVAL_THRESHOLD = 0.35   # don't pick a team with < 35% survival odds
+# Minimum survival probability — set per-stage as a fraction of the top team's probability
+# This ensures every stage always produces picks even when absolute probabilities are low
+MIN_SURVIVAL_FRACTION = 0.20   # must have at least 20% of top team's survival prob
 
 def _log_ev(surv: float, pick_pct: float) -> float:
     """Per-team log-EV contribution. Higher = better value pick."""
@@ -745,7 +746,7 @@ def _greedy_picks(
     used_teams: set[str],
     score_fn,           # team_name → float (higher = prefer)
     survival_probs: dict[str, float],
-    min_surv: float = MIN_SURVIVAL_THRESHOLD,
+    min_surv: float = 0.05,
 ) -> list[str]:
     """
     Greedy pick selector: choose n_picks teams maximising score_fn,
@@ -856,11 +857,16 @@ def compute_survivor_picks(
 
         candidates = [t.name for t in eligible_teams]
 
+        # Stage-relative survival floor: 20% of the top team's prob for this stage
+        top_surv = max(surv.values()) if surv else 1.0
+        stage_floor = top_surv * MIN_SURVIVAL_FRACTION
+
         # ── CHALK: pure survival prob ──
         chalk_picks = _greedy_picks(
             candidates, n_picks, used_chalk,
             score_fn=lambda t: surv.get(t, 0),
             survival_probs=surv,
+            min_surv=stage_floor,
         )
 
         # ── EV_OPT: maximise log-EV ──
@@ -868,13 +874,11 @@ def compute_survivor_picks(
             candidates, n_picks, used_ev,
             score_fn=lambda t: _log_ev(surv.get(t, 0), pick_pcts.get(t, 1e-6)),
             survival_probs=surv,
+            min_surv=stage_floor,
         )
 
         # ── CONTRARIAN: heavily discount popular teams ──
-        # Accept any team with survival >= 55% of the stage's top survival prob,
-        # then maximise pick-percentage discount
-        top_surv = max(surv.values()) if surv else 1.0
-        contrarian_floor = max(top_surv * 0.55, MIN_SURVIVAL_THRESHOLD)
+        contrarian_floor = max(top_surv * 0.40, stage_floor)
         contrarian_picks = _greedy_picks(
             candidates, n_picks, used_contrarian,
             score_fn=lambda t: _log_ev(surv.get(t, 0), pick_pcts.get(t, 1e-6)) * 1.5

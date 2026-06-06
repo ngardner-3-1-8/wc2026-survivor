@@ -14,6 +14,26 @@
         },
         {
           "pick_number": 2,
+          "team": "Haiti",
+          "group": "C",
+          "survival_pct": 34.2,
+          "pick_pct": 0.24,
+          "ev_ratio": 140.98,
+          "log_ev": 4.949,
+          "note": "Best log(surv/pick%)"
+        },
+        {
+          "pick_number": 3,
+          "team": "Cura\u00e7ao",
+          "group": "E",
+          "survival_pct": 31.0,
+          "pick_pct": 0.22,
+          "ev_ratio": 139.02,
+          "log_ev": 4.935,
+          "note": "Best log(surv/pick%)"
+        },
+        {
+          "pick_number": 4,
           "team": "Jordan",
           "group": "J",
           "survival_pct": 36.8,
@@ -21,69 +41,95 @@
           "ev_ratio": 117.54,
           "log_ev": 4.767,
           "note": "Best log(surv/pick%)"
-        },
-        {
-          "pick_number": 3,
-          "team": "Cape Verde",
-          "group": "H",
-          "survival_pct": 45.2,
-          "pick_pct": 0.41,
-          "ev_ratio": 111.59,
-          "log_ev": 4.715,
-          "note": "Best log(surv/pick%)"
-        },
-        {
-          "pick_number": 4,
-          "team": "Ghana",
-          "group": "L",
-          "survival_pct": 49.6,
-          "pick_pct": 0.5,
-          "ev_ratio": 99.98,
-          "log_ev": 4.605,
-          "note": "Best log(surv/pick%)"
         }
       ],
       "Round of 32": [
         {
           "pick_number": 1,
-          "team": "Norway",
-          "group": "I",
-          "survival_pct": 35.2,
-          "pick_pct": 1.17,
-          "ev_ratio": 30.08,
-          "log_ev": 3.404,
+          "team": "Paraguay",
+          "group": "D",
+          "survival_pct": 26.4,
+          "pick_pct": 0.7,
+          "ev_ratio": 37.86,
+          "log_ev": 3.634,
           "note": "Best log(surv/pick%)"
         },
         {
           "pick_number": 2,
-          "team": "T\u00fcrkiye",
-          "group": "D",
-          "survival_pct": 39.2,
-          "pick_pct": 1.37,
-          "ev_ratio": 28.66,
-          "log_ev": 3.356,
+          "team": "Ghana",
+          "group": "L",
+          "survival_pct": 17.2,
+          "pick_pct": 0.51,
+          "ev_ratio": 33.9,
+          "log_ev": 3.523,
           "note": "Best log(surv/pick%)"
         }
       ],
       "Round of 16": [
         {
           "pick_number": 1,
-          "team": "Portugal",
-          "group": "K",
-          "survival_pct": 39.4,
-          "pick_pct": 5.49,
-          "ev_ratio": 7.18,
-          "log_ev": 1.971,
+          "team": "T\u00fcrkiye",
+          "group": "D",
+          "survival_pct": 18.0,
+          "pick_pct": 1.32,
+          "ev_ratio": 13.6,
+          "log_ev": 2.61,
           "note": "Best log(surv/pick%)"
         },
         {
           "pick_number": 2,
-          "team": "Spain",
-          "group": "H",
-          "survival_pct": 38.6,
-          "pick_pct": 5.73,
-          "ev_ratio": 6.73,
-          "log_ev": 1.907,
+          "team": "Norway",
+          "group": "I",
+          "survival_pct": 15.2,
+          "pick_pct": 1.18,
+          "ev_ratio": 12.9,
+          "log_ev": 2.557,
+          "note": "Best log(surv/pick%)"
+        }
+      ],
+      "Quarterfinals": [
+        {
+          "pick_number": 1,
+          "team": "Belgium",
+          "group": "G",
+          "survival_pct": 17.6,
+          "pick_pct": 2.75,
+          "ev_ratio": 6.41,
+          "log_ev": 1.857,
+          "note": "Best log(surv/pick%)"
+        },
+        {
+          "pick_number": 2,
+          "team": "Colombia",
+          "group": "K",
+          "survival_pct": 13.4,
+          "pick_pct": 2.46,
+          "ev_ratio": 5.45,
+          "log_ev": 1.696,
+          "note": "Best log(surv/pick%)"
+        }
+      ],
+      "Semifinal": [
+        {
+          "pick_number": 1,
+          "team": "Portugal",
+          "group": "K",
+          "survival_pct": 13.2,
+          "pick_pct": 4.16,
+          "ev_ratio": 3.18,
+          "log_ev": 1.155,
+          "note": "Best log(surv/pick%)"
+        }
+      ],
+      "Final": [
+        {
+          "pick_number": 1,
+          "team": "France",
+          "group": "I",
+          "survival_pct": 9.8,
+          "pick_pct": 5.74,
+          "ev_ratio": 1.71,
+          "log_ev": 0.534,
           "note": "Best log(surv/pick%)"
         }
       ]
@@ -152,92 +198,206 @@
           "log_ev": 2.359,
           "note": "Highest survival prob"
         }
+      ],
+      "Round of 16": [
+        {
+          "pick_number": 1,
+          "team": "England",
+          "group": "L",
+          "survival_pct": 34.6,
+          "pick_pct": 5.28,
+          "ev_ratio": 6.56,
+          "log_ev": 1.88,
+          "note": "Highest survival prob"
+        },
+        {
+          "pick_number": 2,
+          "team": "Belgium",
+          "group": "G",
+          "survival_pct": 31.4,
+          "pick_pct": 3.0,
+          "ev_ratio": 10.48,
+          "log_ev": 2.349,
+          "note": "Highest survival prob"
+        }
+      ],
+      "Quarterfinals": [
+        {
+          "pick_number": 1,
+          "team": "Netherlands",
+          "group": "F",
+          "survival_pct": 17.6,
+          "pick_pct": 3.5,
+          "ev_ratio": 5.03,
+          "log_ev": 1.615,
+          "note": "Highest survival prob"
+        },
+        {
+          "pick_number": 2,
+          "team": "Colombia",
+          "group": "K",
+          "survival_pct": 13.4,
+          "pick_pct": 2.46,
+          "ev_ratio": 5.45,
+          "log_ev": 1.696,
+          "note": "Highest survival prob"
+        }
+      ],
+      "Semifinal": [
+        {
+          "pick_number": 1,
+          "team": "Croatia",
+          "group": "L",
+          "survival_pct": 6.4,
+          "pick_pct": 2.58,
+          "ev_ratio": 2.48,
+          "log_ev": 0.909,
+          "note": "Highest survival prob"
+        }
+      ],
+      "Final": [
+        {
+          "pick_number": 1,
+          "team": "T\u00fcrkiye",
+          "group": "D",
+          "survival_pct": 2.6,
+          "pick_pct": 1.77,
+          "ev_ratio": 1.47,
+          "log_ev": 0.384,
+          "note": "Highest survival prob"
+        }
       ]
     },
     "CONTRARIAN": {
       "Group Stage": [
         {
           "pick_number": 1,
-          "team": "Uzbekistan",
-          "group": "K",
-          "survival_pct": 52.8,
-          "pick_pct": 0.57,
-          "ev_ratio": 92.49,
-          "log_ev": 4.527,
+          "team": "New Zealand",
+          "group": "G",
+          "survival_pct": 45.4,
+          "pick_pct": 0.31,
+          "ev_ratio": 147.42,
+          "log_ev": 4.993,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 2,
-          "team": "Paraguay",
-          "group": "D",
-          "survival_pct": 58.2,
-          "pick_pct": 0.67,
-          "ev_ratio": 87.09,
-          "log_ev": 4.467,
+          "team": "Cape Verde",
+          "group": "H",
+          "survival_pct": 45.2,
+          "pick_pct": 0.41,
+          "ev_ratio": 111.59,
+          "log_ev": 4.715,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 3,
-          "team": "Bosnia",
-          "group": "B",
-          "survival_pct": 64.2,
-          "pick_pct": 0.93,
-          "ev_ratio": 68.74,
-          "log_ev": 4.23,
+          "team": "Ghana",
+          "group": "L",
+          "survival_pct": 49.6,
+          "pick_pct": 0.5,
+          "ev_ratio": 99.98,
+          "log_ev": 4.605,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 4,
-          "team": "Scotland",
-          "group": "C",
-          "survival_pct": 65.6,
-          "pick_pct": 1.04,
-          "ev_ratio": 63.38,
-          "log_ev": 4.149,
+          "team": "South Africa",
+          "group": "A",
+          "survival_pct": 49.4,
+          "pick_pct": 0.52,
+          "ev_ratio": 94.77,
+          "log_ev": 4.551,
           "note": "Contrarian value pick"
         }
       ],
       "Round of 32": [
         {
           "pick_number": 1,
-          "team": "T\u00fcrkiye",
-          "group": "D",
-          "survival_pct": 39.2,
-          "pick_pct": 1.37,
-          "ev_ratio": 28.66,
-          "log_ev": 3.356,
+          "team": "Bosnia",
+          "group": "B",
+          "survival_pct": 30.6,
+          "pick_pct": 0.92,
+          "ev_ratio": 33.34,
+          "log_ev": 3.507,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 2,
-          "team": "Ecuador",
-          "group": "E",
-          "survival_pct": 40.4,
-          "pick_pct": 1.74,
-          "ev_ratio": 23.19,
-          "log_ev": 3.144,
+          "team": "Scotland",
+          "group": "C",
+          "survival_pct": 30.4,
+          "pick_pct": 0.96,
+          "ev_ratio": 31.52,
+          "log_ev": 3.451,
           "note": "Contrarian value pick"
         }
       ],
       "Round of 16": [
         {
           "pick_number": 1,
-          "team": "Portugal",
-          "group": "K",
-          "survival_pct": 39.4,
-          "pick_pct": 5.49,
-          "ev_ratio": 7.18,
-          "log_ev": 1.971,
+          "team": "South Korea",
+          "group": "A",
+          "survival_pct": 18.8,
+          "pick_pct": 1.65,
+          "ev_ratio": 11.43,
+          "log_ev": 2.436,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 2,
-          "team": "Spain",
-          "group": "H",
-          "survival_pct": 38.6,
-          "pick_pct": 5.73,
-          "ev_ratio": 6.73,
-          "log_ev": 1.907,
+          "team": "Ecuador",
+          "group": "E",
+          "survival_pct": 18.6,
+          "pick_pct": 1.65,
+          "ev_ratio": 11.26,
+          "log_ev": 2.421,
+          "note": "Contrarian value pick"
+        }
+      ],
+      "Quarterfinals": [
+        {
+          "pick_number": 1,
+          "team": "Belgium",
+          "group": "G",
+          "survival_pct": 17.6,
+          "pick_pct": 2.75,
+          "ev_ratio": 6.41,
+          "log_ev": 1.857,
+          "note": "Contrarian value pick"
+        },
+        {
+          "pick_number": 2,
+          "team": "Colombia",
+          "group": "K",
+          "survival_pct": 13.4,
+          "pick_pct": 2.46,
+          "ev_ratio": 5.45,
+          "log_ev": 1.696,
+          "note": "Contrarian value pick"
+        }
+      ],
+      "Semifinal": [
+        {
+          "pick_number": 1,
+          "team": "Netherlands",
+          "group": "F",
+          "survival_pct": 11.0,
+          "pick_pct": 3.51,
+          "ev_ratio": 3.13,
+          "log_ev": 1.142,
+          "note": "Contrarian value pick"
+        }
+      ],
+      "Final": [
+        {
+          "pick_number": 1,
+          "team": "Portugal",
+          "group": "K",
+          "survival_pct": 8.0,
+          "pick_pct": 4.31,
+          "ev_ratio": 1.86,
+          "log_ev": 0.62,
           "note": "Contrarian value pick"
         }
       ]

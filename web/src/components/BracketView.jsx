@@ -1,286 +1,178 @@
-import { useState, useMemo } from 'react'
+import { useState } from 'react'
 
-// Real FIFA R32 matchup structure (Match 73-88)
-// Each matchup: { id, home: {slot, label}, away: {slot, label} }
-const R32_STRUCTURE = [
-  { id: 'M73', home: { slot: '2A', label: 'Runner-up A' }, away: { slot: '2B', label: 'Runner-up B' } },
-  { id: 'M74', home: { slot: '1E', label: 'Winner E'    }, away: { slot: '3rd', label: 'Best 3rd (A/B/C/D/F)' } },
-  { id: 'M75', home: { slot: '1F', label: 'Winner F'    }, away: { slot: '2C', label: 'Runner-up C' } },
-  { id: 'M76', home: { slot: '1C', label: 'Winner C'    }, away: { slot: '2F', label: 'Runner-up F' } },
-  { id: 'M77', home: { slot: '1I', label: 'Winner I'    }, away: { slot: '3rd', label: 'Best 3rd (C/D/F/G/H)' } },
-  { id: 'M78', home: { slot: '2E', label: 'Runner-up E' }, away: { slot: '2I', label: 'Runner-up I' } },
-  { id: 'M79', home: { slot: '1A', label: 'Winner A'    }, away: { slot: '3rd', label: 'Best 3rd (C/E/F/H/I)' } },
-  { id: 'M80', home: { slot: '1L', label: 'Winner L'    }, away: { slot: '3rd', label: 'Best 3rd (E/H/I/J/K)' } },
-  { id: 'M81', home: { slot: '1D', label: 'Winner D'    }, away: { slot: '3rd', label: 'Best 3rd (B/E/F/I/J)' } },
-  { id: 'M82', home: { slot: '1G', label: 'Winner G'    }, away: { slot: '3rd', label: 'Best 3rd (A/E/H/I/J)' } },
-  { id: 'M83', home: { slot: '2K', label: 'Runner-up K' }, away: { slot: '2L', label: 'Runner-up L' } },
-  { id: 'M84', home: { slot: '1H', label: 'Winner H'    }, away: { slot: '2J', label: 'Runner-up J' } },
-  { id: 'M85', home: { slot: '1B', label: 'Winner B'    }, away: { slot: '3rd', label: 'Best 3rd (E/F/G/I/J)' } },
-  { id: 'M86', home: { slot: '1J', label: 'Winner J'    }, away: { slot: '2H', label: 'Runner-up H' } },
-  { id: 'M87', home: { slot: '1K', label: 'Winner K'    }, away: { slot: '3rd', label: 'Best 3rd (D/E/I/J/L)' } },
-  { id: 'M88', home: { slot: '2D', label: 'Runner-up D' }, away: { slot: '2G', label: 'Runner-up G' } },
-]
+const ROUNDS = ['r32','r16','qf','sf','final']
+const ROUND_LABELS = { r32:'Round of 32', r16:'Round of 16', qf:'Quarterfinals', sf:'Semifinals', final:'Final' }
 
-// Bracket halves: M73-80 feed into one half, M81-88 the other
-const BRACKET_LEFT  = ['M73','M74','M75','M76','M77','M78','M79','M80']
-const BRACKET_RIGHT = ['M81','M82','M83','M84','M85','M86','M87','M88']
-
-function pctBar(pct, color = '#58a6ff') {
+function WinBar({ p1, p2, name1, name2 }) {
+  const c1 = p1 >= p2 ? '#3fb950' : '#58a6ff'
+  const c2 = p2 > p1  ? '#3fb950' : '#58a6ff'
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginTop: 2 }}>
-      <div style={{ flex: 1, height: 4, background: '#21262d', borderRadius: 2, overflow: 'hidden' }}>
-        <div style={{ width: `${pct}%`, height: '100%', background: color, borderRadius: 2 }} />
-      </div>
-      <span style={{ fontSize: 10, color: '#8b949e', width: 32, textAlign: 'right' }}>{pct.toFixed(1)}%</span>
+    <div style={{ display:'flex', height:6, borderRadius:3, overflow:'hidden', margin:'4px 0' }}>
+      <div style={{ width:`${p1}%`, background:c1 }} title={`${name1} ${p1}%`} />
+      <div style={{ width:`${p2}%`, background:c2 }} title={`${name2} ${p2}%`} />
     </div>
   )
 }
 
-function TeamSlot({ name, group, pct, stage, highlight, onHover }) {
-  const ko = { r32: 'r32_pct', r16: 'r16_pct', qf: 'qf_pct', sf: 'sf_pct', final: 'final_pct', champion: 'champion_pct' }
-  const color = pct > 60 ? '#3fb950' : pct > 35 ? '#58a6ff' : pct > 15 ? '#d29922' : '#8b949e'
-  const isHL = highlight === name
+function MatchCard({ match, highlight, onHover, showChampPct }) {
+  const { home, away } = match
+  const hWin = home.win_pct >= away.win_pct
 
-  return (
+  const TeamRow = ({ t, isWinner }) => (
     <div
-      className={`team-slot ${isHL ? 'highlighted' : ''}`}
-      onMouseEnter={() => onHover(name)}
-      onMouseLeave={() => onHover(null)}
+      className={`bracket-team ${highlight===t.name?'hl':''} ${isWinner?'winner':''}`}
+      onMouseEnter={()=>onHover(t.name)} onMouseLeave={()=>onHover(null)}
     >
-      <div className="slot-top">
-        <span className="slot-name">{name || '?'}</span>
-        {group && <span className="slot-group">Grp {group}</span>}
+      <div style={{ display:'flex', alignItems:'baseline', gap:6 }}>
+        <span style={{ fontWeight: isWinner?700:400, fontSize:'0.88rem' }}>{t.name}</span>
+        {t.is_third && <span style={{ fontSize:'0.65rem', color:'var(--yellow)', border:'1px solid var(--yellow)', borderRadius:3, padding:'0 4px' }}>3rd</span>}
+        {t.group && !t.is_third && <span style={{ fontSize:'0.68rem', color:'var(--text-muted)' }}>Grp {t.group}</span>}
       </div>
-      {name && pct != null && pctBar(pct, color)}
+      <div style={{ display:'flex', alignItems:'center', gap:6, marginTop:2 }}>
+        <span style={{ fontSize:'0.78rem', color: isWinner?'var(--green)':'var(--text-muted)', fontWeight:isWinner?600:400 }}>
+          {t.win_pct?.toFixed(0)}%
+        </span>
+        {showChampPct && t.champion_pct != null &&
+          <span style={{ fontSize:'0.72rem', color:'var(--yellow)' }}>🏆 {t.champion_pct?.toFixed(1)}%</span>}
+      </div>
     </div>
   )
-}
-
-function MatchupCard({ matchup, groups, knockout, stage, highlight, onHover }) {
-  // Try to resolve the most likely team for each slot from simulation data
-  const teamsByGroup = useMemo(() => {
-    const map = {}
-    if (!groups) return map
-    Object.entries(groups).forEach(([grp, data]) => {
-      if (data.teams.length >= 2) {
-        map[`1${grp}`] = data.teams[0]  // sim winner
-        map[`2${grp}`] = data.teams[1]  // sim runner-up
-      }
-    })
-    return map
-  }, [groups])
-
-  const getTeam = (slot) => {
-    if (slot === '3rd') return { name: 'Best 3rd', group: '?' }
-    return teamsByGroup[slot] || { name: slot, group: '?' }
-  }
-
-  const getKOPct = (teamName, stageKey) => {
-    if (!knockout || !teamName) return null
-    const entry = knockout.find(t => t.name === teamName)
-    if (!entry) return null
-    const colMap = { r32: 'r32_pct', r16: 'r16_pct', qf: 'qf_pct', sf: 'sf_pct', final: 'final_pct', champion: 'champion_pct' }
-    return entry[colMap[stageKey]] ?? null
-  }
-
-  const home = getTeam(matchup.home.slot)
-  const away = getTeam(matchup.away.slot)
-  const homePct = getKOPct(home.name, stage)
-  const awayPct = getKOPct(away.name, stage)
 
   return (
-    <div className="matchup-card">
-      <div className="match-id">{matchup.id}</div>
-      <TeamSlot name={home.name} group={home.group} pct={homePct} stage={stage} highlight={highlight} onHover={onHover} />
-      <div className="vs-divider">vs</div>
-      <TeamSlot name={away.name} group={away.group} pct={awayPct} stage={stage} highlight={highlight} onHover={onHover} />
+    <div className="bracket-match-card">
+      <div className="match-id-tag">{match.match_id}</div>
+      <TeamRow t={home} isWinner={hWin} />
+      <WinBar p1={home.win_pct} p2={away.win_pct} name1={home.name} name2={away.name} />
+      <TeamRow t={away} isWinner={!hWin} />
     </div>
   )
 }
 
-function KOColumn({ title, teams, stage, knockout, highlight, onHover }) {
-  if (!teams || teams.length === 0) return null
-  const colMap = { r32: 'r32_pct', r16: 'r16_pct', qf: 'qf_pct', sf: 'sf_pct', final: 'final_pct', champion: 'champion_pct' }
-
+function ThirdPlaceTable({ thirds }) {
+  if (!thirds?.length) return null
   return (
-    <div className="ko-column">
-      <div className="ko-col-title">{title}</div>
-      {teams.map(t => {
-        const entry = knockout?.find(k => k.name === t)
-        const pct = entry?.[colMap[stage]] ?? 0
-        const color = pct > 50 ? '#3fb950' : pct > 25 ? '#58a6ff' : pct > 10 ? '#d29922' : '#8b949e'
-        const isHL = highlight === t
-        return (
-          <div
-            key={t}
-            className={`ko-team-chip ${isHL ? 'highlighted' : ''}`}
-            onMouseEnter={() => onHover(t)}
-            onMouseLeave={() => onHover(null)}
-          >
-            <span className="chip-name">{t}</span>
-            {pctBar(pct, color)}
-          </div>
-        )
-      })}
+    <div className="card third-place-card">
+      <div className="card-title">Best 8 Third-Place Teams (Advancing)</div>
+      <table className="sim-table">
+        <thead><tr>
+          <th>#</th><th>Team</th><th>Group</th>
+          <th className="num">Avg Pts</th><th className="num">Avg GD</th>
+          <th className="num">Avg GF</th><th className="num">Advance%</th>
+        </tr></thead>
+        <tbody>
+          {thirds.map((t,i) => (
+            <tr key={t.name}>
+              <td className="text-muted">{i+1}</td>
+              <td style={{ fontWeight:500 }}>{t.name}</td>
+              <td className="text-muted">{t.group}</td>
+              <td className="num">{t.avg_pts?.toFixed(1)}</td>
+              <td className="num" style={{ color: t.avg_gd>=0?'var(--green)':'var(--red)' }}>{t.avg_gd?.toFixed(1)}</td>
+              <td className="num">{t.avg_gf?.toFixed(1)}</td>
+              <td className="num">
+                <div style={{ display:'flex', alignItems:'center', gap:4 }}>
+                  <div style={{ flex:1, height:5, background:'var(--surface2)', borderRadius:2, overflow:'hidden' }}>
+                    <div style={{ width:`${t.advance_pct}%`, height:'100%', background:'var(--yellow)' }} />
+                  </div>
+                  <span style={{ fontSize:'0.75rem', color:'var(--yellow)', width:36, textAlign:'right' }}>{t.advance_pct}%</span>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }
 
-export default function BracketView({ groups, knockout }) {
+export default function BracketView({ groups, knockout, bracket }) {
   const [highlight, setHighlight] = useState(null)
-  const [view, setView] = useState('r32') // 'r32' | 'odds'
+  const [showChamp, setShowChamp] = useState(false)
+  const [view, setView] = useState('bracket')
 
-  // For odds view — full probability table sorted by champion_pct
-  const sortedKO = useMemo(() =>
-    knockout ? [...knockout].sort((a, b) => b.champion_pct - a.champion_pct) : []
-  , [knockout])
+  if (!bracket) return <div className="text-muted" style={{ padding:'2rem' }}>Loading bracket…</div>
 
-  // Top teams by each stage for the bracket odds view
-  const topByStage = (stageKey, n = 8) =>
-    [...(knockout || [])].sort((a, b) => b[stageKey] - a[stageKey]).slice(0, n).map(t => t.name)
+  const rounds = [
+    { key:'r32', data: bracket.r32,   half: 8 },
+    { key:'r16', data: bracket.r16,   half: 4 },
+    { key:'qf',  data: bracket.qf,    half: 2 },
+    { key:'sf',  data: bracket.sf,    half: 1 },
+    { key:'final', data: bracket.final, half: 1 },
+  ]
 
   return (
     <div className="bracket-view">
-      <div style={{ marginBottom: '1.25rem' }}>
+      <div style={{ marginBottom:'1.25rem' }}>
         <h2 className="section-title">Predicted Bracket</h2>
         <p className="section-sub">
-          R32 matchups follow the official FIFA schedule (Matches 73–88).
-          Team shown is the most likely group finisher. Bar = probability of advancing from that round.
+          Full tournament bracket predicted from simulation results · R32 follows official FIFA matchup structure (M73–M88) · Green = predicted winner
         </p>
       </div>
 
-      <div className="bracket-tabs" style={{ marginBottom: '1rem' }}>
-        {[['r32', '🗓 R32 Matchups'], ['odds', '📊 Stage Probabilities']].map(([k, label]) => (
-          <button key={k} className={`ctrl-btn ${view === k ? 'active' : ''}`} onClick={() => setView(k)}>
-            {label}
-          </button>
+      <div style={{ display:'flex', gap:'0.5rem', marginBottom:'1rem', flexWrap:'wrap', alignItems:'center' }}>
+        {[['bracket','🗓 Full Bracket'],['thirds','🥉 3rd Place Rankings']].map(([k,l])=>(
+          <button key={k} className={`ctrl-btn ${view===k?'active':''}`} onClick={()=>setView(k)}>{l}</button>
         ))}
+        <label style={{ marginLeft:'auto', display:'flex', alignItems:'center', gap:6, fontSize:'0.82rem', color:'var(--text-muted)', cursor:'pointer' }}>
+          <input type="checkbox" checked={showChamp} onChange={e=>setShowChamp(e.target.checked)} />
+          Show 🏆 champion%
+        </label>
       </div>
 
-      {view === 'r32' && (
-        <div className="r32-grid">
-          <div className="bracket-half">
-            <div className="half-label">Left Half (M73–M80)</div>
-            {BRACKET_LEFT.map(id => {
-              const m = R32_STRUCTURE.find(x => x.id === id)
-              return (
-                <MatchupCard key={id} matchup={m} groups={groups} knockout={knockout}
-                  stage="r16" highlight={highlight} onHover={setHighlight} />
-              )
-            })}
-          </div>
-          <div className="bracket-half">
-            <div className="half-label">Right Half (M81–M88)</div>
-            {BRACKET_RIGHT.map(id => {
-              const m = R32_STRUCTURE.find(x => x.id === id)
-              return (
-                <MatchupCard key={id} matchup={m} groups={groups} knockout={knockout}
-                  stage="r16" highlight={highlight} onHover={setHighlight} />
-              )
-            })}
-          </div>
-        </div>
-      )}
+      {view === 'thirds' && <ThirdPlaceTable thirds={bracket.third_place_ranking} />}
 
-      {view === 'odds' && (
-        <div className="odds-view">
-          <div className="ko-stages-row">
-            {[
-              { key: 'r32_pct',      label: 'Qualified (R32)', n: 16 },
-              { key: 'r16_pct',      label: 'R16',             n: 12 },
-              { key: 'qf_pct',       label: 'Quarterfinals',   n: 8  },
-              { key: 'sf_pct',       label: 'Semifinals',      n: 6  },
-              { key: 'final_pct',    label: 'Final',           n: 4  },
-              { key: 'champion_pct', label: '🏆 Champion',     n: 4  },
-            ].map(({ key, label, n }) => (
-              <KOColumn key={key} title={label}
-                teams={topByStage(key, n)} stage={key.replace('_pct','')}
-                knockout={knockout} highlight={highlight} onHover={setHighlight} />
-            ))}
-          </div>
-
-          <div className="card" style={{ marginTop: '1.5rem', padding: 0, overflow: 'hidden' }}>
-            <div style={{ overflowX: 'auto' }}>
-              <table className="sim-table">
-                <thead>
-                  <tr>
-                    <th>#</th><th>Team</th><th>Grp</th>
-                    <th className="num">R32%</th>
-                    <th className="num">R16%</th>
-                    <th className="num">QF%</th>
-                    <th className="num">SF%</th>
-                    <th className="num">Final%</th>
-                    <th className="num">🏆%</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedKO.map((t, i) => (
-                    <tr key={t.name}
-                      onMouseEnter={() => setHighlight(t.name)}
-                      onMouseLeave={() => setHighlight(null)}
-                      style={{ background: highlight === t.name ? 'var(--surface2)' : undefined }}
-                    >
-                      <td className="text-muted" style={{ fontSize: '0.78rem' }}>{i+1}</td>
-                      <td style={{ fontWeight: 500 }}>{t.name}</td>
-                      <td className="text-muted">{t.group}</td>
-                      <td className="num">{t.r32_pct.toFixed(1)}%</td>
-                      <td className="num">{t.r16_pct.toFixed(1)}%</td>
-                      <td className="num">{t.qf_pct.toFixed(1)}%</td>
-                      <td className="num">{t.sf_pct.toFixed(1)}%</td>
-                      <td className="num">{t.final_pct.toFixed(1)}%</td>
-                      <td className="num" style={{ fontWeight: 700, color: t.champion_pct >= 8 ? '#ffd700' : t.champion_pct >= 4 ? '#58a6ff' : undefined }}>
-                        {t.champion_pct.toFixed(1)}%
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+      {view === 'bracket' && (
+        <>
+          {/* Champion banner */}
+          <div className="champion-banner card">
+            <span className="trophy-big">🏆</span>
+            <div>
+              <div style={{ fontSize:'0.78rem', color:'var(--text-muted)', textTransform:'uppercase', letterSpacing:'0.06em' }}>Predicted Champion</div>
+              <div style={{ fontSize:'1.4rem', fontWeight:700, fontFamily:"'Space Grotesk',sans-serif" }}>{bracket.predicted_champion}</div>
             </div>
           </div>
-        </div>
+
+          {/* Bracket rounds */}
+          <div className="bracket-scroll">
+            {rounds.map(({ key, data }) => (
+              <div key={key} className="bracket-round">
+                <div className="round-label">{ROUND_LABELS[key]}</div>
+                <div className="round-matches">
+                  {data?.map(m => (
+                    <MatchCard key={m.match_id} match={m}
+                      highlight={highlight} onHover={setHighlight}
+                      showChampPct={showChamp} />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
       )}
 
       <style>{`
-        .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.35rem; }
-        .section-sub { color: var(--text-muted); font-size: 0.875rem; }
-        .bracket-tabs { display: flex; gap: 0.5rem; }
-        .ctrl-btn {
-          background: var(--surface2); border: 1px solid var(--border);
-          border-radius: 4px; color: var(--text-muted); cursor: pointer;
-          font-size: 0.82rem; padding: 4px 12px; transition: all 0.12s;
-        }
-        .ctrl-btn:hover  { color: var(--text); }
-        .ctrl-btn.active { background: var(--blue-dim); border-color: var(--blue); color: var(--blue); }
+        .section-title { font-family:'Space Grotesk',sans-serif; font-size:1.4rem; font-weight:700; margin-bottom:0.35rem; }
+        .section-sub { color:var(--text-muted); font-size:0.875rem; }
+        .ctrl-btn { background:var(--surface2); border:1px solid var(--border); border-radius:4px; color:var(--text-muted); cursor:pointer; font-size:0.82rem; padding:4px 12px; transition:all .12s; }
+        .ctrl-btn:hover { color:var(--text); }
+        .ctrl-btn.active { background:var(--blue-dim); border-color:var(--blue); color:var(--blue); }
 
-        .r32-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-        @media (max-width: 800px) { .r32-grid { grid-template-columns: 1fr; } }
+        .champion-banner { display:flex; align-items:center; gap:1rem; padding:1rem 1.5rem; margin-bottom:1.25rem; background:linear-gradient(135deg, #21262d 0%, #1a2a1a 100%); border-color:#3fb95044; }
+        .trophy-big { font-size:2.5rem; }
 
-        .bracket-half { display: flex; flex-direction: column; gap: 0.5rem; }
-        .half-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.25rem; }
+        .bracket-scroll { display:flex; gap:0.75rem; overflow-x:auto; padding-bottom:1rem; align-items:flex-start; }
+        .bracket-round { flex-shrink:0; width:220px; }
+        .round-label { font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em; font-weight:600; margin-bottom:0.5rem; padding:0 2px; }
+        .round-matches { display:flex; flex-direction:column; gap:0.5rem; }
 
-        .matchup-card {
-          background: var(--surface); border: 1px solid var(--border);
-          border-radius: 6px; padding: 0.6rem 0.75rem;
-        }
-        .match-id { font-size: 0.68rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 600; letter-spacing: 0.05em; }
-        .team-slot { padding: 4px 6px; border-radius: 4px; transition: background 0.12s; cursor: default; }
-        .team-slot.highlighted { background: var(--blue-dim); }
-        .slot-top { display: flex; align-items: baseline; gap: 0.5rem; }
-        .slot-name { font-size: 0.88rem; font-weight: 500; }
-        .slot-group { font-size: 0.68rem; color: var(--text-muted); }
-        .vs-divider { font-size: 0.7rem; color: var(--text-muted); text-align: center; padding: 2px 0; }
+        .bracket-match-card { background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:0.6rem 0.75rem; }
+        .match-id-tag { font-size:0.65rem; color:var(--text-muted); font-weight:600; letter-spacing:0.05em; margin-bottom:4px; }
+        .bracket-team { padding:3px 5px; border-radius:4px; transition:background .1s; cursor:default; }
+        .bracket-team.hl { background:var(--blue-dim); }
+        .bracket-team.winner { background:rgba(63,185,80,0.08); }
 
-        .ko-stages-row { display: flex; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.5rem; }
-        .ko-column { min-width: 140px; flex: 1; }
-        .ko-col-title { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; font-weight: 600; }
-        .ko-team-chip {
-          background: var(--surface); border: 1px solid var(--border);
-          border-radius: 5px; padding: 5px 8px; margin-bottom: 0.35rem;
-          cursor: default; transition: background 0.12s;
-        }
-        .ko-team-chip.highlighted { background: var(--blue-dim); border-color: var(--blue); }
-        .chip-name { font-size: 0.82rem; font-weight: 500; display: block; margin-bottom: 2px; }
-        .num { text-align: right; }
+        .third-place-card { padding:1rem; }
+        .num { text-align:right; }
+        .text-muted { color:var(--text-muted); }
       `}</style>
     </div>
   )

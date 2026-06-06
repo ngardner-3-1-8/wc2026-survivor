@@ -9,8 +9,8 @@ async function fetchJSON(file) {
 }
 
 export function useSimData() {
-  const [data, setData]     = useState(null)
-  const [error, setError]   = useState(null)
+  const [data, setData]       = useState(null)
+  const [error, setError]     = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -19,9 +19,11 @@ export function useSimData() {
       fetchJSON('groups.json'),
       fetchJSON('knockout.json'),
       fetchJSON('survivor.json'),
+      fetchJSON('bracket.json'),
+      fetchJSON('betting.json'),
     ])
-      .then(([meta, groups, knockout, survivor]) => {
-        setData({ meta, groups, knockout, survivor })
+      .then(([meta, groups, knockout, survivor, bracket, betting]) => {
+        setData({ meta, groups, knockout, survivor, bracket, betting })
       })
       .catch(setError)
       .finally(() => setLoading(false))

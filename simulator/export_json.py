@@ -1,155 +1,335 @@
 """
-export_json.py
-==============
+export_json.py  —  v3
+=====================
 Runs the WC2026 simulator and writes web-ready JSON to public/data/.
-Called by GitHub Actions after each simulation run.
-
-Usage:
-    python export_json.py --sims 50000 --out-dir ../public/data
 """
-
-import argparse
-import json
-import sys
-import os
+import argparse, json, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-# Allow importing simulator from same directory
 sys.path.insert(0, str(Path(__file__).parent))
-from wc2026_simulator import run_simulation, GROUPS, TEAMS
+from wc2026_simulator import run_simulation, GROUPS, TEAMS, BASE_RATE
 
 STAGE_ORDER = [
-    "Group Stage", "Round of 32", "Round of 16",
-    "Quarterfinals", "Semifinal", "Final"
+    "Group Stage","Round of 32","Round of 16",
+    "Quarterfinals","Semifinal","Final"
 ]
 
-def df_to_records(df):
-    """Convert DataFrame to list of dicts with native Python types."""
-    return json.loads(df.to_json(orient="records"))
+def write_json(data, path: Path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path,"w") as f:
+        json.dump(data, f, indent=2)
+    print(f"  ✓ {path}  ({path.stat().st_size//1024}KB)")
 
+# ── helpers ──────────────────────────────────────────────────────────────────
 
 def build_groups_json(group_df, match_df):
-    """
-    {
-      "A": {
-        "teams": [ { name, fifa_rank, avg_pts, avg_gf, avg_ga, advance_pct }, ... ],
-        "matches": [ { home, away, home_win_pct, draw_pct, away_win_pct, xgf, xga }, ... ]
-      }, ...
-    }
-    """
     groups = {}
-    for grp_name, grp_teams in sorted(GROUPS.items()):
-        team_rows = group_df[group_df["Group"] == grp_name].sort_values(
-            "Avg_GroupRank"
-        )
+    for grp_name in sorted(GROUPS.keys()):
+        team_rows = group_df[group_df["Group"]==grp_name].sort_values("Avg_GroupRank")
         teams_out = []
         for _, r in team_rows.iterrows():
             teams_out.append({
                 "name":        r["Team"],
                 "fifa_rank":   int(r["FIFA_Rank"]),
-                "avg_pts":     round(float(r["Avg_Pts"]), 2),
-                "avg_gf":      round(float(r["Avg_GF"]), 2),
-                "avg_ga":      round(float(r["Avg_GA"]), 2),
-                "avg_gd":      round(float(r["Avg_GD"]), 2),
-                "advance_pct": round(float(r["Advance_Pct"]), 1),
+                "avg_pts":     round(float(r["Avg_Pts"]),2),
+                "avg_gf":      round(float(r["Avg_GF"]),2),
+                "avg_ga":      round(float(r["Avg_GA"]),2),
+                "avg_gd":      round(float(r["Avg_GD"]),2),
+                "advance_pct": round(float(r["Advance_Pct"]),1),
             })
-
-        grp_matches = match_df[match_df["Group"] == grp_name]
+        grp_matches = match_df[match_df["Group"]==grp_name]
         matches_out = []
         for _, r in grp_matches.iterrows():
             matches_out.append({
-                "home":          r["Home"],
-                "away":          r["Away"],
-                "home_win_pct":  round(float(r["Home_Win%"]), 1),
-                "draw_pct":      round(float(r["Draw%"]), 1),
-                "away_win_pct":  round(float(r["Away_Win%"]), 1),
-                "xgf":           round(float(r["Sim_xGF"]), 2),
-                "xga":           round(float(r["Sim_xGA"]), 2),
+                "home":         r["Home"],
+                "away":         r["Away"],
+                "home_win_pct": round(float(r["Home_Win%"]),1),
+                "draw_pct":     round(float(r["Draw%"]),1),
+                "away_win_pct": round(float(r["Away_Win%"]),1),
+                "xgf":          round(float(r["Sim_xGF"]),2),
+                "xga":          round(float(r["Sim_xGA"]),2),
+                # Derived betting metrics
+                "xg_total":     round(float(r["Sim_xGF"])+float(r["Sim_xGA"]),2),
+                # P(both score) ≈ P(home scores ≥1) × P(away scores ≥1)
+                # Using Poisson: P(score≥1) = 1 - e^(-λ)
+                "btts_pct":     round((1-2.718**(-float(r["Sim_xGF"])))*(1-2.718**(-float(r["Sim_xGA"])))*100,1),
+                "home_cover_pct": round(float(r["Home_Win%"]),1),  # moneyline proxy
+                "model_home_ml":  _pct_to_american(float(r["Home_Win%"])/100),
+                "model_draw_ml":  _pct_to_american(float(r["Draw%"])/100),
+                "model_away_ml":  _pct_to_american(float(r["Away_Win%"])/100),
             })
-
         groups[grp_name] = {"teams": teams_out, "matches": matches_out}
     return groups
 
 
+def _pct_to_american(p: float) -> int:
+    """Convert win probability to American moneyline odds."""
+    if p <= 0 or p >= 1:
+        return 0
+    if p >= 0.5:
+        return -round((p / (1 - p)) * 100)
+    else:
+        return round(((1 - p) / p) * 100)
+
+
 def build_knockout_json(ko_df):
-    """
-    List of teams with per-stage probabilities, sorted by champion_pct desc.
-    [ { name, group, r32_pct, r16_pct, qf_pct, sf_pct, final_pct, champion_pct }, ... ]
-    """
     out = []
     for _, r in ko_df.iterrows():
         out.append({
             "name":         r["Team"],
             "group":        r["Group"],
             "fifa_rank":    int(r["FIFA_Rank"]),
-            "r32_pct":      round(float(r["r32_pct"]), 2),
-            "r16_pct":      round(float(r["r16_pct"]), 2),
-            "qf_pct":       round(float(r["qf_pct"]), 2),
-            "sf_pct":       round(float(r["sf_pct"]), 2),
-            "final_pct":    round(float(r["final_pct"]), 2),
-            "champion_pct": round(float(r["champion_pct"]), 2),
+            "r32_pct":      round(float(r["r32_pct"]),2),
+            "r16_pct":      round(float(r["r16_pct"]),2),
+            "qf_pct":       round(float(r["qf_pct"]),2),
+            "sf_pct":       round(float(r["sf_pct"]),2),
+            "final_pct":    round(float(r["final_pct"]),2),
+            "champion_pct": round(float(r["champion_pct"]),2),
         })
     return out
 
 
-def build_survivor_json(survivor_df, pick_pct_df):
+def build_predicted_bracket(group_df, ko_df):
     """
-    {
-      "strategies": {
-        "EV_OPT": {
-          "Group Stage": [ { pick_number, team, group, survival_pct, pick_pct, ev_ratio }, ... ],
-          "Round of 32": [ ... ],
-          ...
-        },
-        "CHALK": { ... },
-        "CONTRARIAN": { ... }
-      },
-      "pick_intelligence": {
-        "Group Stage": [ { team, group, survival_pct, pick_pct, ev_ratio, value_label }, ... ],
-        ...
-      }
+    Build a fully predicted bracket using group-stage winner probabilities
+    and the official FIFA R32 matchup structure (Matches 73-88).
+
+    For each R32 match we record:
+    - The two slots (e.g. "Winner A" vs "Runner-up B")
+    - The most likely team for each slot (by sim avg rank)
+    - Their relative win probability in that specific matchup
+    - Advancement probability through each subsequent round
+
+    Third-place slots show the top-8 expected 3rd-place teams ranked by
+    average points, applying the FIFA 3rd-place ranking criteria.
+    """
+    team_map = {t.name: t for t in TEAMS}
+
+    # Most likely finisher per slot, derived from group_df avg ranks
+    def likely_winner(grp: str):
+        t = group_df[group_df["Group"]==grp].sort_values("Avg_GroupRank").iloc[0]
+        return {"name": t["Team"], "advance_pct": round(float(t["Advance_Pct"]),1)}
+
+    def likely_runner_up(grp: str):
+        t = group_df[group_df["Group"]==grp].sort_values("Avg_GroupRank").iloc[1]
+        return {"name": t["Team"], "advance_pct": round(float(t["Advance_Pct"]),1)}
+
+    # Best 8 third-place teams by average points across groups
+    third_place_rows = []
+    for grp in sorted(GROUPS.keys()):
+        grp_teams = group_df[group_df["Group"]==grp].sort_values("Avg_GroupRank")
+        if len(grp_teams) >= 3:
+            t = grp_teams.iloc[2]
+            third_place_rows.append({
+                "name":    t["Team"],
+                "group":   grp,
+                "avg_pts": float(t["Avg_Pts"]),
+                "avg_gd":  float(t["Avg_GD"]),
+                "avg_gf":  float(t["Avg_GF"]),
+                "advance_pct": round(float(t["Advance_Pct"]),1),
+            })
+    third_place_rows.sort(key=lambda x: (-x["avg_pts"], -x["avg_gd"], -x["avg_gf"]))
+    best_thirds = third_place_rows[:8]
+    best_third_groups = set(r["group"] for r in best_thirds)
+
+    # FIFA 3rd-place slot assignment matrix (most common combinations)
+    # Maps frozenset of 8 advancing groups to slot assignments
+    # slot_names = ['1A','1B','1D','1E','1G','1I','1K','1L']
+    THIRD_MATRIX = {
+        frozenset('CDEFGHIJ'): ('C','G','J','D','H','F','E','I'),
+        frozenset('CDEFGHIK'): ('C','G','E','D','H','F','I','K'),
+        frozenset('CDEFGHIL'): ('C','G','E','D','H','F','L','I'),
+        frozenset('CDEFGHJK'): ('C','G','J','D','H','F','E','K'),
+        frozenset('CDEFGHJL'): ('C','G','J','D','H','F','L','E'),
+        frozenset('CDEFGHKL'): ('C','G','E','D','H','F','L','K'),
+        frozenset('DEFGHIJK'): ('E','G','J','F','I','H','K','L'),  # combo 9
+        frozenset('DEFGHIJL'): ('E','G','J','F','I','H','L','K'),
     }
-    """
+    slot_names = ['1A','1B','1D','1E','1G','1I','1K','1L']
+    fset = frozenset(best_third_groups)
+    if fset in THIRD_MATRIX:
+        slot_assignments = dict(zip(slot_names, THIRD_MATRIX[fset]))
+    else:
+        # fallback: assign best thirds to slots in order
+        grps_sorted = sorted(best_third_groups)
+        slot_assignments = {slot_names[i]: grps_sorted[i] for i in range(min(8,len(grps_sorted)))}
+
+    def get_3rd_for_slot(slot: str):
+        grp = slot_assignments.get(slot)
+        if grp:
+            match = next((r for r in best_thirds if r["group"]==grp), None)
+            if match:
+                return {"name": match["name"], "advance_pct": match["advance_pct"], "is_third": True}
+        # fallback
+        return {"name": best_thirds[0]["name"] if best_thirds else "TBD", "advance_pct": 0, "is_third": True}
+
+    def matchup_win_prob(t1_name: str, t2_name: str):
+        """Head-to-head win prob from model ratings."""
+        t1 = team_map.get(t1_name)
+        t2 = team_map.get(t2_name)
+        if not t1 or not t2:
+            return 50.0, 50.0
+        lam1 = BASE_RATE * t1.att * t2.defe
+        lam2 = BASE_RATE * t2.att * t1.defe
+        # Approximate from lambda ratio
+        p1 = lam1 / (lam1 + lam2)
+        return round(p1*100,1), round((1-p1)*100,1)
+
+    def ko_pcts(name: str):
+        row = ko_df[ko_df["Team"]==name]
+        if row.empty:
+            return {}
+        r = row.iloc[0]
+        return {
+            "r16_pct":      round(float(r["r16_pct"]),1),
+            "qf_pct":       round(float(r["qf_pct"]),1),
+            "sf_pct":       round(float(r["sf_pct"]),1),
+            "final_pct":    round(float(r["final_pct"]),1),
+            "champion_pct": round(float(r["champion_pct"]),1),
+        }
+
+    def make_matchup(match_id, slot1_label, team1_fn, slot2_label, team2_fn):
+        t1 = team1_fn()
+        t2 = team2_fn()
+        p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+        return {
+            "match_id":   match_id,
+            "home": {**t1, "slot": slot1_label, "win_pct": p1, **ko_pcts(t1["name"])},
+            "away": {**t2, "slot": slot2_label, "win_pct": p2, **ko_pcts(t2["name"])},
+        }
+
+    r32 = [
+        make_matchup("M73", "Runner-up A", lambda: likely_runner_up("A"),
+                            "Runner-up B", lambda: likely_runner_up("B")),
+        make_matchup("M74", "Winner E",    lambda: likely_winner("E"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1E")),
+        make_matchup("M75", "Winner F",    lambda: likely_winner("F"),
+                            "Runner-up C", lambda: likely_runner_up("C")),
+        make_matchup("M76", "Winner C",    lambda: likely_winner("C"),
+                            "Runner-up F", lambda: likely_runner_up("F")),
+        make_matchup("M77", "Winner I",    lambda: likely_winner("I"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1I")),
+        make_matchup("M78", "Runner-up E", lambda: likely_runner_up("E"),
+                            "Runner-up I", lambda: likely_runner_up("I")),
+        make_matchup("M79", "Winner A",    lambda: likely_winner("A"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1A")),
+        make_matchup("M80", "Winner L",    lambda: likely_winner("L"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1L")),
+        make_matchup("M81", "Winner D",    lambda: likely_winner("D"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1D")),
+        make_matchup("M82", "Winner G",    lambda: likely_winner("G"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1G")),
+        make_matchup("M83", "Runner-up K", lambda: likely_runner_up("K"),
+                            "Runner-up L", lambda: likely_runner_up("L")),
+        make_matchup("M84", "Winner H",    lambda: likely_winner("H"),
+                            "Runner-up J", lambda: likely_runner_up("J")),
+        make_matchup("M85", "Winner B",    lambda: likely_winner("B"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1B")),
+        make_matchup("M86", "Winner J",    lambda: likely_winner("J"),
+                            "Runner-up H", lambda: likely_runner_up("H")),
+        make_matchup("M87", "Winner K",    lambda: likely_winner("K"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1K")),
+        make_matchup("M88", "Runner-up D", lambda: likely_runner_up("D"),
+                            "Runner-up G", lambda: likely_runner_up("G")),
+    ]
+
+    # Predicted R16 onward (winner of each R32 pair advances)
+    def predicted_winner(matchup):
+        h, a = matchup["home"], matchup["away"]
+        return h if h["win_pct"] >= a["win_pct"] else a
+
+    r16_teams = [predicted_winner(m) for m in r32]
+    # pair them up: M73 winner vs M74 winner, etc.
+    r16 = []
+    for i in range(0, 16, 2):
+        t1, t2 = r16_teams[i], r16_teams[i+1]
+        p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+        r16.append({
+            "match_id": f"R16-{i//2+1}",
+            "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
+            "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
+        })
+
+    qf_teams = [predicted_winner(m) for m in r16]
+    qf = []
+    for i in range(0, 8, 2):
+        t1, t2 = qf_teams[i], qf_teams[i+1]
+        p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+        qf.append({
+            "match_id": f"QF-{i//2+1}",
+            "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
+            "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
+        })
+
+    sf_teams = [predicted_winner(m) for m in qf]
+    sf = []
+    for i in range(0, 4, 2):
+        t1, t2 = sf_teams[i], sf_teams[i+1]
+        p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+        sf.append({
+            "match_id": f"SF-{i//2+1}",
+            "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
+            "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
+        })
+
+    final_teams = [predicted_winner(m) for m in sf]
+    t1, t2 = final_teams[0], final_teams[1]
+    p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+    final = [{
+        "match_id": "Final",
+        "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
+        "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
+    }]
+
+    return {
+        "third_place_ranking": best_thirds,
+        "r32": r32,
+        "r16": r16,
+        "qf":  qf,
+        "sf":  sf,
+        "final": final,
+        "predicted_champion": predicted_winner(final[0])["name"],
+    }
+
+
+def build_survivor_json(survivor_df, pick_pct_df):
     strategies = {}
-    for strat in ["EV_OPT", "CHALK", "CONTRARIAN"]:
+    for strat in ["EV_OPT","CHALK","CONTRARIAN"]:
         strat_picks = {}
-        sub = survivor_df[survivor_df["Strategy"] == strat]
+        sub = survivor_df[survivor_df["Strategy"]==strat]
         for stage in STAGE_ORDER:
-            stage_rows = sub[sub["Stage"] == stage].sort_values("Pick_Number")
+            stage_rows = sub[sub["Stage"]==stage].sort_values("Pick_Number")
             if stage_rows.empty:
                 continue
             strat_picks[stage] = [
                 {
-                    "pick_number":   int(r["Pick_Number"]),
-                    "team":          r["Team"],
-                    "group":         r["Group"],
-                    "survival_pct":  round(float(r["Survival_Pct"]), 2),
-                    "pick_pct":      round(float(r["Est_Pick_Pct"]), 2),
-                    "ev_ratio":      round(float(r["EV_Ratio"]), 2),
-                    "log_ev":        round(float(r["Log_EV"]), 3),
-                    "note":          r["Note"],
+                    "pick_number":  int(r["Pick_Number"]),
+                    "team":         r["Team"],
+                    "group":        r["Group"],
+                    "survival_pct": round(float(r["Survival_Pct"]),2),
+                    "pick_pct":     round(float(r["Est_Pick_Pct"]),2),
+                    "ev_ratio":     round(float(r["EV_Ratio"]),2),
+                    "log_ev":       round(float(r["Log_EV"]),3),
+                    "note":         r["Note"],
                 }
                 for _, r in stage_rows.iterrows()
             ]
         strategies[strat] = strat_picks
 
-    # Pick intelligence per stage
     pick_intel = {}
     for stage in STAGE_ORDER:
-        stage_rows = pick_pct_df[pick_pct_df["Stage"] == stage].sort_values(
-            "Log_EV", ascending=False
-        )
+        stage_rows = pick_pct_df[pick_pct_df["Stage"]==stage].sort_values("Log_EV",ascending=False)
         if stage_rows.empty:
             continue
         pick_intel[stage] = [
             {
                 "team":         r["Team"],
                 "group":        r["Group"],
-                "survival_pct": round(float(r["Survival_Pct"]), 2),
-                "pick_pct":     round(float(r["Est_Pick_Pct"]), 2),
-                "ev_ratio":     round(float(r["EV_Ratio"]), 2),
-                "log_ev":       round(float(r["Log_EV"]), 3),
+                "survival_pct": round(float(r["Survival_Pct"]),2),
+                "pick_pct":     round(float(r["Est_Pick_Pct"]),2),
+                "ev_ratio":     round(float(r["EV_Ratio"]),2),
+                "log_ev":       round(float(r["Log_EV"]),3),
                 "value_label":  r["Value_Label"],
             }
             for _, r in stage_rows.iterrows()
@@ -157,12 +337,83 @@ def build_survivor_json(survivor_df, pick_pct_df):
     return {"strategies": strategies, "pick_intelligence": pick_intel}
 
 
-def write_json(data, path: Path):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w") as f:
-        json.dump(data, f, indent=2)
-    print(f"  ✓ {path}  ({path.stat().st_size // 1024}KB)")
+def build_betting_json(group_df, match_df, ko_df):
+    """
+    Build betting intelligence for every group stage match.
+    Compares our model implied odds against a placeholder for live odds
+    (live odds are fetched client-side via the Odds API).
 
+    Includes:
+      moneyline, totals (2.5 line), team totals, BTTS, Asian handicap proxy
+    """
+    matches = []
+    for _, r in match_df.iterrows():
+        home_wp = float(r["Home_Win%"]) / 100
+        draw_p  = float(r["Draw%"])     / 100
+        away_wp = float(r["Away_Win%"]) / 100
+        xgf     = float(r["Sim_xGF"])
+        xga     = float(r["Sim_xGA"])
+        xg_tot  = xgf + xga
+
+        import math
+        # P(over 2.5) using Poisson
+        def p_over(lam_h, lam_a, line=2.5):
+            threshold = int(line)
+            p_under = 0
+            for g in range(0, threshold+1):
+                for h in range(0, g+1):
+                    a = g - h
+                    ph = math.exp(-lam_h) * lam_h**h / math.factorial(h)
+                    pa = math.exp(-lam_a) * lam_a**a / math.factorial(a)
+                    p_under += ph * pa
+            return 1 - p_under
+
+        def p_team_over(lam, line=1.5):
+            """P(team scores > line goals)"""
+            p_under = sum(
+                math.exp(-lam) * lam**k / math.factorial(k)
+                for k in range(0, int(line)+1)
+            )
+            return 1 - p_under
+
+        p_o25 = p_over(xgf, xga, 2.5)
+        p_u25 = 1 - p_o25
+        p_o35 = p_over(xgf, xga, 3.5)
+        p_btts = (1 - math.exp(-xgf)) * (1 - math.exp(-xga))
+        p_home_o15 = p_team_over(xgf, 1.5)
+        p_away_o15 = p_team_over(xga, 1.5)
+
+        matches.append({
+            "home":           r["Home"],
+            "away":           r["Away"],
+            "group":          r["Group"],
+            # Model probabilities
+            "model_home_wp":  round(home_wp*100,1),
+            "model_draw_p":   round(draw_p*100,1),
+            "model_away_wp":  round(away_wp*100,1),
+            "model_xgf":      round(xgf,2),
+            "model_xga":      round(xga,2),
+            "model_xg_total": round(xg_tot,2),
+            # Totals
+            "model_over_25":  round(p_o25*100,1),
+            "model_under_25": round(p_u25*100,1),
+            "model_over_35":  round(p_o35*100,1),
+            # Team totals
+            "model_home_over_15": round(p_home_o15*100,1),
+            "model_away_over_15": round(p_away_o15*100,1),
+            # BTTS
+            "model_btts_yes": round(p_btts*100,1),
+            "model_btts_no":  round((1-p_btts)*100,1),
+            # American odds implied by model
+            "model_ml_home":  _pct_to_american(home_wp),
+            "model_ml_draw":  _pct_to_american(draw_p),
+            "model_ml_away":  _pct_to_american(away_wp),
+        })
+
+    return {"group_matches": matches}
+
+
+# ── main ─────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser()
@@ -171,31 +422,25 @@ def main():
     parser.add_argument("--out-dir", type=Path, default=Path("../public/data"))
     args = parser.parse_args()
 
-    print(f"\n{'='*55}")
-    print(f"  Running {args.sims:,} simulations …")
-    print(f"{'='*55}\n")
-
+    print(f"\n{'='*55}\n  Running {args.sims:,} simulations …\n{'='*55}\n")
     results = run_simulation(n_sims=args.sims, seed=args.seed)
-
     print("\nExporting JSON …")
 
-    meta = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "n_sims":        args.sims,
-        "model":         "Dixon-Coles Poisson + MLE ratings",
-    }
-
-    write_json(meta,
-        args.out_dir / "meta.json")
+    out = args.out_dir
+    write_json({"generated_at": datetime.now(timezone.utc).isoformat(),
+                "n_sims": args.sims, "model": "Dixon-Coles Poisson + MLE"},
+               out / "meta.json")
     write_json(build_groups_json(results["group_df"], results["match_df"]),
-        args.out_dir / "groups.json")
+               out / "groups.json")
     write_json(build_knockout_json(results["ko_df"]),
-        args.out_dir / "knockout.json")
+               out / "knockout.json")
+    write_json(build_predicted_bracket(results["group_df"], results["ko_df"]),
+               out / "bracket.json")
     write_json(build_survivor_json(results["survivor_df"], results["pick_pct_df"]),
-        args.out_dir / "survivor.json")
-
+               out / "survivor.json")
+    write_json(build_betting_json(results["group_df"], results["match_df"], results["ko_df"]),
+               out / "betting.json")
     print("\nDone.\n")
-
 
 if __name__ == "__main__":
     main()

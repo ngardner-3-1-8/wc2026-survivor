@@ -46,7 +46,13 @@
         "draw_pct": 30.0,
         "away_win_pct": 29.0,
         "xgf": 1.43,
-        "xga": 1.17
+        "xga": 1.17,
+        "xg_total": 2.6,
+        "btts_pct": 52.5,
+        "home_cover_pct": 41.0,
+        "model_home_ml": 144,
+        "model_draw_ml": 233,
+        "model_away_ml": 245
       },
       {
         "home": "Czechia",
@@ -55,7 +61,13 @@
         "draw_pct": 26.6,
         "away_win_pct": 42.0,
         "xgf": 1.14,
-        "xga": 1.41
+        "xga": 1.41,
+        "xg_total": 2.55,
+        "btts_pct": 51.4,
+        "home_cover_pct": 31.4,
+        "model_home_ml": 218,
+        "model_draw_ml": 276,
+        "model_away_ml": 138
       },
       {
         "home": "Czechia",
@@ -64,7 +76,13 @@
         "draw_pct": 29.0,
         "away_win_pct": 35.0,
         "xgf": 1.29,
-        "xga": 1.22
+        "xga": 1.22,
+        "xg_total": 2.51,
+        "btts_pct": 51.1,
+        "home_cover_pct": 36.0,
+        "model_home_ml": 178,
+        "model_draw_ml": 245,
+        "model_away_ml": 186
       },
       {
         "home": "Mexico",
@@ -73,7 +91,13 @@
         "draw_pct": 29.4,
         "away_win_pct": 19.0,
         "xgf": 1.56,
-        "xga": 0.89
+        "xga": 0.89,
+        "xg_total": 2.45,
+        "btts_pct": 46.5,
+        "home_cover_pct": 51.6,
+        "model_home_ml": -107,
+        "model_draw_ml": 240,
+        "model_away_ml": 426
       },
       {
         "home": "Mexico",
@@ -82,7 +106,13 @@
         "draw_pct": 30.4,
         "away_win_pct": 30.8,
         "xgf": 1.39,
-        "xga": 1.18
+        "xga": 1.18,
+        "xg_total": 2.57,
+        "btts_pct": 52.0,
+        "home_cover_pct": 38.8,
+        "model_home_ml": 158,
+        "model_draw_ml": 229,
+        "model_away_ml": 225
       },
       {
         "home": "South Africa",
@@ -91,7 +121,13 @@
         "draw_pct": 26.4,
         "away_win_pct": 49.2,
         "xgf": 0.96,
-        "xga": 1.46
+        "xga": 1.46,
+        "xg_total": 2.42,
+        "btts_pct": 47.4,
+        "home_cover_pct": 24.4,
+        "model_home_ml": 310,
+        "model_draw_ml": 279,
+        "model_away_ml": 103
       }
     ]
   },
@@ -142,7 +178,13 @@
         "draw_pct": 26.2,
         "away_win_pct": 29.2,
         "xgf": 1.42,
-        "xga": 1.1
+        "xga": 1.1,
+        "xg_total": 2.52,
+        "btts_pct": 50.6,
+        "home_cover_pct": 44.6,
+        "model_home_ml": 124,
+        "model_draw_ml": 282,
+        "model_away_ml": 242
       },
       {
         "home": "Bosnia",
@@ -151,7 +193,13 @@
         "draw_pct": 25.6,
         "away_win_pct": 30.2,
         "xgf": 1.37,
-        "xga": 1.1
+        "xga": 1.1,
+        "xg_total": 2.47,
+        "btts_pct": 49.8,
+        "home_cover_pct": 44.2,
+        "model_home_ml": 126,
+        "model_draw_ml": 291,
+        "model_away_ml": 231
       },
       {
         "home": "Bosnia",
@@ -160,7 +208,13 @@
         "draw_pct": 34.4,
         "away_win_pct": 38.0,
         "xgf": 1.03,
-        "xga": 1.21
+        "xga": 1.21,
+        "xg_total": 2.24,
+        "btts_pct": 45.1,
+        "home_cover_pct": 27.6,
+        "model_home_ml": 262,
+        "model_draw_ml": 191,
+        "model_away_ml": 163
       },
       {
         "home": "Canada",
@@ -169,7 +223,13 @@
         "draw_pct": 26.2,
         "away_win_pct": 31.8,
         "xgf": 1.43,
-        "xga": 1.19
+        "xga": 1.19,
+        "xg_total": 2.62,
+        "btts_pct": 52.9,
+        "home_cover_pct": 42.0,
+        "model_home_ml": 138,
+        "model_draw_ml": 282,
+        "model_away_ml": 214
       },
       {
         "home": "Canada",
@@ -178,7 +238,13 @@
         "draw_pct": 30.8,
         "away_win_pct": 26.6,
         "xgf": 1.46,
-        "xga": 1.04
+        "xga": 1.04,
+        "xg_total": 2.5,
+        "btts_pct": 49.6,
+        "home_cover_pct": 42.6,
+        "model_home_ml": 135,
+        "model_draw_ml": 225,
+        "model_away_ml": 276
       },
       {
         "home": "Qatar",
@@ -187,7 +253,13 @@
         "draw_pct": 27.4,
         "away_win_pct": 18.2,
         "xgf": 1.65,
-        "xga": 0.86
+        "xga": 0.86,
+        "xg_total": 2.51,
+        "btts_pct": 46.6,
+        "home_cover_pct": 54.4,
+        "model_home_ml": -119,
+        "model_draw_ml": 265,
+        "model_away_ml": 449
       }
     ]
   },
@@ -238,7 +310,13 @@
         "draw_pct": 27.4,
         "away_win_pct": 22.0,
         "xgf": 1.58,
-        "xga": 1.05
+        "xga": 1.05,
+        "xg_total": 2.63,
+        "btts_pct": 51.6,
+        "home_cover_pct": 50.6,
+        "model_home_ml": -102,
+        "model_draw_ml": 265,
+        "model_away_ml": 355
       },
       {
         "home": "Brazil",
@@ -247,7 +325,13 @@
         "draw_pct": 26.0,
         "away_win_pct": 18.2,
         "xgf": 1.76,
-        "xga": 0.91
+        "xga": 0.91,
+        "xg_total": 2.67,
+        "btts_pct": 49.5,
+        "home_cover_pct": 55.8,
+        "model_home_ml": -126,
+        "model_draw_ml": 285,
+        "model_away_ml": 449
       },
       {
         "home": "Brazil",
@@ -256,7 +340,13 @@
         "draw_pct": 17.4,
         "away_win_pct": 13.6,
         "xgf": 2.06,
-        "xga": 0.76
+        "xga": 0.76,
+        "xg_total": 2.82,
+        "btts_pct": 46.4,
+        "home_cover_pct": 69.0,
+        "model_home_ml": -223,
+        "model_draw_ml": 475,
+        "model_away_ml": 635
       },
       {
         "home": "Haiti",
@@ -265,7 +355,13 @@
         "draw_pct": 27.4,
         "away_win_pct": 14.6,
         "xgf": 1.68,
-        "xga": 0.82
+        "xga": 0.82,
+        "xg_total": 2.5,
+        "btts_pct": 45.5,
+        "home_cover_pct": 58.0,
+        "model_home_ml": -138,
+        "model_draw_ml": 265,
+        "model_away_ml": 585
       },
       {
         "home": "Haiti",
@@ -274,7 +370,13 @@
         "draw_pct": 25.8,
         "away_win_pct": 22.6,
         "xgf": 1.51,
-        "xga": 0.94
+        "xga": 0.94,
+        "xg_total": 2.45,
+        "btts_pct": 47.5,
+        "home_cover_pct": 51.6,
+        "model_home_ml": -107,
+        "model_draw_ml": 288,
+        "model_away_ml": 342
       },
       {
         "home": "Morocco",
@@ -283,7 +385,13 @@
         "draw_pct": 29.2,
         "away_win_pct": 30.2,
         "xgf": 1.4,
-        "xga": 1.16
+        "xga": 1.16,
+        "xg_total": 2.56,
+        "btts_pct": 51.7,
+        "home_cover_pct": 40.6,
+        "model_home_ml": 146,
+        "model_draw_ml": 242,
+        "model_away_ml": 231
       }
     ]
   },
@@ -334,7 +442,13 @@
         "draw_pct": 28.4,
         "away_win_pct": 28.6,
         "xgf": 1.47,
-        "xga": 1.15
+        "xga": 1.15,
+        "xg_total": 2.62,
+        "btts_pct": 52.6,
+        "home_cover_pct": 43.0,
+        "model_home_ml": 133,
+        "model_draw_ml": 252,
+        "model_away_ml": 250
       },
       {
         "home": "Australia",
@@ -343,7 +457,13 @@
         "draw_pct": 29.2,
         "away_win_pct": 28.0,
         "xgf": 1.33,
-        "xga": 1.06
+        "xga": 1.06,
+        "xg_total": 2.39,
+        "btts_pct": 48.1,
+        "home_cover_pct": 42.8,
+        "model_home_ml": 134,
+        "model_draw_ml": 242,
+        "model_away_ml": 257
       },
       {
         "home": "Australia",
@@ -352,7 +472,13 @@
         "draw_pct": 26.2,
         "away_win_pct": 35.8,
         "xgf": 1.17,
-        "xga": 1.19
+        "xga": 1.19,
+        "xg_total": 2.36,
+        "btts_pct": 48.0,
+        "home_cover_pct": 38.0,
+        "model_home_ml": 163,
+        "model_draw_ml": 282,
+        "model_away_ml": 179
       },
       {
         "home": "Paraguay",
@@ -361,7 +487,13 @@
         "draw_pct": 25.8,
         "away_win_pct": 26.4,
         "xgf": 1.6,
-        "xga": 1.08
+        "xga": 1.08,
+        "xg_total": 2.68,
+        "btts_pct": 52.7,
+        "home_cover_pct": 47.8,
+        "model_home_ml": 109,
+        "model_draw_ml": 288,
+        "model_away_ml": 279
       },
       {
         "home": "Paraguay",
@@ -370,7 +502,13 @@
         "draw_pct": 25.0,
         "away_win_pct": 25.8,
         "xgf": 1.5,
-        "xga": 1.07
+        "xga": 1.07,
+        "xg_total": 2.57,
+        "btts_pct": 51.0,
+        "home_cover_pct": 49.2,
+        "model_home_ml": 103,
+        "model_draw_ml": 300,
+        "model_away_ml": 288
       },
       {
         "home": "T\u00fcrkiye",
@@ -379,7 +517,13 @@
         "draw_pct": 28.0,
         "away_win_pct": 36.4,
         "xgf": 1.31,
-        "xga": 1.3
+        "xga": 1.3,
+        "xg_total": 2.61,
+        "btts_pct": 53.1,
+        "home_cover_pct": 35.6,
+        "model_home_ml": 181,
+        "model_draw_ml": 257,
+        "model_away_ml": 175
       }
     ]
   },
@@ -430,7 +574,13 @@
         "draw_pct": 18.2,
         "away_win_pct": 11.0,
         "xgf": 2.05,
-        "xga": 0.74
+        "xga": 0.74,
+        "xg_total": 2.79,
+        "btts_pct": 45.6,
+        "home_cover_pct": 70.8,
+        "model_home_ml": -242,
+        "model_draw_ml": 449,
+        "model_away_ml": 809
       },
       {
         "home": "Cura\u00e7ao",
@@ -439,7 +589,13 @@
         "draw_pct": 24.6,
         "away_win_pct": 18.4,
         "xgf": 1.66,
-        "xga": 0.86
+        "xga": 0.86,
+        "xg_total": 2.52,
+        "btts_pct": 46.7,
+        "home_cover_pct": 57.0,
+        "model_home_ml": -133,
+        "model_draw_ml": 307,
+        "model_away_ml": 443
       },
       {
         "home": "Cura\u00e7ao",
@@ -448,7 +604,13 @@
         "draw_pct": 28.6,
         "away_win_pct": 18.2,
         "xgf": 1.51,
-        "xga": 0.82
+        "xga": 0.82,
+        "xg_total": 2.33,
+        "btts_pct": 43.6,
+        "home_cover_pct": 53.2,
+        "model_home_ml": -114,
+        "model_draw_ml": 250,
+        "model_away_ml": 449
       },
       {
         "home": "Ecuador",
@@ -457,7 +619,13 @@
         "draw_pct": 27.0,
         "away_win_pct": 21.0,
         "xgf": 1.64,
-        "xga": 1.01
+        "xga": 1.01,
+        "xg_total": 2.65,
+        "btts_pct": 51.2,
+        "home_cover_pct": 52.0,
+        "model_home_ml": -108,
+        "model_draw_ml": 270,
+        "model_away_ml": 376
       },
       {
         "home": "Ecuador",
@@ -466,7 +634,13 @@
         "draw_pct": 28.8,
         "away_win_pct": 32.8,
         "xgf": 1.28,
-        "xga": 1.16
+        "xga": 1.16,
+        "xg_total": 2.44,
+        "btts_pct": 49.6,
+        "home_cover_pct": 38.4,
+        "model_home_ml": 160,
+        "model_draw_ml": 247,
+        "model_away_ml": 205
       },
       {
         "home": "Germany",
@@ -475,7 +649,13 @@
         "draw_pct": 27.2,
         "away_win_pct": 20.4,
         "xgf": 1.69,
-        "xga": 0.98
+        "xga": 0.98,
+        "xg_total": 2.67,
+        "btts_pct": 50.9,
+        "home_cover_pct": 52.4,
+        "model_home_ml": -110,
+        "model_draw_ml": 268,
+        "model_away_ml": 390
       }
     ]
   },
@@ -526,7 +706,13 @@
         "draw_pct": 26.6,
         "away_win_pct": 25.8,
         "xgf": 1.57,
-        "xga": 1.1
+        "xga": 1.1,
+        "xg_total": 2.67,
+        "btts_pct": 52.8,
+        "home_cover_pct": 47.6,
+        "model_home_ml": 110,
+        "model_draw_ml": 276,
+        "model_away_ml": 288
       },
       {
         "home": "Japan",
@@ -535,7 +721,13 @@
         "draw_pct": 26.6,
         "away_win_pct": 30.0,
         "xgf": 1.41,
-        "xga": 1.17
+        "xga": 1.17,
+        "xg_total": 2.58,
+        "btts_pct": 52.1,
+        "home_cover_pct": 43.4,
+        "model_home_ml": 130,
+        "model_draw_ml": 276,
+        "model_away_ml": 233
       },
       {
         "home": "Japan",
@@ -544,7 +736,13 @@
         "draw_pct": 30.2,
         "away_win_pct": 20.8,
         "xgf": 1.53,
-        "xga": 0.95
+        "xga": 0.95,
+        "xg_total": 2.48,
+        "btts_pct": 48.0,
+        "home_cover_pct": 49.0,
+        "model_home_ml": 104,
+        "model_draw_ml": 231,
+        "model_away_ml": 381
       },
       {
         "home": "Netherlands",
@@ -553,7 +751,13 @@
         "draw_pct": 28.2,
         "away_win_pct": 20.6,
         "xgf": 1.67,
-        "xga": 0.94
+        "xga": 0.94,
+        "xg_total": 2.61,
+        "btts_pct": 49.5,
+        "home_cover_pct": 51.2,
+        "model_home_ml": -105,
+        "model_draw_ml": 255,
+        "model_away_ml": 385
       },
       {
         "home": "Netherlands",
@@ -562,7 +766,13 @@
         "draw_pct": 24.6,
         "away_win_pct": 19.4,
         "xgf": 1.78,
-        "xga": 0.99
+        "xga": 0.99,
+        "xg_total": 2.77,
+        "btts_pct": 52.2,
+        "home_cover_pct": 56.0,
+        "model_home_ml": -127,
+        "model_draw_ml": 307,
+        "model_away_ml": 415
       },
       {
         "home": "Sweden",
@@ -571,7 +781,13 @@
         "draw_pct": 31.4,
         "away_win_pct": 27.4,
         "xgf": 1.36,
-        "xga": 1.06
+        "xga": 1.06,
+        "xg_total": 2.42,
+        "btts_pct": 48.6,
+        "home_cover_pct": 41.2,
+        "model_home_ml": 143,
+        "model_draw_ml": 218,
+        "model_away_ml": 265
       }
     ]
   },
@@ -622,7 +838,13 @@
         "draw_pct": 22.8,
         "away_win_pct": 20.8,
         "xgf": 1.64,
-        "xga": 0.92
+        "xga": 0.92,
+        "xg_total": 2.56,
+        "btts_pct": 48.5,
+        "home_cover_pct": 56.4,
+        "model_home_ml": -129,
+        "model_draw_ml": 339,
+        "model_away_ml": 381
       },
       {
         "home": "Belgium",
@@ -631,7 +853,13 @@
         "draw_pct": 26.4,
         "away_win_pct": 20.2,
         "xgf": 1.68,
-        "xga": 0.98
+        "xga": 0.98,
+        "xg_total": 2.66,
+        "btts_pct": 50.8,
+        "home_cover_pct": 53.4,
+        "model_home_ml": -115,
+        "model_draw_ml": 279,
+        "model_away_ml": 395
       },
       {
         "home": "Belgium",
@@ -640,7 +868,13 @@
         "draw_pct": 24.0,
         "away_win_pct": 14.4,
         "xgf": 1.81,
-        "xga": 0.81
+        "xga": 0.81,
+        "xg_total": 2.62,
+        "btts_pct": 46.4,
+        "home_cover_pct": 61.6,
+        "model_home_ml": -160,
+        "model_draw_ml": 317,
+        "model_away_ml": 594
       },
       {
         "home": "Egypt",
@@ -649,7 +883,13 @@
         "draw_pct": 28.6,
         "away_win_pct": 34.8,
         "xgf": 1.23,
-        "xga": 1.22
+        "xga": 1.22,
+        "xg_total": 2.45,
+        "btts_pct": 49.9,
+        "home_cover_pct": 36.6,
+        "model_home_ml": 173,
+        "model_draw_ml": 250,
+        "model_away_ml": 187
       },
       {
         "home": "Egypt",
@@ -658,7 +898,13 @@
         "draw_pct": 32.8,
         "away_win_pct": 25.4,
         "xgf": 1.3,
-        "xga": 1.01
+        "xga": 1.01,
+        "xg_total": 2.31,
+        "btts_pct": 46.2,
+        "home_cover_pct": 41.8,
+        "model_home_ml": 139,
+        "model_draw_ml": 205,
+        "model_away_ml": 294
       },
       {
         "home": "Iran",
@@ -667,7 +913,13 @@
         "draw_pct": 28.0,
         "away_win_pct": 28.2,
         "xgf": 1.32,
-        "xga": 1.02
+        "xga": 1.02,
+        "xg_total": 2.34,
+        "btts_pct": 46.9,
+        "home_cover_pct": 43.8,
+        "model_home_ml": 128,
+        "model_draw_ml": 257,
+        "model_away_ml": 255
       }
     ]
   },
@@ -718,7 +970,13 @@
         "draw_pct": 17.8,
         "away_win_pct": 16.6,
         "xgf": 1.94,
-        "xga": 0.75
+        "xga": 0.75,
+        "xg_total": 2.69,
+        "btts_pct": 45.2,
+        "home_cover_pct": 65.6,
+        "model_home_ml": -191,
+        "model_draw_ml": 462,
+        "model_away_ml": 502
       },
       {
         "home": "Cape Verde",
@@ -727,7 +985,13 @@
         "draw_pct": 27.2,
         "away_win_pct": 19.6,
         "xgf": 1.65,
-        "xga": 0.92
+        "xga": 0.92,
+        "xg_total": 2.57,
+        "btts_pct": 48.6,
+        "home_cover_pct": 53.2,
+        "model_home_ml": -114,
+        "model_draw_ml": 268,
+        "model_away_ml": 410
       },
       {
         "home": "Cape Verde",
@@ -736,7 +1000,13 @@
         "draw_pct": 26.2,
         "away_win_pct": 31.8,
         "xgf": 1.29,
-        "xga": 1.11
+        "xga": 1.11,
+        "xg_total": 2.4,
+        "btts_pct": 48.6,
+        "home_cover_pct": 42.0,
+        "model_home_ml": 138,
+        "model_draw_ml": 282,
+        "model_away_ml": 214
       },
       {
         "home": "Saudi Arabia",
@@ -745,7 +1015,13 @@
         "draw_pct": 25.4,
         "away_win_pct": 14.0,
         "xgf": 1.91,
-        "xga": 0.84
+        "xga": 0.84,
+        "xg_total": 2.75,
+        "btts_pct": 48.4,
+        "home_cover_pct": 60.6,
+        "model_home_ml": -154,
+        "model_draw_ml": 294,
+        "model_away_ml": 614
       },
       {
         "home": "Saudi Arabia",
@@ -754,7 +1030,13 @@
         "draw_pct": 24.2,
         "away_win_pct": 22.2,
         "xgf": 1.65,
-        "xga": 0.96
+        "xga": 0.96,
+        "xg_total": 2.61,
+        "btts_pct": 49.9,
+        "home_cover_pct": 53.6,
+        "model_home_ml": -116,
+        "model_draw_ml": 313,
+        "model_away_ml": 350
       },
       {
         "home": "Spain",
@@ -763,7 +1045,13 @@
         "draw_pct": 26.0,
         "away_win_pct": 25.8,
         "xgf": 1.55,
-        "xga": 1.07
+        "xga": 1.07,
+        "xg_total": 2.62,
+        "btts_pct": 51.7,
+        "home_cover_pct": 48.2,
+        "model_home_ml": 107,
+        "model_draw_ml": 285,
+        "model_away_ml": 288
       }
     ]
   },
@@ -814,7 +1102,13 @@
         "draw_pct": 29.2,
         "away_win_pct": 18.8,
         "xgf": 1.73,
-        "xga": 0.98
+        "xga": 0.98,
+        "xg_total": 2.71,
+        "btts_pct": 51.4,
+        "home_cover_pct": 52.0,
+        "model_home_ml": -108,
+        "model_draw_ml": 242,
+        "model_away_ml": 432
       },
       {
         "home": "France",
@@ -823,7 +1117,13 @@
         "draw_pct": 25.0,
         "away_win_pct": 22.4,
         "xgf": 1.67,
-        "xga": 0.97
+        "xga": 0.97,
+        "xg_total": 2.64,
+        "btts_pct": 50.4,
+        "home_cover_pct": 52.6,
+        "model_home_ml": -111,
+        "model_draw_ml": 300,
+        "model_away_ml": 346
       },
       {
         "home": "France",
@@ -832,7 +1132,13 @@
         "draw_pct": 24.8,
         "away_win_pct": 9.8,
         "xgf": 2.01,
-        "xga": 0.68
+        "xga": 0.68,
+        "xg_total": 2.69,
+        "btts_pct": 42.7,
+        "home_cover_pct": 65.4,
+        "model_home_ml": -189,
+        "model_draw_ml": 303,
+        "model_away_ml": 920
       },
       {
         "home": "Iraq",
@@ -841,7 +1147,13 @@
         "draw_pct": 26.2,
         "away_win_pct": 24.0,
         "xgf": 1.54,
-        "xga": 0.96
+        "xga": 0.96,
+        "xg_total": 2.5,
+        "btts_pct": 48.5,
+        "home_cover_pct": 49.8,
+        "model_home_ml": 101,
+        "model_draw_ml": 282,
+        "model_away_ml": 317
       },
       {
         "home": "Iraq",
@@ -850,7 +1162,13 @@
         "draw_pct": 29.0,
         "away_win_pct": 21.0,
         "xgf": 1.55,
-        "xga": 0.97
+        "xga": 0.97,
+        "xg_total": 2.52,
+        "btts_pct": 48.9,
+        "home_cover_pct": 50.0,
+        "model_home_ml": -100,
+        "model_draw_ml": 245,
+        "model_away_ml": 376
       },
       {
         "home": "Norway",
@@ -859,7 +1177,13 @@
         "draw_pct": 32.6,
         "away_win_pct": 32.4,
         "xgf": 1.26,
-        "xga": 1.2
+        "xga": 1.2,
+        "xg_total": 2.46,
+        "btts_pct": 50.1,
+        "home_cover_pct": 35.0,
+        "model_home_ml": 186,
+        "model_draw_ml": 207,
+        "model_away_ml": 209
       }
     ]
   },
@@ -910,7 +1234,13 @@
         "draw_pct": 21.0,
         "away_win_pct": 13.8,
         "xgf": 1.98,
-        "xga": 0.88
+        "xga": 0.88,
+        "xg_total": 2.86,
+        "btts_pct": 50.4,
+        "home_cover_pct": 65.2,
+        "model_home_ml": -187,
+        "model_draw_ml": 376,
+        "model_away_ml": 625
       },
       {
         "home": "Algeria",
@@ -919,7 +1249,13 @@
         "draw_pct": 31.4,
         "away_win_pct": 36.2,
         "xgf": 1.22,
-        "xga": 1.33
+        "xga": 1.33,
+        "xg_total": 2.55,
+        "btts_pct": 51.8,
+        "home_cover_pct": 32.4,
+        "model_home_ml": 209,
+        "model_draw_ml": 218,
+        "model_away_ml": 176
       },
       {
         "home": "Algeria",
@@ -928,7 +1264,13 @@
         "draw_pct": 25.2,
         "away_win_pct": 26.6,
         "xgf": 1.38,
-        "xga": 0.96
+        "xga": 0.96,
+        "xg_total": 2.34,
+        "btts_pct": 46.2,
+        "home_cover_pct": 48.2,
+        "model_home_ml": 107,
+        "model_draw_ml": 297,
+        "model_away_ml": 276
       },
       {
         "home": "Argentina",
@@ -937,7 +1279,13 @@
         "draw_pct": 22.8,
         "away_win_pct": 19.4,
         "xgf": 1.84,
-        "xga": 0.94
+        "xga": 0.94,
+        "xg_total": 2.78,
+        "btts_pct": 51.3,
+        "home_cover_pct": 57.8,
+        "model_home_ml": -137,
+        "model_draw_ml": 339,
+        "model_away_ml": 415
       },
       {
         "home": "Argentina",
@@ -946,7 +1294,13 @@
         "draw_pct": 19.0,
         "away_win_pct": 11.4,
         "xgf": 2.12,
-        "xga": 0.7
+        "xga": 0.7,
+        "xg_total": 2.82,
+        "btts_pct": 44.3,
+        "home_cover_pct": 69.6,
+        "model_home_ml": -229,
+        "model_draw_ml": 426,
+        "model_away_ml": 777
       },
       {
         "home": "Austria",
@@ -955,7 +1309,13 @@
         "draw_pct": 27.0,
         "away_win_pct": 21.2,
         "xgf": 1.57,
-        "xga": 0.89
+        "xga": 0.89,
+        "xg_total": 2.46,
+        "btts_pct": 46.7,
+        "home_cover_pct": 51.8,
+        "model_home_ml": -107,
+        "model_draw_ml": 270,
+        "model_away_ml": 372
       }
     ]
   },
@@ -1006,7 +1366,13 @@
         "draw_pct": 27.6,
         "away_win_pct": 24.8,
         "xgf": 1.54,
-        "xga": 1.08
+        "xga": 1.08,
+        "xg_total": 2.62,
+        "btts_pct": 51.9,
+        "home_cover_pct": 47.6,
+        "model_home_ml": 110,
+        "model_draw_ml": 262,
+        "model_away_ml": 303
       },
       {
         "home": "Colombia",
@@ -1015,7 +1381,13 @@
         "draw_pct": 23.6,
         "away_win_pct": 27.6,
         "xgf": 1.54,
-        "xga": 1.03
+        "xga": 1.03,
+        "xg_total": 2.57,
+        "btts_pct": 50.5,
+        "home_cover_pct": 48.8,
+        "model_home_ml": 105,
+        "model_draw_ml": 324,
+        "model_away_ml": 262
       },
       {
         "home": "Colombia",
@@ -1024,7 +1396,13 @@
         "draw_pct": 24.2,
         "away_win_pct": 23.0,
         "xgf": 1.58,
-        "xga": 0.9
+        "xga": 0.9,
+        "xg_total": 2.48,
+        "btts_pct": 47.1,
+        "home_cover_pct": 52.8,
+        "model_home_ml": -112,
+        "model_draw_ml": 313,
+        "model_away_ml": 335
       },
       {
         "home": "DR Congo",
@@ -1033,7 +1411,13 @@
         "draw_pct": 20.0,
         "away_win_pct": 15.8,
         "xgf": 1.93,
-        "xga": 0.81
+        "xga": 0.81,
+        "xg_total": 2.74,
+        "btts_pct": 47.5,
+        "home_cover_pct": 64.2,
+        "model_home_ml": -179,
+        "model_draw_ml": 400,
+        "model_away_ml": 533
       },
       {
         "home": "DR Congo",
@@ -1042,7 +1426,13 @@
         "draw_pct": 30.4,
         "away_win_pct": 30.8,
         "xgf": 1.2,
-        "xga": 1.1
+        "xga": 1.1,
+        "xg_total": 2.3,
+        "btts_pct": 46.6,
+        "home_cover_pct": 38.8,
+        "model_home_ml": 158,
+        "model_draw_ml": 229,
+        "model_away_ml": 225
       },
       {
         "home": "Portugal",
@@ -1051,7 +1441,13 @@
         "draw_pct": 21.4,
         "away_win_pct": 15.6,
         "xgf": 1.84,
-        "xga": 0.82
+        "xga": 0.82,
+        "xg_total": 2.66,
+        "btts_pct": 47.1,
+        "home_cover_pct": 63.0,
+        "model_home_ml": -170,
+        "model_draw_ml": 367,
+        "model_away_ml": 541
       }
     ]
   },
@@ -1102,7 +1498,13 @@
         "draw_pct": 28.4,
         "away_win_pct": 30.2,
         "xgf": 1.45,
-        "xga": 1.17
+        "xga": 1.17,
+        "xg_total": 2.62,
+        "btts_pct": 52.8,
+        "home_cover_pct": 41.4,
+        "model_home_ml": 142,
+        "model_draw_ml": 252,
+        "model_away_ml": 231
       },
       {
         "home": "Croatia",
@@ -1111,7 +1513,13 @@
         "draw_pct": 23.8,
         "away_win_pct": 22.0,
         "xgf": 1.58,
-        "xga": 0.92
+        "xga": 0.92,
+        "xg_total": 2.5,
+        "btts_pct": 47.8,
+        "home_cover_pct": 54.2,
+        "model_home_ml": -118,
+        "model_draw_ml": 320,
+        "model_away_ml": 355
       },
       {
         "home": "Croatia",
@@ -1120,7 +1528,13 @@
         "draw_pct": 28.4,
         "away_win_pct": 20.8,
         "xgf": 1.56,
-        "xga": 0.96
+        "xga": 0.96,
+        "xg_total": 2.52,
+        "btts_pct": 48.7,
+        "home_cover_pct": 50.8,
+        "model_home_ml": -103,
+        "model_draw_ml": 252,
+        "model_away_ml": 381
       },
       {
         "home": "England",
@@ -1129,7 +1543,13 @@
         "draw_pct": 24.0,
         "away_win_pct": 15.0,
         "xgf": 1.85,
-        "xga": 0.81
+        "xga": 0.81,
+        "xg_total": 2.66,
+        "btts_pct": 46.8,
+        "home_cover_pct": 61.0,
+        "model_home_ml": -156,
+        "model_draw_ml": 317,
+        "model_away_ml": 567
       },
       {
         "home": "England",
@@ -1138,7 +1558,13 @@
         "draw_pct": 22.4,
         "away_win_pct": 17.8,
         "xgf": 1.78,
-        "xga": 0.86
+        "xga": 0.86,
+        "xg_total": 2.64,
+        "btts_pct": 48.0,
+        "home_cover_pct": 59.8,
+        "model_home_ml": -149,
+        "model_draw_ml": 346,
+        "model_away_ml": 462
       },
       {
         "home": "Ghana",
@@ -1147,7 +1573,13 @@
         "draw_pct": 31.2,
         "away_win_pct": 35.8,
         "xgf": 1.11,
-        "xga": 1.18
+        "xga": 1.18,
+        "xg_total": 2.29,
+        "btts_pct": 46.4,
+        "home_cover_pct": 33.0,
+        "model_home_ml": 203,
+        "model_draw_ml": 221,
+        "model_away_ml": 179
       }
     ]
   }
