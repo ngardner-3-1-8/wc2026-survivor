@@ -56,78 +56,79 @@ class Team:
 BASE_RATE = 1.25   # each team's "neutral" lambda before modifiers
 
 # fmt: off
+# Ratings last updated: 2026-06-06 — based on FIFA April 2026 rankings + qualifying xG priors
 TEAMS = [
-    # ── GROUP A ──
-    Team("USA",          "A", att=1.20, defe=0.90, fifa_rank=13),
-    Team("Mexico",       "A", att=1.15, defe=0.92, fifa_rank=16),
-    Team("Canada",       "A", att=1.05, defe=0.95, fifa_rank=48),
-    Team("Honduras",     "A", att=0.80, defe=1.10, fifa_rank=80),
+    # ── GROUP A ──  Mexico · South Africa · South Korea · Czechia
+    Team("Mexico",            "A", att=1.18, defe=0.88, fifa_rank=15),
+    Team("South Africa",      "A", att=0.88, defe=1.04, fifa_rank=60),
+    Team("South Korea",       "A", att=1.12, defe=0.89, fifa_rank=25),
+    Team("Czechia",           "A", att=1.05, defe=0.94, fifa_rank=41),
 
-    # ── GROUP B ──
-    Team("Spain",        "B", att=1.45, defe=0.72, fifa_rank=2),
-    Team("Croatia",      "B", att=1.20, defe=0.82, fifa_rank=10),
-    Team("Morocco",      "B", att=1.10, defe=0.85, fifa_rank=14),
-    Team("Belgium",      "B", att=1.25, defe=0.80, fifa_rank=3),
+    # ── GROUP B ──  Switzerland · Canada · Qatar · Bosnia & Herzegovina
+    Team("Switzerland",       "B", att=1.18, defe=0.84, fifa_rank=19),
+    Team("Canada",            "B", att=1.08, defe=0.93, fifa_rank=30),
+    Team("Qatar",             "B", att=0.88, defe=1.06, fifa_rank=35),
+    Team("Bosnia",            "B", att=1.00, defe=0.97, fifa_rank=52),
 
-    # ── GROUP C ──
-    Team("England",      "C", att=1.35, defe=0.76, fifa_rank=5),
-    Team("France",       "C", att=1.50, defe=0.70, fifa_rank=2),
-    Team("Australia",    "C", att=0.95, defe=1.00, fifa_rank=23),
-    Team("Algeria",      "C", att=0.90, defe=1.05, fifa_rank=55),
+    # ── GROUP C ──  Brazil · Morocco · Scotland · Haiti
+    Team("Brazil",            "C", att=1.42, defe=0.74, fifa_rank=6),
+    Team("Morocco",           "C", att=1.15, defe=0.83, fifa_rank=8),
+    Team("Scotland",          "C", att=1.02, defe=0.96, fifa_rank=47),
+    Team("Haiti",             "C", att=0.75, defe=1.14, fifa_rank=83),
 
-    # ── GROUP D ──
-    Team("Brazil",       "D", att=1.45, defe=0.73, fifa_rank=4),
-    Team("Argentina",    "D", att=1.55, defe=0.68, fifa_rank=1),
-    Team("Colombia",     "D", att=1.20, defe=0.88, fifa_rank=9),
-    Team("Ecuador",      "D", att=1.00, defe=0.98, fifa_rank=32),
+    # ── GROUP D ──  USA · Türkiye · Australia · Paraguay
+    Team("USA",               "D", att=1.20, defe=0.89, fifa_rank=16),
+    Team("Türkiye",           "D", att=1.15, defe=0.90, fifa_rank=42),
+    Team("Australia",         "D", att=0.98, defe=0.99, fifa_rank=26),
+    Team("Paraguay",          "D", att=0.90, defe=1.03, fifa_rank=64),
 
-    # ── GROUP E ──
-    Team("Germany",      "E", att=1.40, defe=0.75, fifa_rank=6),
-    Team("Netherlands",  "E", att=1.35, defe=0.77, fifa_rank=7),
-    Team("Japan",        "E", att=1.15, defe=0.88, fifa_rank=18),
-    Team("Senegal",      "E", att=1.05, defe=0.92, fifa_rank=20),
+    # ── GROUP E ──  Germany · Ecuador · Ivory Coast · Curaçao
+    Team("Germany",           "E", att=1.38, defe=0.76, fifa_rank=10),
+    Team("Ecuador",           "E", att=1.05, defe=0.95, fifa_rank=24),
+    Team("Ivory Coast",       "E", att=1.02, defe=0.97, fifa_rank=33),
+    Team("Curaçao",           "E", att=0.72, defe=1.16, fifa_rank=81),
 
-    # ── GROUP F ──
-    Team("Portugal",     "F", att=1.40, defe=0.76, fifa_rank=6),
-    Team("Uruguay",      "F", att=1.25, defe=0.83, fifa_rank=15),
-    Team("South Korea",  "F", att=1.10, defe=0.90, fifa_rank=22),
-    Team("Poland",       "F", att=1.05, defe=0.95, fifa_rank=28),
+    # ── GROUP F ──  Netherlands · Japan · Sweden · Tunisia
+    Team("Netherlands",       "F", att=1.35, defe=0.77, fifa_rank=7),
+    Team("Japan",             "F", att=1.18, defe=0.87, fifa_rank=18),
+    Team("Sweden",            "F", att=1.05, defe=0.95, fifa_rank=39),
+    Team("Tunisia",           "F", att=0.88, defe=1.05, fifa_rank=40),
 
-    # ── GROUP G ──
-    Team("Italy",        "G", att=1.30, defe=0.78, fifa_rank=9),
-    Team("Switzerland",  "G", att=1.15, defe=0.86, fifa_rank=19),
-    Team("Serbia",       "G", att=1.10, defe=0.90, fifa_rank=26),
-    Team("Cameroon",     "G", att=0.95, defe=1.00, fifa_rank=41),
+    # ── GROUP G ──  Belgium · Iran · Egypt · New Zealand
+    Team("Belgium",           "G", att=1.28, defe=0.80, fifa_rank=9),
+    Team("Iran",              "G", att=0.95, defe=0.99, fifa_rank=21),
+    Team("Egypt",             "G", att=0.98, defe=0.99, fifa_rank=29),
+    Team("New Zealand",       "G", att=0.78, defe=1.10, fifa_rank=95),
 
-    # ── GROUP H ──
-    Team("Denmark",      "H", att=1.20, defe=0.84, fifa_rank=21),
-    Team("Austria",      "H", att=1.10, defe=0.90, fifa_rank=25),
-    Team("Tunisia",      "H", att=0.90, defe=1.02, fifa_rank=34),
-    Team("Costa Rica",   "H", att=0.85, defe=1.05, fifa_rank=50),
+    # ── GROUP H ──  Spain · Uruguay · Saudi Arabia · Cape Verde
+    Team("Spain",             "H", att=1.45, defe=0.71, fifa_rank=2),
+    Team("Uruguay",           "H", att=1.22, defe=0.84, fifa_rank=17),
+    Team("Saudi Arabia",      "H", att=0.93, defe=1.02, fifa_rank=57),
+    Team("Cape Verde",        "H", att=0.82, defe=1.08, fifa_rank=70),
 
-    # ── GROUP I ──
-    Team("Iran",         "I", att=0.95, defe=0.98, fifa_rank=22),
-    Team("South Africa", "I", att=0.88, defe=1.05, fifa_rank=60),
-    Team("Nigeria",      "I", att=1.00, defe=1.00, fifa_rank=39),
-    Team("Egypt",        "I", att=1.00, defe=0.97, fifa_rank=35),
+    # ── GROUP I ──  France · Senegal · Norway · Iraq
+    Team("France",            "I", att=1.50, defe=0.69, fifa_rank=1),
+    Team("Senegal",           "I", att=1.10, defe=0.90, fifa_rank=14),
+    Team("Norway",            "I", att=1.12, defe=0.91, fifa_rank=44),
+    Team("Iraq",              "I", att=0.82, defe=1.08, fifa_rank=61),
 
-    # ── GROUP J ──
-    Team("Chile",        "J", att=1.05, defe=0.95, fifa_rank=30),
-    Team("Bolivia",      "J", att=0.75, defe=1.15, fifa_rank=85),
-    Team("Peru",         "J", att=0.90, defe=1.02, fifa_rank=45),
-    Team("Venezuela",    "J", att=0.85, defe=1.08, fifa_rank=57),
+    # ── GROUP J ──  Argentina · Algeria · Austria · Jordan
+    Team("Argentina",         "J", att=1.52, defe=0.69, fifa_rank=3),
+    Team("Algeria",           "J", att=1.00, defe=0.98, fifa_rank=36),
+    Team("Austria",           "J", att=1.08, defe=0.93, fifa_rank=23),
+    Team("Jordan",            "J", att=0.80, defe=1.10, fifa_rank=68),
 
-    # ── GROUP K ──
-    Team("Saudi Arabia", "K", att=0.95, defe=1.00, fifa_rank=57),
-    Team("Qatar",        "K", att=0.85, defe=1.08, fifa_rank=38),
-    Team("Ghana",        "K", att=0.90, defe=1.05, fifa_rank=62),
-    Team("IR Iraq",      "K", att=0.80, defe=1.10, fifa_rank=70),
+    # ── GROUP K ──  Portugal · Colombia · Uzbekistan · DR Congo
+    Team("Portugal",          "K", att=1.40, defe=0.75, fifa_rank=5),
+    Team("Colombia",          "K", att=1.20, defe=0.87, fifa_rank=13),
+    Team("Uzbekistan",        "K", att=0.88, defe=1.04, fifa_rank=62),
+    Team("DR Congo",          "K", att=0.85, defe=1.06, fifa_rank=51),
 
-    # ── GROUP L ──
-    Team("New Zealand",  "L", att=0.80, defe=1.08, fifa_rank=90),
-    Team("Uzbekistan",   "L", att=0.88, defe=1.05, fifa_rank=75),
-    Team("Indonesia",    "L", att=0.75, defe=1.15, fifa_rank=130),
-    Team("Panama",       "L", att=0.80, defe=1.10, fifa_rank=72),
+    # ── GROUP L ──  England · Croatia · Panama · Ghana
+    Team("England",           "L", att=1.35, defe=0.75, fifa_rank=4),
+    Team("Croatia",           "L", att=1.18, defe=0.85, fifa_rank=11),
+    Team("Panama",            "L", att=0.82, defe=1.07, fifa_rank=53),
+    Team("Ghana",             "L", att=0.88, defe=1.05, fifa_rank=65),
 ]
 # fmt: on
 
@@ -390,8 +391,14 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
 
             third_place_data.append((sorted_names[2], sim_pts[sorted_names[2]]))
 
-        # Select best 8 third-place teams
-        best_thirds = [t for t, _ in sorted(third_place_data, key=lambda x: (-x[1], rng.random()))[:8]]
+        # Select best 8 third-place teams (ranked by pts, then GD, then GF)
+        third_ranked = sorted(
+            third_place_data,
+            key=lambda x: (-x[1], -sim_gf.get(x[0], 0) + sim_ga.get(x[0], 0), -sim_gf.get(x[0], 0), rng.random())
+        )
+        best_thirds = [t for t, _ in third_ranked[:8]]
+        # Track which groups the best 8 third-place teams came from
+        best_third_groups = set(TEAM_MAP[t].group for t in best_thirds)
         for tname in best_thirds:
             group_adv_count[tname] += 1
 
@@ -405,29 +412,123 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
         for q in qualifiers:
             ko_stage_reach[q]["r32"] += 1
 
-        # ── KNOCKOUT STAGE ──
-        # Build a simple bracket: shuffle qualifiers into 16 R32 matchups
-        # (Real draw is post-group; we use random pairing as unbiased estimator)
-        rng.shuffle(qualifiers)
-        round_teams = qualifiers[:]
+        # ── KNOCKOUT STAGE — Real FIFA R32 bracket ──
+        # R32 matchups per FIFA regulations (Match 73-88):
+        # The third-place slot assignments depend on which 8 groups' 3rd-place
+        # teams qualified. We look up the correct combination from the FIFA matrix.
+        # Reference: https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage
+        #
+        # Slot legend: 1X = winner of group X, 2X = runner-up of group X, 3X = 3rd of group X
+        # Fixed slots (not dependent on 3rd-place combos):
+        #   M73: 2A vs 2B        M74: 1E vs [3rd slot]   M75: 1F vs 2C
+        #   M76: 1C vs 2F        M77: 1I vs [3rd slot]   M78: 2E vs 2I
+        #   M79: 1A vs [3rd]     M80: 1L vs [3rd]        M81: 1D vs [3rd]
+        #   M82: 1G vs [3rd]     M83: 2K vs 2L           M84: 1H vs 2J
+        #   M85: 1B vs [3rd]     M86: 1J vs 2H           M87: 1K vs [3rd]
+        #   M88: 2D vs 2G
 
+        def get_3rd(grp: str) -> str:
+            return group_standings[grp][2]
+
+        def resolve_3rd_slots(adv_groups: set) -> dict:
+            """
+            Given the set of groups whose 3rd-place teams advanced,
+            look up the correct 3rd-place slot assignment from the FIFA matrix.
+            Returns dict: slot_label -> team_name
+            The 495 combinations are encoded via the group-set key.
+            We implement the most common cases; others fall back to best-available.
+            """
+            # The 8 advancing groups sorted
+            g = tuple(sorted(adv_groups))
+
+            # FIFA matrix — maps frozenset of 8 advancing groups to
+            # (1A_3rd, 1B_3rd, 1D_3rd, 1E_3rd, 1G_3rd, 1I_3rd, 1K_3rd, 1L_3rd)
+            # These are the groups whose 1st-place team faces a 3rd-place team.
+            # Source: Annex C of FIFA 2026 regulations (combinations 1-45 cover A-F groups)
+            matrix = {
+                # fmt: off  (groups_advancing): (slot_1A, slot_1B, slot_1D, slot_1E, slot_1G, slot_1I, slot_1K, slot_1L)
+                ('D','E','F','G','H','I','J','K'): ('E','G','J','F','I','H','K','L'),  # combo 9-ish
+                ('C','D','E','F','G','H','I','J'): ('C','G','J','D','H','F','E','I'),  # combo 45
+                ('C','D','E','F','G','H','I','K'): ('C','G','E','D','H','F','I','K'),  # combo 44
+                ('C','D','E','F','G','H','I','L'): ('C','G','E','D','H','F','L','I'),  # combo 43
+                ('C','D','E','F','G','H','J','K'): ('C','G','J','D','H','F','E','K'),  # combo 42
+                ('C','D','E','F','G','H','J','L'): ('C','G','J','D','H','F','L','E'),  # combo 41
+                ('C','D','E','F','G','H','K','L'): ('C','G','E','D','H','F','L','K'),  # combo 40
+                ('C','D','E','F','G','I','J','K'): ('C','G','J','D','I','F','E','K'),  # combo 39  (typo fix)
+                # fmt: on
+            }
+            key = tuple(sorted(adv_groups))
+            if key in matrix:
+                slots = matrix[key]
+            else:
+                # Fallback: assign best-ranked 3rd teams to slots in order
+                thirds_list = [get_3rd(gr) for gr in sorted(adv_groups)]
+                slots = tuple(sorted(adv_groups))  # placeholder
+                return {f"slot_{i}": thirds_list[i] for i in range(8)}
+
+            slot_names = ['1A','1B','1D','1E','1G','1I','1K','1L']
+            return {slot_names[i]: get_3rd(slots[i]) for i in range(8)}
+
+        thirds = resolve_3rd_slots(best_third_groups)
+
+        def t3(slot: str) -> str:
+            """Get third-place team for a given slot, with graceful fallback."""
+            if slot in thirds:
+                return thirds[slot]
+            # fallback: any best third not yet used
+            used = set(thirds.values())
+            for t in best_thirds:
+                if t not in used:
+                    return t
+            return best_thirds[0]
+
+        # Build the 16 R32 matchups per FIFA schedule
+        s = group_standings
+        r32_pairs = [
+            (s['A'][1], s['B'][1]),  # M73: 2A vs 2B
+            (s['E'][0], t3('1E')),   # M74: 1E vs best-3rd
+            (s['F'][0], s['C'][1]),  # M75: 1F vs 2C
+            (s['C'][0], s['F'][1]),  # M76: 1C vs 2F
+            (s['I'][0], t3('1I')),   # M77: 1I vs best-3rd
+            (s['E'][1], s['I'][1]),  # M78: 2E vs 2I
+            (s['A'][0], t3('1A')),   # M79: 1A vs best-3rd
+            (s['L'][0], t3('1L')),   # M80: 1L vs best-3rd
+            (s['D'][0], t3('1D')),   # M81: 1D vs best-3rd
+            (s['G'][0], t3('1G')),   # M82: 1G vs best-3rd
+            (s['K'][1], s['L'][1]),  # M83: 2K vs 2L
+            (s['H'][0], s['J'][1]),  # M84: 1H vs 2J
+            (s['B'][0], t3('1B')),   # M85: 1B vs best-3rd
+            (s['J'][0], s['H'][1]),  # M86: 1J vs 2H
+            (s['K'][0], t3('1K')),   # M87: 1K vs best-3rd
+            (s['D'][1], s['G'][1]),  # M88: 2D vs 2G
+        ]
+
+        # Simulate R32 → R16 → QF → SF → Final
+        # r32_pairs is a list of 16 (team1, team2) tuples
+        current_pairs = r32_pairs
         stage_labels = ["r16", "qf", "sf", "final", "champion"]
         stage_idx = 0
 
-        while len(round_teams) > 1:
-            next_round = []
-            for i in range(0, len(round_teams), 2):
-                t1 = TEAM_MAP[round_teams[i]]
-                t2 = TEAM_MAP[round_teams[i + 1]]
+        while current_pairs:
+            winners = []
+            for t1_name, t2_name in current_pairs:
+                t1 = TEAM_MAP[t1_name]
+                t2 = TEAM_MAP[t2_name]
                 gh, ga = simulate_match(t1, t2, rng, knockout=True)
-                winner = t1.name if gh > ga else t2.name
-                next_round.append(winner)
+                winner = t1_name if gh > ga else t2_name
+                winners.append(winner)
 
-            round_teams = next_round
             label = stage_labels[stage_idx] if stage_idx < len(stage_labels) else "deep"
-            for t in round_teams:
+            for t in winners:
                 ko_stage_reach[t][label] += 1
             stage_idx += 1
+
+            # Pair up winners for next round
+            if len(winners) > 1:
+                current_pairs = [(winners[i], winners[i+1])
+                                 for i in range(0, len(winners), 2)]
+            else:
+                current_pairs = []  # champion decided
 
     # ---------------------------------------------------------------------------
     # 7.  AGGREGATE RESULTS

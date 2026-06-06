@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T05:58:11.235776+00:00",
-  "n_sims": 50000,
+  "generated_at": "2026-06-06T06:21:45.958861+00:00",
+  "n_sims": 500,
   "model": "Dixon-Coles Poisson + MLE ratings"
 }

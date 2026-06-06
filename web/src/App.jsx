@@ -4,10 +4,12 @@ import GroupStage from './components/GroupStage'
 import KnockoutBracket from './components/KnockoutBracket'
 import SurvivorPicks from './components/SurvivorPicks'
 import PickIntelligence from './components/PickIntelligence'
+import BracketView from './components/BracketView'
 import './app.css'
 
 const TABS = [
   { id: 'survivor',  label: '🎯 Survivor Picks' },
+  { id: 'bracket',   label: '🗓 Bracket' },
   { id: 'groups',    label: '📊 Group Stage' },
   { id: 'knockout',  label: '🏆 Knockout Odds' },
   { id: 'pickpct',   label: '🧠 Pick Intelligence' },
@@ -67,6 +69,7 @@ export default function App() {
 
       <main className="app-main">
         {tab === 'survivor'  && <SurvivorPicks  survivor={survivor} />}
+        {tab === 'bracket'   && <BracketView    groups={groups} knockout={knockout} />}
         {tab === 'groups'    && <GroupStage     groups={groups} />}
         {tab === 'knockout'  && <KnockoutBracket knockout={knockout} />}
         {tab === 'pickpct'   && <PickIntelligence survivor={survivor} />}
