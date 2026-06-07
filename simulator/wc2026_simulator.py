@@ -58,77 +58,54 @@ BASE_RATE = 1.25   # each team's "neutral" lambda before modifiers
 # fmt: off
 # Ratings last updated: 2026-06-06 — based on FIFA April 2026 rankings + qualifying xG priors
 TEAMS = [
-    # ── GROUP A ──  Mexico · South Africa · South Korea · Czechia
-    Team("Mexico",            "A", att=1.18, defe=0.88, fifa_rank=15),
-    Team("South Africa",      "A", att=0.88, defe=1.04, fifa_rank=60),
-    Team("South Korea",       "A", att=1.12, defe=0.89, fifa_rank=25),
-    Team("Czechia",           "A", att=1.05, defe=0.94, fifa_rank=41),
-
-    # ── GROUP B ──  Switzerland · Canada · Qatar · Bosnia & Herzegovina
-    Team("Switzerland",       "B", att=1.18, defe=0.84, fifa_rank=19),
-    Team("Canada",            "B", att=1.08, defe=0.93, fifa_rank=30),
-    Team("Qatar",             "B", att=0.88, defe=1.06, fifa_rank=35),
-    Team("Bosnia",            "B", att=1.00, defe=0.97, fifa_rank=52),
-
-    # ── GROUP C ──  Brazil · Morocco · Scotland · Haiti
-    Team("Brazil",            "C", att=1.42, defe=0.74, fifa_rank=6),
-    Team("Morocco",           "C", att=1.15, defe=0.83, fifa_rank=8),
-    Team("Scotland",          "C", att=1.02, defe=0.96, fifa_rank=47),
-    Team("Haiti",             "C", att=0.75, defe=1.14, fifa_rank=83),
-
-    # ── GROUP D ──  USA · Türkiye · Australia · Paraguay
-    Team("USA",               "D", att=1.20, defe=0.89, fifa_rank=16),
-    Team("Türkiye",           "D", att=1.15, defe=0.90, fifa_rank=42),
-    Team("Australia",         "D", att=0.98, defe=0.99, fifa_rank=26),
-    Team("Paraguay",          "D", att=0.90, defe=1.03, fifa_rank=64),
-
-    # ── GROUP E ──  Germany · Ecuador · Ivory Coast · Curaçao
-    Team("Germany",           "E", att=1.38, defe=0.76, fifa_rank=10),
-    Team("Ecuador",           "E", att=1.05, defe=0.95, fifa_rank=24),
-    Team("Ivory Coast",       "E", att=1.02, defe=0.97, fifa_rank=33),
-    Team("Curaçao",           "E", att=0.72, defe=1.16, fifa_rank=81),
-
-    # ── GROUP F ──  Netherlands · Japan · Sweden · Tunisia
-    Team("Netherlands",       "F", att=1.35, defe=0.77, fifa_rank=7),
-    Team("Japan",             "F", att=1.18, defe=0.87, fifa_rank=18),
-    Team("Sweden",            "F", att=1.05, defe=0.95, fifa_rank=39),
-    Team("Tunisia",           "F", att=0.88, defe=1.05, fifa_rank=40),
-
-    # ── GROUP G ──  Belgium · Iran · Egypt · New Zealand
-    Team("Belgium",           "G", att=1.28, defe=0.80, fifa_rank=9),
-    Team("Iran",              "G", att=0.95, defe=0.99, fifa_rank=21),
-    Team("Egypt",             "G", att=0.98, defe=0.99, fifa_rank=29),
-    Team("New Zealand",       "G", att=0.78, defe=1.10, fifa_rank=95),
-
-    # ── GROUP H ──  Spain · Uruguay · Saudi Arabia · Cape Verde
-    Team("Spain",             "H", att=1.45, defe=0.71, fifa_rank=2),
-    Team("Uruguay",           "H", att=1.22, defe=0.84, fifa_rank=17),
-    Team("Saudi Arabia",      "H", att=0.93, defe=1.02, fifa_rank=57),
-    Team("Cape Verde",        "H", att=0.82, defe=1.08, fifa_rank=70),
-
-    # ── GROUP I ──  France · Senegal · Norway · Iraq
-    Team("France",            "I", att=1.50, defe=0.69, fifa_rank=1),
-    Team("Senegal",           "I", att=1.10, defe=0.90, fifa_rank=14),
-    Team("Norway",            "I", att=1.12, defe=0.91, fifa_rank=44),
-    Team("Iraq",              "I", att=0.82, defe=1.08, fifa_rank=61),
-
-    # ── GROUP J ──  Argentina · Algeria · Austria · Jordan
-    Team("Argentina",         "J", att=1.52, defe=0.69, fifa_rank=3),
-    Team("Algeria",           "J", att=1.00, defe=0.98, fifa_rank=36),
-    Team("Austria",           "J", att=1.08, defe=0.93, fifa_rank=23),
-    Team("Jordan",            "J", att=0.80, defe=1.10, fifa_rank=68),
-
-    # ── GROUP K ──  Portugal · Colombia · Uzbekistan · DR Congo
-    Team("Portugal",          "K", att=1.40, defe=0.75, fifa_rank=5),
-    Team("Colombia",          "K", att=1.20, defe=0.87, fifa_rank=13),
-    Team("Uzbekistan",        "K", att=0.88, defe=1.04, fifa_rank=62),
-    Team("DR Congo",          "K", att=0.85, defe=1.06, fifa_rank=51),
-
-    # ── GROUP L ──  England · Croatia · Panama · Ghana
-    Team("England",           "L", att=1.35, defe=0.75, fifa_rank=4),
-    Team("Croatia",           "L", att=1.18, defe=0.85, fifa_rank=11),
-    Team("Panama",            "L", att=0.82, defe=1.07, fifa_rank=53),
-    Team("Ghana",             "L", att=0.88, defe=1.05, fifa_rank=65),
+    Team("Mexico", "A", att=1.04, defe=0.5, fifa_rank=15),
+    Team("South Africa", "A", att=0.9, defe=0.96, fifa_rank=60),
+    Team("South Korea", "A", att=1.77, defe=1.35, fifa_rank=25),
+    Team("Czechia", "A", att=1.05, defe=0.94, fifa_rank=41),
+    Team("Switzerland", "B", att=1.71, defe=0.5, fifa_rank=19),
+    Team("Canada", "B", att=1.2, defe=0.6, fifa_rank=30),
+    Team("Qatar", "B", att=1.44, defe=0.5, fifa_rank=35),
+    Team("Bosnia", "B", att=1.0, defe=0.97, fifa_rank=52),
+    Team("Brazil", "C", att=1.35, defe=0.54, fifa_rank=6),
+    Team("Morocco", "C", att=2.68, defe=0.5, fifa_rank=8),
+    Team("Scotland", "C", att=0.94, defe=1.69, fifa_rank=47),
+    Team("Haiti", "C", att=0.9, defe=1.4, fifa_rank=83),
+    Team("USA", "D", att=1.64, defe=0.61, fifa_rank=16),
+    Team("Türkiye", "D", att=1.15, defe=0.9, fifa_rank=42),
+    Team("Australia", "D", att=1.35, defe=0.5, fifa_rank=26),
+    Team("Paraguay", "D", att=0.6, defe=1.16, fifa_rank=64),
+    Team("Germany", "E", att=2.4, defe=0.5, fifa_rank=10),
+    Team("Ecuador", "E", att=0.78, defe=0.5, fifa_rank=24),
+    Team("Ivory Coast", "E", att=1.94, defe=0.5, fifa_rank=33),
+    Team("Curaçao", "E", att=1.2, defe=0.73, fifa_rank=81),
+    Team("Netherlands", "F", att=2.21, defe=0.62, fifa_rank=7),
+    Team("Japan", "F", att=2.24, defe=1.16, fifa_rank=18),
+    Team("Sweden", "F", att=0.6, defe=1.76, fifa_rank=39),
+    Team("Tunisia", "F", att=1.58, defe=0.5, fifa_rank=40),
+    Team("Belgium", "G", att=2.13, defe=0.5, fifa_rank=9),
+    Team("Iran", "G", att=1.84, defe=0.73, fifa_rank=21),
+    Team("Egypt", "G", att=1.62, defe=0.5, fifa_rank=29),
+    Team("New Zealand", "G", att=0.78, defe=1.1, fifa_rank=95),
+    Team("Spain", "H", att=2.56, defe=0.5, fifa_rank=2),
+    Team("Uruguay", "H", att=1.41, defe=0.5, fifa_rank=17),
+    Team("Saudi Arabia", "H", att=0.6, defe=0.69, fifa_rank=57),
+    Team("Cape Verde", "H", att=0.82, defe=1.08, fifa_rank=70),
+    Team("France", "I", att=1.47, defe=0.5, fifa_rank=1),
+    Team("Senegal", "I", att=2.04, defe=0.5, fifa_rank=14),
+    Team("Norway", "I", att=3.18, defe=0.58, fifa_rank=44),
+    Team("Iraq", "I", att=1.54, defe=1.68, fifa_rank=61),
+    Team("Argentina", "J", att=1.67, defe=0.5, fifa_rank=3),
+    Team("Algeria", "J", att=1.8, defe=0.68, fifa_rank=36),
+    Team("Austria", "J", att=2.0, defe=0.7, fifa_rank=23),
+    Team("Jordan", "J", att=1.15, defe=1.15, fifa_rank=68),
+    Team("Portugal", "K", att=2.14, defe=0.59, fifa_rank=5),
+    Team("Colombia", "K", att=1.59, defe=0.58, fifa_rank=13),
+    Team("Uzbekistan", "K", att=0.82, defe=0.53, fifa_rank=62),
+    Team("DR Congo", "K", att=0.85, defe=1.06, fifa_rank=51),
+    Team("England", "L", att=1.78, defe=0.5, fifa_rank=4),
+    Team("Croatia", "L", att=1.96, defe=0.87, fifa_rank=11),
+    Team("Panama", "L", att=1.33, defe=1.17, fifa_rank=53),
+    Team("Ghana", "L", att=1.38, defe=0.64, fifa_rank=65),
 ]
 # fmt: on
 
