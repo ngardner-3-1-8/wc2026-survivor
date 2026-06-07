@@ -207,14 +207,15 @@ class TeamGroupStats:
 def simulate_group(
     group_teams: list[Team],
     rng: np.random.Generator,
-) -> list[str]:
+    match_trackers: dict = None,
+) -> tuple[list[str], dict]:
     """
-    Simulate a group. Returns teams sorted by standard FIFA tiebreakers:
-    pts → gd → gf → head-to-head pts → head-to-head gd → draw
+    Simulate a group. Returns (sorted_team_names, stats_dict).
+    sorted_team_names is sorted by standard FIFA tiebreakers: pts → gd → gf → draw.
+    stats_dict maps team_name -> TeamGroupStats.
+    Optionally accumulates match-level trackers if match_trackers dict is provided.
     """
     stats: dict[str, TeamGroupStats] = {t.name: TeamGroupStats(t.name) for t in group_teams}
-    h2h_pts: dict[tuple[str, str], int] = defaultdict(int)
-    h2h_gd: dict[tuple[str, str], int] = defaultdict(int)
 
     fixtures = build_group_fixtures(group_teams)
     for h_name, a_name in fixtures:
@@ -229,25 +230,27 @@ def simulate_group(
 
         if gh > ga:
             stats[h_name].pts += 3
-            h2h_pts[(h_name, a_name)] += 3
         elif ga > gh:
             stats[a_name].pts += 3
-            h2h_pts[(a_name, h_name)] += 3
         else:
             stats[h_name].pts += 1
             stats[a_name].pts += 1
-            h2h_pts[(h_name, a_name)] += 1
-            h2h_pts[(a_name, h_name)] += 1
 
-        h2h_gd[(h_name, a_name)] += gh - ga
-        h2h_gd[(a_name, h_name)] += ga - gh
+        if match_trackers is not None:
+            key = tuple(sorted([h_name, a_name]))
+            match_trackers["home_wins"][key]  += (1 if gh > ga else 0)
+            match_trackers["draws"][key]      += (1 if gh == ga else 0)
+            match_trackers["away_wins"][key]  += (1 if ga > gh else 0)
+            match_trackers["total_gf"][key]   += gh
+            match_trackers["total_ga"][key]   += ga
+            match_trackers["count"][key]      += 1
 
     def sort_key(name: str):
         s = stats[name]
-        # Simplified tiebreaker: pts, gd, gf, then small noise
         return (s.pts, s.gd, s.gf, rng.random())
 
-    return sorted(stats.keys(), key=sort_key, reverse=True)
+    sorted_names = sorted(stats.keys(), key=sort_key, reverse=True)
+    return sorted_names, stats
 
 # ---------------------------------------------------------------------------
 # 5.  KNOCKOUT BRACKET  (Round of 32 → Final)
@@ -309,48 +312,20 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
         sim_gf:  dict[str, int] = {}
         sim_ga:  dict[str, int] = {}
 
+        match_trackers = {
+            "home_wins": match_home_wins,
+            "draws":     match_draws,
+            "away_wins": match_away_wins,
+            "total_gf":  match_total_gf,
+            "total_ga":  match_total_ga,
+            "count":     match_count,
+        }
+
         for grp in group_names:
             teams_in_group = GROUPS[grp]
-            standings = simulate_group(teams_in_group, rng)
-            group_standings[grp] = standings
-
-            # record per-team group stats (re-derive for tracking)
-            stats_lookup = {}
-            for t in teams_in_group:
-                stats_lookup[t.name] = TeamGroupStats(t.name)
-
-            for h_name, a_name in build_group_fixtures(teams_in_group):
-                h_team = TEAM_MAP[h_name]
-                a_team = TEAM_MAP[a_name]
-                gh, ga = simulate_match(h_team, a_team, rng)
-
-                stats_lookup[h_name].gf += gh
-                stats_lookup[h_name].ga += ga
-                stats_lookup[a_name].gf += ga
-                stats_lookup[a_name].ga += gh
-
-                if gh > ga:
-                    stats_lookup[h_name].pts += 3
-                elif ga > gh:
-                    stats_lookup[a_name].pts += 3
-                else:
-                    stats_lookup[h_name].pts += 1
-                    stats_lookup[a_name].pts += 1
-
-                key = tuple(sorted([h_name, a_name]))
-                match_home_wins[key]  += (1 if gh > ga else 0)
-                match_draws[key]      += (1 if gh == ga else 0)
-                match_away_wins[key]  += (1 if ga > gh else 0)
-                match_total_gf[key]   += gh
-                match_total_ga[key]   += ga
-                match_count[key]      += 1
-
-            # Re-sort using accumulated stats (consistent with simulate_group)
-            def rerank(name):
-                s = stats_lookup[name]
-                return (s.pts, s.gd, s.gf, rng.random())
-
-            sorted_names = sorted(stats_lookup.keys(), key=rerank, reverse=True)
+            sorted_names, stats_lookup = simulate_group(
+                teams_in_group, rng, match_trackers=match_trackers
+            )
             group_standings[grp] = sorted_names
 
             for rank_idx, tname in enumerate(sorted_names):
@@ -371,7 +346,7 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
         # Select best 8 third-place teams (ranked by pts, then GD, then GF)
         third_ranked = sorted(
             third_place_data,
-            key=lambda x: (-x[1], -sim_gf.get(x[0], 0) + sim_ga.get(x[0], 0), -sim_gf.get(x[0], 0), rng.random())
+            key=lambda x: (-x[1], -(sim_gf.get(x[0], 0) - sim_ga.get(x[0], 0)), -sim_gf.get(x[0], 0), rng.random())
         )
         best_thirds = [t for t, _ in third_ranked[:8]]
         # Track which groups the best 8 third-place teams came from
@@ -404,10 +379,6 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
         #   M82: 1G vs [3rd]     M83: 2K vs 2L           M84: 1H vs 2J
         #   M85: 1B vs [3rd]     M86: 1J vs 2H           M87: 1K vs [3rd]
         #   M88: 2D vs 2G
-
-        def get_3rd(grp: str) -> str:
-            clean_grp = grp[-1] if grp.startswith('3') else grp
-            return group_standings[grp][2]
 
         def resolve_3rd_slots(adv_groups: set) -> dict:
             """
@@ -934,9 +905,10 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
                 # Map the slot names directly to the team name string using get_3rd
                 return {slot_name: adv_thirds_by_group[slots[slot_name]] for slot_name in slot_names}
             else:
-                # Clean fallback: assign best-ranked 3rd teams to slots sequentially
-                sorted_groups = sorted(list(adv_groups))
-                return {slot_name: adv_thirds_by_group[slots[slot_name]] for slot_name in slot_names}
+                # Fallback: assign advancing 3rd-place teams sequentially to slots
+                sorted_adv = sorted(list(adv_groups))
+                return {slot_names[i]: adv_thirds_by_group[sorted_adv[i]]
+                        for i in range(len(slot_names))}
 
         # Execute the resolution
         thirds = resolve_3rd_slots(best_third_groups)
