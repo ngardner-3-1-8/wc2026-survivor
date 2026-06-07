@@ -7,7 +7,6 @@ import argparse, json, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-
 sys.path.insert(0, str(Path(__file__).parent))
 from wc2026_simulator import run_simulation, GROUPS, TEAMS, BASE_RATE
 
@@ -688,39 +687,53 @@ def build_predicted_bracket(group_df, ko_df):
             "away": {**t2, "slot": slot2_label, "win_pct": p2, **ko_pcts(t2["name"])},
         }
 
+    # R32 ordered so sequential pairing propagates correctly through R16 → QF → SF → Final:
+    #   Pairs (0,1)→M89→QF M97,  (2,3)→M90→QF M97
+    #   Pairs (4,5)→M93→QF M98,  (6,7)→M94→QF M98
+    #   Pairs (8,9)→M91→QF M99,  (10,11)→M92→QF M99
+    #   Pairs (12,13)→M95→QF M100, (14,15)→M96→QF M100
+    #   QF sequential: (M97,M98)→M101, (M99,M100)→M102 → Final
     r32 = [
-        make_matchup("M73", "Runner-up A", lambda: likely_runner_up("A"),
-                            "Runner-up B", lambda: likely_runner_up("B")),
+        # ── feeds M89 → M97 ──────────────────────────────────────
         make_matchup("M74", "Winner E",    lambda: likely_winner("E"),
                             "Best 3rd",    lambda: get_3rd_for_slot("1E")),
-        make_matchup("M75", "Winner F",    lambda: likely_winner("F"),
-                            "Runner-up C", lambda: likely_runner_up("C")),
-        make_matchup("M76", "Winner C",    lambda: likely_winner("C"),
-                            "Runner-up F", lambda: likely_runner_up("F")),
         make_matchup("M77", "Winner I",    lambda: likely_winner("I"),
                             "Best 3rd",    lambda: get_3rd_for_slot("1I")),
-        make_matchup("M78", "Runner-up E", lambda: likely_runner_up("E"),
-                            "Runner-up I", lambda: likely_runner_up("I")),
-        make_matchup("M79", "Winner A",    lambda: likely_winner("A"),
-                            "Best 3rd",    lambda: get_3rd_for_slot("1A")),
-        make_matchup("M80", "Winner L",    lambda: likely_winner("L"),
-                            "Best 3rd",    lambda: get_3rd_for_slot("1L")),
-        make_matchup("M81", "Winner D",    lambda: likely_winner("D"),
-                            "Best 3rd",    lambda: get_3rd_for_slot("1D")),
-        make_matchup("M82", "Winner G",    lambda: likely_winner("G"),
-                            "Best 3rd",    lambda: get_3rd_for_slot("1G")),
+        # ── feeds M90 → M97 ──────────────────────────────────────
+        make_matchup("M73", "Runner-up A", lambda: likely_runner_up("A"),
+                            "Runner-up B", lambda: likely_runner_up("B")),
+        make_matchup("M75", "Winner F",    lambda: likely_winner("F"),
+                            "Runner-up C", lambda: likely_runner_up("C")),
+        # ── feeds M93 → M98 ──────────────────────────────────────
         make_matchup("M83", "Runner-up K", lambda: likely_runner_up("K"),
                             "Runner-up L", lambda: likely_runner_up("L")),
         make_matchup("M84", "Winner H",    lambda: likely_winner("H"),
                             "Runner-up J", lambda: likely_runner_up("J")),
-        make_matchup("M85", "Winner B",    lambda: likely_winner("B"),
-                            "Best 3rd",    lambda: get_3rd_for_slot("1B")),
+        # ── feeds M94 → M98 ──────────────────────────────────────
+        make_matchup("M81", "Winner D",    lambda: likely_winner("D"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1D")),
+        make_matchup("M82", "Winner G",    lambda: likely_winner("G"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1G")),
+        # ── feeds M91 → M99 ──────────────────────────────────────
+        make_matchup("M76", "Winner C",    lambda: likely_winner("C"),
+                            "Runner-up F", lambda: likely_runner_up("F")),
+        make_matchup("M78", "Runner-up E", lambda: likely_runner_up("E"),
+                            "Runner-up I", lambda: likely_runner_up("I")),
+        # ── feeds M92 → M99 ──────────────────────────────────────
+        make_matchup("M79", "Winner A",    lambda: likely_winner("A"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1A")),
+        make_matchup("M80", "Winner L",    lambda: likely_winner("L"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1L")),
+        # ── feeds M95 → M100 ─────────────────────────────────────
         make_matchup("M86", "Winner J",    lambda: likely_winner("J"),
                             "Runner-up H", lambda: likely_runner_up("H")),
-        make_matchup("M87", "Winner K",    lambda: likely_winner("K"),
-                            "Best 3rd",    lambda: get_3rd_for_slot("1K")),
         make_matchup("M88", "Runner-up D", lambda: likely_runner_up("D"),
                             "Runner-up G", lambda: likely_runner_up("G")),
+        # ── feeds M96 → M100 ─────────────────────────────────────
+        make_matchup("M85", "Winner B",    lambda: likely_winner("B"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1B")),
+        make_matchup("M87", "Winner K",    lambda: likely_winner("K"),
+                            "Best 3rd",    lambda: get_3rd_for_slot("1K")),
     ]
 
     # Predicted R16 onward (winner of each R32 pair advances)
@@ -734,8 +747,9 @@ def build_predicted_bracket(group_df, ko_df):
     for i in range(0, 16, 2):
         t1, t2 = r16_teams[i], r16_teams[i+1]
         p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+        r16_match_ids = ["M89","M90","M93","M94","M91","M92","M95","M96"]
         r16.append({
-            "match_id": f"R16-{i//2+1}",
+            "match_id": r16_match_ids[i//2],
             "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
             "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
         })
@@ -745,8 +759,9 @@ def build_predicted_bracket(group_df, ko_df):
     for i in range(0, 8, 2):
         t1, t2 = qf_teams[i], qf_teams[i+1]
         p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+        qf_match_ids = ["M97","M98","M99","M100"]
         qf.append({
-            "match_id": f"QF-{i//2+1}",
+            "match_id": qf_match_ids[i//2],
             "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
             "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
         })
@@ -756,8 +771,9 @@ def build_predicted_bracket(group_df, ko_df):
     for i in range(0, 4, 2):
         t1, t2 = sf_teams[i], sf_teams[i+1]
         p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+        sf_match_ids = ["M101","M102"]
         sf.append({
-            "match_id": f"SF-{i//2+1}",
+            "match_id": sf_match_ids[i//2],
             "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
             "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
         })
