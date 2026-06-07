@@ -648,9 +648,9 @@ def build_predicted_bracket(group_df, ko_df):
         if grp:
             match = next((r for r in best_thirds if r["group"]==grp), None)
             if match:
-                return {"name": match["name"], "advance_pct": match["advance_pct"], "is_third": True}
+                return {"name": match["name"], "advance_pct": match["advance_pct"], "is_third": True, "group": grp}
         # fallback
-        return {"name": best_thirds[0]["name"] if best_thirds else "TBD", "advance_pct": 0, "is_third": True}
+        return {"name": best_thirds[0]["name"] if best_thirds else "TBD", "advance_pct": 0, "is_third": True, "group": "?"}
 
     def matchup_win_prob(t1_name: str, t2_name: str):
         """Head-to-head win prob from model ratings."""
