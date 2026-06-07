@@ -376,6 +376,7 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
         best_thirds = [t for t, _ in third_ranked[:8]]
         # Track which groups the best 8 third-place teams came from
         best_third_groups = set(TEAM_MAP[t].group for t in best_thirds)
+        adv_thirds_by_group = {TEAM_MAP[t].group: t for t in best_thirds}
         for tname in best_thirds:
             group_adv_count[tname] += 1
 
@@ -931,11 +932,11 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
             if key in matrix:
                 slots = matrix[key]
                 # Map the slot names directly to the team name string using get_3rd
-                return {slot_name: get_3rd(slots[slot_name]) for slot_name in slot_names}
+                return {slot_name: adv_thirds_by_group[slots[slot_name]] for slot_name in slot_names}
             else:
                 # Clean fallback: assign best-ranked 3rd teams to slots sequentially
-                thirds_list = [get_3rd(gr) for gr in sorted(adv_groups)]
-                return {slot_names[i]: thirds_list[i] for i in range(8)}
+                sorted_groups = sorted(list(adv_groups))
+                return {slot_name: adv_thirds_by_group[slots[slot_name]] for slot_name in slot_names}
 
         # Execute the resolution
         thirds = resolve_3rd_slots(best_third_groups)
