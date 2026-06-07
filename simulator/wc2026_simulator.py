@@ -422,6 +422,14 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
             # (1A_3rd, 1B_3rd, 1D_3rd, 1E_3rd, 1G_3rd, 1I_3rd, 1K_3rd, 1L_3rd)
             # These are the groups whose 1st-place team faces a 3rd-place team.
             # Source: Annex C of FIFA 2026 regulations (combinations 1-45 cover A-F groups)
+
+
+            # Define the static slot names immediately at the top of the scope
+            slot_names = ['1A', '1B', '1D', '1E', '1G', '1I', '1K', '1L']
+            
+            # The 8 advancing groups sorted into a standard lookup key
+            key = tuple(sorted(adv_groups))
+          
             matrix = {
               ('E','F','G','H','I','J','K','L'): {'1A':'3E','1B':'3J','1D':'3I','1E':'3F','1G':'3H','1I':'3G','1K':'3L','1L':'3K'},
               ('D','F','G','H','I','J','K','L'): {'1A':'3H','1B':'3G','1D':'3I','1E':'3D','1G':'3J','1I':'3F','1K':'3L','1L':'3K'},
@@ -919,20 +927,16 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
               ('A','B','C','D','E','F','G','I'): {'1A':'3C','1B':'3G','1D':'3B','1E':'3D','1G':'3A','1I':'3F','1K':'3E','1L':'3I'},
               ('A','B','C','D','E','F','G','H'): {'1A':'3H','1B':'3G','1D':'3B','1E':'3C','1G':'3A','1I':'3F','1K':'3D','1L':'3E'}
             }
-            key = tuple(sorted(adv_groups))
             if key in matrix:
                 slots = matrix[key]
+                # Map the slot names directly to the team name string using get_3rd
                 return {slot_name: get_3rd(slots[slot_name]) for slot_name in slot_names}
             else:
-                # Fallback: assign best-ranked 3rd teams to slots in order
+                # Clean fallback: assign best-ranked 3rd teams to slots sequentially
                 thirds_list = [get_3rd(gr) for gr in sorted(adv_groups)]
-                slots = tuple(sorted(adv_groups))  # placeholder
-                return {f"slot_{i}": thirds_list[i] for i in range(8)}
+                return {slot_names[i]: thirds_list[i] for i in range(8)}
 
-            slot_names = ['1A','1B','1D','1E','1G','1I','1K','1L']
-          
-            return {slot_names[i]: get_3rd(slots[i]) for i in range(8)}
-
+        # Execute the resolution
         thirds = resolve_3rd_slots(best_third_groups)
 
         def t3(slot: str) -> str:
