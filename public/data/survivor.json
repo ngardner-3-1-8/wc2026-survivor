@@ -4,42 +4,42 @@
       "Group Stage": [
         {
           "pick_number": 1,
-          "team": "Haiti",
-          "group": "C",
-          "survival_pct": 24.3,
-          "pick_pct": 0.14,
-          "ev_ratio": 176.23,
-          "log_ev": 5.172,
+          "team": "New Zealand",
+          "group": "G",
+          "survival_pct": 25.3,
+          "pick_pct": 0.16,
+          "ev_ratio": 153.7,
+          "log_ev": 5.035,
           "note": "Best log(surv/pick%)"
         },
         {
           "pick_number": 2,
-          "team": "Cura\u00e7ao",
-          "group": "E",
-          "survival_pct": 38.8,
-          "pick_pct": 0.23,
-          "ev_ratio": 169.69,
-          "log_ev": 5.134,
+          "team": "Haiti",
+          "group": "C",
+          "survival_pct": 42.9,
+          "pick_pct": 0.34,
+          "ev_ratio": 126.68,
+          "log_ev": 4.842,
           "note": "Best log(surv/pick%)"
         },
         {
           "pick_number": 3,
           "team": "Cape Verde",
           "group": "H",
-          "survival_pct": 21.4,
-          "pick_pct": 0.14,
-          "ev_ratio": 147.74,
-          "log_ev": 4.995,
+          "survival_pct": 34.6,
+          "pick_pct": 0.3,
+          "ev_ratio": 116.44,
+          "log_ev": 4.757,
           "note": "Best log(surv/pick%)"
         },
         {
           "pick_number": 4,
-          "team": "Panama",
-          "group": "L",
-          "survival_pct": 25.2,
-          "pick_pct": 0.2,
-          "ev_ratio": 126.64,
-          "log_ev": 4.841,
+          "team": "Cura\u00e7ao",
+          "group": "E",
+          "survival_pct": 48.8,
+          "pick_pct": 0.42,
+          "ev_ratio": 115.75,
+          "log_ev": 4.751,
           "note": "Best log(surv/pick%)"
         }
       ],
@@ -48,88 +48,88 @@
           "pick_number": 1,
           "team": "Ghana",
           "group": "L",
-          "survival_pct": 31.97,
-          "pick_pct": 0.74,
-          "ev_ratio": 43.45,
-          "log_ev": 3.772,
+          "survival_pct": 32.61,
+          "pick_pct": 0.92,
+          "ev_ratio": 35.45,
+          "log_ev": 3.568,
           "note": "Best log(surv/pick%)"
         },
         {
           "pick_number": 2,
           "team": "Uzbekistan",
           "group": "K",
-          "survival_pct": 18.34,
-          "pick_pct": 0.48,
-          "ev_ratio": 37.96,
-          "log_ev": 3.637,
+          "survival_pct": 25.69,
+          "pick_pct": 0.76,
+          "ev_ratio": 34.0,
+          "log_ev": 3.526,
           "note": "Best log(surv/pick%)"
         }
       ],
       "Round of 16": [
         {
           "pick_number": 1,
-          "team": "Tunisia",
-          "group": "F",
-          "survival_pct": 28.98,
-          "pick_pct": 1.93,
-          "ev_ratio": 15.0,
-          "log_ev": 2.708,
+          "team": "Norway",
+          "group": "I",
+          "survival_pct": 25.61,
+          "pick_pct": 1.8,
+          "ev_ratio": 14.25,
+          "log_ev": 2.657,
           "note": "Best log(surv/pick%)"
         },
         {
           "pick_number": 2,
-          "team": "Ivory Coast",
-          "group": "E",
-          "survival_pct": 25.52,
-          "pick_pct": 1.86,
-          "ev_ratio": 13.7,
-          "log_ev": 2.617,
+          "team": "Tunisia",
+          "group": "F",
+          "survival_pct": 29.95,
+          "pick_pct": 2.17,
+          "ev_ratio": 13.78,
+          "log_ev": 2.624,
           "note": "Best log(surv/pick%)"
         }
       ],
       "Quarterfinals": [
         {
           "pick_number": 1,
-          "team": "Norway",
-          "group": "I",
-          "survival_pct": 39.92,
-          "pick_pct": 4.1,
-          "ev_ratio": 9.75,
-          "log_ev": 2.277,
+          "team": "Ivory Coast",
+          "group": "E",
+          "survival_pct": 18.27,
+          "pick_pct": 2.27,
+          "ev_ratio": 8.07,
+          "log_ev": 2.088,
           "note": "Best log(surv/pick%)"
         },
         {
           "pick_number": 2,
           "team": "Egypt",
           "group": "G",
-          "survival_pct": 13.63,
-          "pick_pct": 2.02,
-          "ev_ratio": 6.76,
-          "log_ev": 1.91,
+          "survival_pct": 15.11,
+          "pick_pct": 2.13,
+          "ev_ratio": 7.09,
+          "log_ev": 1.958,
           "note": "Best log(surv/pick%)"
         }
       ],
       "Semifinal": [
         {
           "pick_number": 1,
-          "team": "Belgium",
-          "group": "G",
-          "survival_pct": 13.95,
-          "pick_pct": 3.35,
-          "ev_ratio": 4.16,
-          "log_ev": 1.426,
+          "team": "Morocco",
+          "group": "C",
+          "survival_pct": 16.21,
+          "pick_pct": 3.89,
+          "ev_ratio": 4.17,
+          "log_ev": 1.428,
           "note": "Best log(surv/pick%)"
         }
       ],
       "Final": [
         {
           "pick_number": 1,
-          "team": "Morocco",
-          "group": "C",
-          "survival_pct": 12.58,
-          "pick_pct": 4.54,
-          "ev_ratio": 2.77,
-          "log_ev": 1.019,
+          "team": "Spain",
+          "group": "H",
+          "survival_pct": 11.35,
+          "pick_pct": 4.73,
+          "ev_ratio": 2.4,
+          "log_ev": 0.876,
           "note": "Best log(surv/pick%)"
         }
       ]
@@ -140,40 +140,40 @@
           "pick_number": 1,
           "team": "Morocco",
           "group": "C",
-          "survival_pct": 100.0,
-          "pick_pct": 4.62,
-          "ev_ratio": 21.64,
-          "log_ev": 3.074,
+          "survival_pct": 95.7,
+          "pick_pct": 5.29,
+          "ev_ratio": 18.09,
+          "log_ev": 2.895,
           "note": "Highest survival prob"
         },
         {
           "pick_number": 2,
           "team": "Spain",
           "group": "H",
-          "survival_pct": 99.3,
-          "pick_pct": 5.8,
-          "ev_ratio": 17.12,
-          "log_ev": 2.84,
+          "survival_pct": 95.4,
+          "pick_pct": 6.73,
+          "ev_ratio": 14.17,
+          "log_ev": 2.651,
           "note": "Highest survival prob"
         },
         {
           "pick_number": 3,
-          "team": "Norway",
-          "group": "I",
-          "survival_pct": 99.1,
-          "pick_pct": 2.59,
-          "ev_ratio": 38.33,
-          "log_ev": 3.646,
+          "team": "Tunisia",
+          "group": "F",
+          "survival_pct": 89.7,
+          "pick_pct": 2.61,
+          "ev_ratio": 34.35,
+          "log_ev": 3.536,
           "note": "Highest survival prob"
         },
         {
           "pick_number": 4,
-          "team": "Netherlands",
-          "group": "F",
-          "survival_pct": 99.0,
-          "pick_pct": 4.86,
-          "ev_ratio": 20.35,
-          "log_ev": 3.013,
+          "team": "Portugal",
+          "group": "K",
+          "survival_pct": 86.4,
+          "pick_pct": 4.65,
+          "ev_ratio": 18.59,
+          "log_ev": 2.923,
           "note": "Highest survival prob"
         }
       ],
@@ -182,88 +182,88 @@
           "pick_number": 1,
           "team": "Belgium",
           "group": "G",
-          "survival_pct": 69.59,
-          "pick_pct": 4.83,
-          "ev_ratio": 14.39,
-          "log_ev": 2.667,
-          "note": "Highest survival prob"
-        },
-        {
-          "pick_number": 2,
-          "team": "Senegal",
-          "group": "I",
-          "survival_pct": 69.34,
-          "pick_pct": 4.7,
-          "ev_ratio": 14.75,
-          "log_ev": 2.691,
-          "note": "Highest survival prob"
-        }
-      ],
-      "Round of 16": [
-        {
-          "pick_number": 1,
-          "team": "Germany",
-          "group": "E",
-          "survival_pct": 39.11,
-          "pick_pct": 5.89,
-          "ev_ratio": 6.64,
-          "log_ev": 1.893,
+          "survival_pct": 53.96,
+          "pick_pct": 3.52,
+          "ev_ratio": 15.35,
+          "log_ev": 2.731,
           "note": "Highest survival prob"
         },
         {
           "pick_number": 2,
           "team": "England",
           "group": "L",
-          "survival_pct": 32.7,
-          "pick_pct": 4.91,
-          "ev_ratio": 6.67,
-          "log_ev": 1.897,
+          "survival_pct": 53.89,
+          "pick_pct": 5.55,
+          "ev_ratio": 9.71,
+          "log_ev": 2.273,
+          "note": "Highest survival prob"
+        }
+      ],
+      "Round of 16": [
+        {
+          "pick_number": 1,
+          "team": "Ivory Coast",
+          "group": "E",
+          "survival_pct": 32.21,
+          "pick_pct": 2.53,
+          "ev_ratio": 12.71,
+          "log_ev": 2.542,
+          "note": "Highest survival prob"
+        },
+        {
+          "pick_number": 2,
+          "team": "Egypt",
+          "group": "G",
+          "survival_pct": 29.4,
+          "pick_pct": 2.41,
+          "ev_ratio": 12.18,
+          "log_ev": 2.5,
           "note": "Highest survival prob"
         }
       ],
       "Quarterfinals": [
         {
           "pick_number": 1,
-          "team": "Portugal",
-          "group": "K",
-          "survival_pct": 17.59,
-          "pick_pct": 4.04,
-          "ev_ratio": 4.35,
-          "log_ev": 1.471,
+          "team": "Senegal",
+          "group": "I",
+          "survival_pct": 16.4,
+          "pick_pct": 2.73,
+          "ev_ratio": 6.0,
+          "log_ev": 1.792,
           "note": "Highest survival prob"
         },
         {
           "pick_number": 2,
-          "team": "Switzerland",
-          "group": "B",
-          "survival_pct": 13.74,
-          "pick_pct": 2.27,
-          "ev_ratio": 6.06,
-          "log_ev": 1.802,
+          "team": "Argentina",
+          "group": "J",
+          "survival_pct": 16.35,
+          "pick_pct": 5.16,
+          "ev_ratio": 3.17,
+          "log_ev": 1.154,
           "note": "Highest survival prob"
         }
       ],
       "Semifinal": [
         {
           "pick_number": 1,
-          "team": "Egypt",
-          "group": "G",
-          "survival_pct": 6.42,
-          "pick_pct": 2.0,
-          "ev_ratio": 3.2,
-          "log_ev": 1.164,
+          "team": "Germany",
+          "group": "E",
+          "survival_pct": 7.68,
+          "pick_pct": 3.83,
+          "ev_ratio": 2.0,
+          "log_ev": 0.694,
           "note": "Highest survival prob"
         }
       ],
       "Final": [
         {
           "pick_number": 1,
-          "team": "Ivory Coast",
-          "group": "E",
-          "survival_pct": 3.3,
-          "pick_pct": 2.07,
-          "ev_ratio": 1.59,
-          "log_ev": 0.466,
+          "team": "Norway",
+          "group": "I",
+          "survival_pct": 3.9,
+          "pick_pct": 1.65,
+          "ev_ratio": 2.36,
+          "log_ev": 0.857,
           "note": "Highest survival prob"
         }
       ]
@@ -272,132 +272,132 @@
       "Group Stage": [
         {
           "pick_number": 1,
-          "team": "South Africa",
-          "group": "A",
-          "survival_pct": 48.9,
-          "pick_pct": 0.41,
-          "ev_ratio": 120.65,
-          "log_ev": 4.793,
+          "team": "Haiti",
+          "group": "C",
+          "survival_pct": 42.9,
+          "pick_pct": 0.34,
+          "ev_ratio": 126.68,
+          "log_ev": 4.842,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 2,
-          "team": "Uzbekistan",
-          "group": "K",
-          "survival_pct": 60.7,
-          "pick_pct": 0.59,
-          "ev_ratio": 103.35,
-          "log_ev": 4.638,
+          "team": "Cura\u00e7ao",
+          "group": "E",
+          "survival_pct": 48.8,
+          "pick_pct": 0.42,
+          "ev_ratio": 115.75,
+          "log_ev": 4.751,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 3,
-          "team": "Ecuador",
-          "group": "E",
-          "survival_pct": 40.7,
-          "pick_pct": 0.46,
-          "ev_ratio": 88.1,
-          "log_ev": 4.478,
+          "team": "Jordan",
+          "group": "J",
+          "survival_pct": 45.1,
+          "pick_pct": 0.43,
+          "ev_ratio": 104.58,
+          "log_ev": 4.65,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 4,
-          "team": "Ghana",
-          "group": "L",
-          "survival_pct": 75.1,
-          "pick_pct": 0.92,
-          "ev_ratio": 81.84,
-          "log_ev": 4.405,
+          "team": "DR Congo",
+          "group": "K",
+          "survival_pct": 38.9,
+          "pick_pct": 0.42,
+          "ev_ratio": 91.64,
+          "log_ev": 4.518,
           "note": "Contrarian value pick"
         }
       ],
       "Round of 32": [
         {
           "pick_number": 1,
-          "team": "Algeria",
-          "group": "J",
-          "survival_pct": 37.84,
-          "pick_pct": 1.24,
-          "ev_ratio": 30.54,
-          "log_ev": 3.419,
+          "team": "Ghana",
+          "group": "L",
+          "survival_pct": 32.61,
+          "pick_pct": 0.92,
+          "ev_ratio": 35.45,
+          "log_ev": 3.568,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 2,
-          "team": "Ivory Coast",
-          "group": "E",
-          "survival_pct": 45.39,
-          "pick_pct": 1.65,
-          "ev_ratio": 27.54,
-          "log_ev": 3.316,
+          "team": "Czechia",
+          "group": "A",
+          "survival_pct": 26.53,
+          "pick_pct": 0.98,
+          "ev_ratio": 26.97,
+          "log_ev": 3.295,
           "note": "Contrarian value pick"
         }
       ],
       "Round of 16": [
         {
           "pick_number": 1,
-          "team": "Tunisia",
-          "group": "F",
-          "survival_pct": 28.98,
-          "pick_pct": 1.93,
-          "ev_ratio": 15.0,
-          "log_ev": 2.708,
+          "team": "Norway",
+          "group": "I",
+          "survival_pct": 25.61,
+          "pick_pct": 1.8,
+          "ev_ratio": 14.25,
+          "log_ev": 2.657,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 2,
-          "team": "Egypt",
-          "group": "G",
-          "survival_pct": 28.56,
-          "pick_pct": 2.16,
-          "ev_ratio": 13.25,
-          "log_ev": 2.584,
+          "team": "Tunisia",
+          "group": "F",
+          "survival_pct": 29.95,
+          "pick_pct": 2.17,
+          "ev_ratio": 13.78,
+          "log_ev": 2.624,
           "note": "Contrarian value pick"
         }
       ],
       "Quarterfinals": [
         {
           "pick_number": 1,
-          "team": "Norway",
-          "group": "I",
-          "survival_pct": 39.92,
-          "pick_pct": 4.1,
-          "ev_ratio": 9.75,
-          "log_ev": 2.277,
+          "team": "Ivory Coast",
+          "group": "E",
+          "survival_pct": 18.27,
+          "pick_pct": 2.27,
+          "ev_ratio": 8.07,
+          "log_ev": 2.088,
           "note": "Contrarian value pick"
         },
         {
           "pick_number": 2,
-          "team": "Belgium",
+          "team": "Egypt",
           "group": "G",
-          "survival_pct": 24.3,
-          "pick_pct": 3.6,
-          "ev_ratio": 6.74,
-          "log_ev": 1.908,
+          "survival_pct": 15.11,
+          "pick_pct": 2.13,
+          "ev_ratio": 7.09,
+          "log_ev": 1.958,
           "note": "Contrarian value pick"
         }
       ],
       "Semifinal": [
         {
           "pick_number": 1,
-          "team": "Senegal",
-          "group": "I",
-          "survival_pct": 10.26,
-          "pick_pct": 2.88,
-          "ev_ratio": 3.56,
-          "log_ev": 1.271,
+          "team": "Morocco",
+          "group": "C",
+          "survival_pct": 16.21,
+          "pick_pct": 3.89,
+          "ev_ratio": 4.17,
+          "log_ev": 1.428,
           "note": "Contrarian value pick"
         }
       ],
       "Final": [
         {
           "pick_number": 1,
-          "team": "Morocco",
-          "group": "C",
-          "survival_pct": 12.58,
-          "pick_pct": 4.54,
-          "ev_ratio": 2.77,
-          "log_ev": 1.019,
+          "team": "Spain",
+          "group": "H",
+          "survival_pct": 11.35,
+          "pick_pct": 4.73,
+          "ev_ratio": 2.4,
+          "log_ev": 0.876,
           "note": "Contrarian value pick"
         }
       ]
@@ -406,251 +406,251 @@
   "pick_intelligence": {
     "Group Stage": [
       {
-        "team": "Haiti",
-        "group": "C",
-        "survival_pct": 24.3,
-        "pick_pct": 0.14,
-        "ev_ratio": 176.23,
-        "log_ev": 5.172,
+        "team": "New Zealand",
+        "group": "G",
+        "survival_pct": 25.3,
+        "pick_pct": 0.16,
+        "ev_ratio": 153.7,
+        "log_ev": 5.035,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
-        "team": "Cura\u00e7ao",
-        "group": "E",
-        "survival_pct": 38.8,
-        "pick_pct": 0.23,
-        "ev_ratio": 169.69,
-        "log_ev": 5.134,
+        "team": "Haiti",
+        "group": "C",
+        "survival_pct": 42.9,
+        "pick_pct": 0.34,
+        "ev_ratio": 126.68,
+        "log_ev": 4.842,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "Cape Verde",
         "group": "H",
-        "survival_pct": 21.4,
-        "pick_pct": 0.14,
-        "ev_ratio": 147.74,
-        "log_ev": 4.995,
+        "survival_pct": 34.6,
+        "pick_pct": 0.3,
+        "ev_ratio": 116.44,
+        "log_ev": 4.757,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
-        "team": "Saudi Arabia",
-        "group": "H",
-        "survival_pct": 35.1,
-        "pick_pct": 0.26,
-        "ev_ratio": 132.64,
-        "log_ev": 4.888,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Panama",
-        "group": "L",
-        "survival_pct": 25.2,
-        "pick_pct": 0.2,
-        "ev_ratio": 126.64,
-        "log_ev": 4.841,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Jordan",
-        "group": "J",
-        "survival_pct": 15.2,
-        "pick_pct": 0.12,
-        "ev_ratio": 126.16,
-        "log_ev": 4.838,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Bosnia",
-        "group": "B",
-        "survival_pct": 25.4,
-        "pick_pct": 0.2,
-        "ev_ratio": 125.38,
-        "log_ev": 4.831,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "South Africa",
-        "group": "A",
-        "survival_pct": 48.9,
-        "pick_pct": 0.41,
-        "ev_ratio": 120.65,
-        "log_ev": 4.793,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "New Zealand",
-        "group": "G",
-        "survival_pct": 8.1,
-        "pick_pct": 0.07,
-        "ev_ratio": 115.35,
-        "log_ev": 4.748,
+        "team": "Cura\u00e7ao",
+        "group": "E",
+        "survival_pct": 48.8,
+        "pick_pct": 0.42,
+        "ev_ratio": 115.75,
+        "log_ev": 4.751,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "Paraguay",
         "group": "D",
-        "survival_pct": 13.9,
-        "pick_pct": 0.12,
-        "ev_ratio": 115.19,
-        "log_ev": 4.747,
+        "survival_pct": 37.7,
+        "pick_pct": 0.35,
+        "ev_ratio": 106.96,
+        "log_ev": 4.672,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Iraq",
+        "group": "I",
+        "survival_pct": 35.2,
+        "pick_pct": 0.34,
+        "ev_ratio": 104.95,
+        "log_ev": 4.654,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Jordan",
+        "group": "J",
+        "survival_pct": 45.1,
+        "pick_pct": 0.43,
+        "ev_ratio": 104.58,
+        "log_ev": 4.65,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "DR Congo",
         "group": "K",
-        "survival_pct": 18.6,
-        "pick_pct": 0.16,
-        "ev_ratio": 113.89,
-        "log_ev": 4.735,
+        "survival_pct": 38.9,
+        "pick_pct": 0.42,
+        "ev_ratio": 91.64,
+        "log_ev": 4.518,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
-        "team": "Uzbekistan",
-        "group": "K",
-        "survival_pct": 60.7,
+        "team": "Saudi Arabia",
+        "group": "H",
+        "survival_pct": 50.6,
         "pick_pct": 0.59,
-        "ev_ratio": 103.35,
-        "log_ev": 4.638,
+        "ev_ratio": 86.33,
+        "log_ev": 4.458,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "Scotland",
         "group": "C",
-        "survival_pct": 14.4,
-        "pick_pct": 0.15,
-        "ev_ratio": 96.97,
-        "log_ev": 4.574,
+        "survival_pct": 41.0,
+        "pick_pct": 0.48,
+        "ev_ratio": 86.1,
+        "log_ev": 4.456,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Bosnia",
+        "group": "B",
+        "survival_pct": 50.5,
+        "pick_pct": 0.62,
+        "ev_ratio": 81.73,
+        "log_ev": 4.403,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Panama",
+        "group": "L",
+        "survival_pct": 53.2,
+        "pick_pct": 0.67,
+        "ev_ratio": 79.57,
+        "log_ev": 4.377,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Sweden",
+        "group": "F",
+        "survival_pct": 19.7,
+        "pick_pct": 0.26,
+        "ev_ratio": 76.92,
+        "log_ev": 4.343,
         "value_label": "  OK"
       },
       {
-        "team": "Ecuador",
-        "group": "E",
-        "survival_pct": 40.7,
-        "pick_pct": 0.46,
-        "ev_ratio": 88.1,
-        "log_ev": 4.478,
+        "team": "South Africa",
+        "group": "A",
+        "survival_pct": 61.1,
+        "pick_pct": 0.8,
+        "ev_ratio": 75.98,
+        "log_ev": 4.33,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Uzbekistan",
+        "group": "K",
+        "survival_pct": 62.6,
+        "pick_pct": 0.83,
+        "ev_ratio": 75.73,
+        "log_ev": 4.327,
         "value_label": "  OK"
       },
       {
         "team": "Ghana",
         "group": "L",
-        "survival_pct": 75.1,
-        "pick_pct": 0.92,
-        "ev_ratio": 81.84,
-        "log_ev": 4.405,
+        "survival_pct": 65.8,
+        "pick_pct": 0.89,
+        "ev_ratio": 73.99,
+        "log_ev": 4.304,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Ecuador",
+        "group": "E",
+        "survival_pct": 51.9,
+        "pick_pct": 0.89,
+        "ev_ratio": 58.54,
+        "log_ev": 4.07,
         "value_label": "  OK"
       },
       {
         "team": "Czechia",
         "group": "A",
-        "survival_pct": 61.4,
-        "pick_pct": 0.76,
-        "ev_ratio": 80.68,
-        "log_ev": 4.39,
+        "survival_pct": 64.7,
+        "pick_pct": 1.12,
+        "ev_ratio": 57.65,
+        "log_ev": 4.054,
         "value_label": "  OK"
       },
       {
         "team": "T\u00fcrkiye",
         "group": "D",
-        "survival_pct": 65.3,
-        "pick_pct": 0.86,
-        "ev_ratio": 76.2,
-        "log_ev": 4.333,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Canada",
-        "group": "B",
-        "survival_pct": 69.1,
-        "pick_pct": 1.24,
-        "ev_ratio": 55.62,
-        "log_ev": 4.018,
-        "value_label": "  OK"
-      },
-      {
-        "team": "South Korea",
-        "group": "A",
-        "survival_pct": 72.7,
-        "pick_pct": 1.33,
-        "ev_ratio": 54.77,
-        "log_ev": 4.003,
+        "survival_pct": 71.7,
+        "pick_pct": 1.4,
+        "ev_ratio": 51.16,
+        "log_ev": 3.935,
         "value_label": "  OK"
       },
       {
         "team": "Algeria",
         "group": "J",
-        "survival_pct": 83.4,
-        "pick_pct": 1.68,
-        "ev_ratio": 49.76,
-        "log_ev": 3.907,
+        "survival_pct": 69.5,
+        "pick_pct": 1.39,
+        "ev_ratio": 49.89,
+        "log_ev": 3.91,
         "value_label": "  OK"
       },
       {
-        "team": "Qatar",
-        "group": "B",
-        "survival_pct": 84.6,
-        "pick_pct": 1.76,
-        "ev_ratio": 47.96,
-        "log_ev": 3.87,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Ivory Coast",
-        "group": "E",
-        "survival_pct": 86.7,
-        "pick_pct": 1.93,
-        "ev_ratio": 44.81,
-        "log_ev": 3.802,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Iran",
-        "group": "G",
-        "survival_pct": 81.7,
-        "pick_pct": 1.87,
-        "ev_ratio": 43.59,
-        "log_ev": 3.775,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Egypt",
-        "group": "G",
-        "survival_pct": 89.2,
-        "pick_pct": 2.2,
-        "ev_ratio": 40.55,
-        "log_ev": 3.703,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Austria",
-        "group": "J",
-        "survival_pct": 87.3,
-        "pick_pct": 2.21,
-        "ev_ratio": 39.53,
-        "log_ev": 3.677,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Tunisia",
-        "group": "F",
-        "survival_pct": 97.1,
-        "pick_pct": 2.53,
-        "ev_ratio": 38.38,
-        "log_ev": 3.648,
+        "team": "South Korea",
+        "group": "A",
+        "survival_pct": 65.0,
+        "pick_pct": 1.36,
+        "ev_ratio": 47.91,
+        "log_ev": 3.869,
         "value_label": "  OK"
       },
       {
         "team": "Norway",
         "group": "I",
-        "survival_pct": 99.1,
-        "pick_pct": 2.59,
-        "ev_ratio": 38.33,
-        "log_ev": 3.646,
+        "survival_pct": 77.2,
+        "pick_pct": 1.65,
+        "ev_ratio": 46.9,
+        "log_ev": 3.848,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Canada",
+        "group": "B",
+        "survival_pct": 64.2,
+        "pick_pct": 1.39,
+        "ev_ratio": 46.05,
+        "log_ev": 3.83,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Qatar",
+        "group": "B",
+        "survival_pct": 75.5,
+        "pick_pct": 1.72,
+        "ev_ratio": 43.87,
+        "log_ev": 3.781,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Austria",
+        "group": "J",
+        "survival_pct": 70.3,
+        "pick_pct": 1.66,
+        "ev_ratio": 42.46,
+        "log_ev": 3.749,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Iran",
+        "group": "G",
+        "survival_pct": 73.6,
+        "pick_pct": 1.89,
+        "ev_ratio": 38.94,
+        "log_ev": 3.662,
         "value_label": "  OK"
       },
       {
         "team": "Croatia",
         "group": "L",
+        "survival_pct": 64.3,
+        "pick_pct": 1.73,
+        "ev_ratio": 37.14,
+        "log_ev": 3.615,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Australia",
+        "group": "D",
         "survival_pct": 79.0,
         "pick_pct": 2.14,
         "ev_ratio": 36.93,
@@ -658,2137 +658,2344 @@
         "value_label": "  OK"
       },
       {
-        "team": "Australia",
-        "group": "D",
-        "survival_pct": 92.9,
-        "pick_pct": 2.57,
-        "ev_ratio": 36.1,
-        "log_ev": 3.586,
+        "team": "Japan",
+        "group": "F",
+        "survival_pct": 72.5,
+        "pick_pct": 2.03,
+        "ev_ratio": 35.75,
+        "log_ev": 3.577,
         "value_label": "  OK"
       },
       {
-        "team": "Iraq",
-        "group": "I",
-        "survival_pct": 3.1,
-        "pick_pct": 0.09,
-        "ev_ratio": 35.6,
-        "log_ev": 3.572,
+        "team": "Ivory Coast",
+        "group": "E",
+        "survival_pct": 84.3,
+        "pick_pct": 2.36,
+        "ev_ratio": 35.72,
+        "log_ev": 3.576,
         "value_label": "  OK"
       },
       {
         "team": "Switzerland",
         "group": "B",
-        "survival_pct": 90.8,
-        "pick_pct": 2.6,
-        "ev_ratio": 34.98,
-        "log_ev": 3.555,
+        "survival_pct": 78.2,
+        "pick_pct": 2.25,
+        "ev_ratio": 34.7,
+        "log_ev": 3.547,
         "value_label": "  OK"
       },
       {
-        "team": "Japan",
+        "team": "Egypt",
+        "group": "G",
+        "survival_pct": 83.8,
+        "pick_pct": 2.43,
+        "ev_ratio": 34.52,
+        "log_ev": 3.542,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Tunisia",
         "group": "F",
-        "survival_pct": 88.7,
-        "pick_pct": 2.63,
-        "ev_ratio": 33.68,
-        "log_ev": 3.517,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Colombia",
-        "group": "K",
-        "survival_pct": 88.2,
-        "pick_pct": 2.74,
-        "ev_ratio": 32.19,
-        "log_ev": 3.472,
+        "survival_pct": 89.7,
+        "pick_pct": 2.61,
+        "ev_ratio": 34.35,
+        "log_ev": 3.536,
         "value_label": "  OK"
       },
       {
         "team": "Uruguay",
         "group": "H",
-        "survival_pct": 90.3,
-        "pick_pct": 2.91,
-        "ev_ratio": 30.98,
-        "log_ev": 3.433,
+        "survival_pct": 77.4,
+        "pick_pct": 2.5,
+        "ev_ratio": 30.9,
+        "log_ev": 3.431,
         "value_label": "  OK"
       },
       {
         "team": "Senegal",
         "group": "I",
-        "survival_pct": 94.6,
-        "pick_pct": 3.23,
-        "ev_ratio": 29.26,
-        "log_ev": 3.376,
+        "survival_pct": 80.3,
+        "pick_pct": 2.65,
+        "ev_ratio": 30.28,
+        "log_ev": 3.411,
         "value_label": "  OK"
       },
       {
-        "team": "Mexico",
-        "group": "A",
-        "survival_pct": 88.4,
-        "pick_pct": 3.12,
-        "ev_ratio": 28.3,
-        "log_ev": 3.343,
+        "team": "Colombia",
+        "group": "K",
+        "survival_pct": 78.2,
+        "pick_pct": 2.59,
+        "ev_ratio": 30.15,
+        "log_ev": 3.406,
         "value_label": "  OK"
       },
       {
         "team": "Belgium",
         "group": "G",
-        "survival_pct": 95.9,
-        "pick_pct": 3.44,
-        "ev_ratio": 27.86,
-        "log_ev": 3.327,
+        "survival_pct": 85.4,
+        "pick_pct": 3.21,
+        "ev_ratio": 26.65,
+        "log_ev": 3.283,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Mexico",
+        "group": "A",
+        "survival_pct": 78.7,
+        "pick_pct": 2.99,
+        "ev_ratio": 26.35,
+        "log_ev": 3.272,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "USA",
         "group": "D",
-        "survival_pct": 94.5,
-        "pick_pct": 3.93,
-        "ev_ratio": 24.07,
-        "log_ev": 3.181,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Morocco",
-        "group": "C",
-        "survival_pct": 100.0,
-        "pick_pct": 4.62,
-        "ev_ratio": 21.64,
-        "log_ev": 3.074,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "France",
-        "group": "I",
-        "survival_pct": 83.2,
-        "pick_pct": 3.97,
-        "ev_ratio": 20.94,
-        "log_ev": 3.042,
+        "survival_pct": 79.4,
+        "pick_pct": 3.14,
+        "ev_ratio": 25.32,
+        "log_ev": 3.232,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "Netherlands",
         "group": "F",
-        "survival_pct": 99.0,
-        "pick_pct": 4.86,
-        "ev_ratio": 20.35,
-        "log_ev": 3.013,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Portugal",
-        "group": "K",
-        "survival_pct": 95.6,
-        "pick_pct": 4.78,
-        "ev_ratio": 20.0,
-        "log_ev": 2.996,
+        "survival_pct": 86.7,
+        "pick_pct": 4.27,
+        "ev_ratio": 20.33,
+        "log_ev": 3.012,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "Germany",
         "group": "E",
-        "survival_pct": 93.3,
-        "pick_pct": 4.85,
-        "ev_ratio": 19.25,
-        "log_ev": 2.958,
+        "survival_pct": 80.6,
+        "pick_pct": 4.19,
+        "ev_ratio": 19.22,
+        "log_ev": 2.956,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Portugal",
+        "group": "K",
+        "survival_pct": 86.4,
+        "pick_pct": 4.65,
+        "ev_ratio": 18.59,
+        "log_ev": 2.923,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Morocco",
+        "group": "C",
+        "survival_pct": 95.7,
+        "pick_pct": 5.29,
+        "ev_ratio": 18.09,
+        "log_ev": 2.895,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "France",
+        "group": "I",
+        "survival_pct": 77.7,
+        "pick_pct": 4.37,
+        "ev_ratio": 17.78,
+        "log_ev": 2.878,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "England",
         "group": "L",
-        "survival_pct": 93.4,
-        "pick_pct": 5.01,
-        "ev_ratio": 18.63,
-        "log_ev": 2.925,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Argentina",
-        "group": "J",
-        "survival_pct": 90.1,
-        "pick_pct": 5.26,
-        "ev_ratio": 17.13,
-        "log_ev": 2.841,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Spain",
-        "group": "H",
-        "survival_pct": 99.3,
-        "pick_pct": 5.8,
-        "ev_ratio": 17.12,
-        "log_ev": 2.84,
+        "survival_pct": 85.2,
+        "pick_pct": 5.04,
+        "ev_ratio": 16.9,
+        "log_ev": 2.827,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "Brazil",
         "group": "C",
-        "survival_pct": 96.0,
-        "pick_pct": 6.19,
-        "ev_ratio": 15.5,
-        "log_ev": 2.741,
+        "survival_pct": 79.8,
+        "pick_pct": 4.77,
+        "ev_ratio": 16.74,
+        "log_ev": 2.818,
         "value_label": "\u2193 AVOID"
       },
       {
-        "team": "Sweden",
-        "group": "F",
-        "survival_pct": 0.8,
-        "pick_pct": 0.1,
-        "ev_ratio": 7.75,
-        "log_ev": 2.047,
+        "team": "Argentina",
+        "group": "J",
+        "survival_pct": 84.2,
+        "pick_pct": 5.71,
+        "ev_ratio": 14.75,
+        "log_ev": 2.691,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Spain",
+        "group": "H",
+        "survival_pct": 95.4,
+        "pick_pct": 6.73,
+        "ev_ratio": 14.17,
+        "log_ev": 2.651,
         "value_label": "\u2193 AVOID"
       }
     ],
     "Round of 32": [
       {
+        "team": "Cura\u00e7ao",
+        "group": "E",
+        "survival_pct": 17.16,
+        "pick_pct": 0.46,
+        "ev_ratio": 37.36,
+        "log_ev": 3.621,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
         "team": "Ghana",
         "group": "L",
-        "survival_pct": 31.97,
-        "pick_pct": 0.74,
-        "ev_ratio": 43.45,
-        "log_ev": 3.772,
+        "survival_pct": 32.61,
+        "pick_pct": 0.92,
+        "ev_ratio": 35.45,
+        "log_ev": 3.568,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "Uzbekistan",
         "group": "K",
-        "survival_pct": 18.34,
-        "pick_pct": 0.48,
-        "ev_ratio": 37.96,
-        "log_ev": 3.637,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Algeria",
-        "group": "J",
-        "survival_pct": 37.84,
-        "pick_pct": 1.24,
-        "ev_ratio": 30.54,
-        "log_ev": 3.419,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Cura\u00e7ao",
-        "group": "E",
-        "survival_pct": 7.73,
-        "pick_pct": 0.27,
-        "ev_ratio": 28.21,
-        "log_ev": 3.34,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Ivory Coast",
-        "group": "E",
-        "survival_pct": 45.39,
-        "pick_pct": 1.65,
-        "ev_ratio": 27.54,
-        "log_ev": 3.316,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Qatar",
-        "group": "B",
-        "survival_pct": 48.18,
-        "pick_pct": 1.77,
-        "ev_ratio": 27.24,
-        "log_ev": 3.305,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "T\u00fcrkiye",
-        "group": "D",
-        "survival_pct": 14.42,
-        "pick_pct": 0.53,
-        "ev_ratio": 27.17,
-        "log_ev": 3.302,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Canada",
-        "group": "B",
-        "survival_pct": 29.94,
-        "pick_pct": 1.14,
-        "ev_ratio": 26.33,
-        "log_ev": 3.271,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Czechia",
-        "group": "A",
-        "survival_pct": 13.86,
-        "pick_pct": 0.53,
-        "ev_ratio": 26.31,
-        "log_ev": 3.27,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Australia",
-        "group": "D",
-        "survival_pct": 44.79,
-        "pick_pct": 1.75,
-        "ev_ratio": 25.63,
-        "log_ev": 3.244,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Austria",
-        "group": "J",
-        "survival_pct": 41.81,
-        "pick_pct": 1.64,
-        "ev_ratio": 25.55,
-        "log_ev": 3.24,
+        "survival_pct": 25.69,
+        "pick_pct": 0.76,
+        "ev_ratio": 34.0,
+        "log_ev": 3.526,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "South Africa",
         "group": "A",
-        "survival_pct": 9.09,
-        "pick_pct": 0.36,
-        "ev_ratio": 25.04,
-        "log_ev": 3.221,
+        "survival_pct": 23.53,
+        "pick_pct": 0.72,
+        "ev_ratio": 32.73,
+        "log_ev": 3.488,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
-        "team": "Iran",
-        "group": "G",
-        "survival_pct": 42.04,
-        "pick_pct": 1.69,
-        "ev_ratio": 24.92,
-        "log_ev": 3.216,
+        "team": "Haiti",
+        "group": "C",
+        "survival_pct": 11.29,
+        "pick_pct": 0.37,
+        "ev_ratio": 30.57,
+        "log_ev": 3.42,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Jordan",
+        "group": "J",
+        "survival_pct": 15.1,
+        "pick_pct": 0.5,
+        "ev_ratio": 30.43,
+        "log_ev": 3.415,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Panama",
+        "group": "L",
+        "survival_pct": 22.44,
+        "pick_pct": 0.75,
+        "ev_ratio": 29.92,
+        "log_ev": 3.398,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Bosnia",
+        "group": "B",
+        "survival_pct": 18.76,
+        "pick_pct": 0.67,
+        "ev_ratio": 27.96,
+        "log_ev": 3.331,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Saudi Arabia",
+        "group": "H",
+        "survival_pct": 15.84,
+        "pick_pct": 0.58,
+        "ev_ratio": 27.52,
+        "log_ev": 3.315,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "T\u00fcrkiye",
+        "group": "D",
+        "survival_pct": 31.16,
+        "pick_pct": 1.13,
+        "ev_ratio": 27.46,
+        "log_ev": 3.313,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Czechia",
+        "group": "A",
+        "survival_pct": 26.53,
+        "pick_pct": 0.98,
+        "ev_ratio": 26.97,
+        "log_ev": 3.295,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Algeria",
+        "group": "J",
+        "survival_pct": 32.82,
+        "pick_pct": 1.28,
+        "ev_ratio": 25.58,
+        "log_ev": 3.242,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Norway",
+        "group": "I",
+        "survival_pct": 48.02,
+        "pick_pct": 1.95,
+        "ev_ratio": 24.67,
+        "log_ev": 3.206,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Iraq",
+        "group": "I",
+        "survival_pct": 11.63,
+        "pick_pct": 0.48,
+        "ev_ratio": 24.32,
+        "log_ev": 3.191,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Qatar",
+        "group": "B",
+        "survival_pct": 40.29,
+        "pick_pct": 1.66,
+        "ev_ratio": 24.21,
+        "log_ev": 3.187,
         "value_label": "  OK"
       },
       {
         "team": "South Korea",
         "group": "A",
-        "survival_pct": 17.9,
-        "pick_pct": 0.72,
-        "ev_ratio": 24.82,
-        "log_ev": 3.212,
+        "survival_pct": 26.12,
+        "pick_pct": 1.16,
+        "ev_ratio": 22.49,
+        "log_ev": 3.113,
         "value_label": "  OK"
       },
       {
-        "team": "Japan",
-        "group": "F",
-        "survival_pct": 35.79,
+        "team": "Austria",
+        "group": "J",
+        "survival_pct": 33.49,
         "pick_pct": 1.52,
-        "ev_ratio": 23.48,
-        "log_ev": 3.156,
+        "ev_ratio": 22.06,
+        "log_ev": 3.094,
         "value_label": "  OK"
       },
       {
-        "team": "Egypt",
+        "team": "Australia",
+        "group": "D",
+        "survival_pct": 39.49,
+        "pick_pct": 1.79,
+        "ev_ratio": 22.03,
+        "log_ev": 3.092,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Paraguay",
+        "group": "D",
+        "survival_pct": 9.25,
+        "pick_pct": 0.43,
+        "ev_ratio": 21.66,
+        "log_ev": 3.075,
+        "value_label": "  OK"
+      },
+      {
+        "team": "New Zealand",
         "group": "G",
-        "survival_pct": 54.27,
-        "pick_pct": 2.32,
-        "ev_ratio": 23.41,
-        "log_ev": 3.153,
+        "survival_pct": 5.79,
+        "pick_pct": 0.27,
+        "ev_ratio": 21.55,
+        "log_ev": 3.07,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Canada",
+        "group": "B",
+        "survival_pct": 29.08,
+        "pick_pct": 1.35,
+        "ev_ratio": 21.5,
+        "log_ev": 3.068,
         "value_label": "  OK"
       },
       {
         "team": "Tunisia",
         "group": "F",
-        "survival_pct": 62.15,
-        "pick_pct": 2.66,
-        "ev_ratio": 23.33,
-        "log_ev": 3.15,
+        "survival_pct": 56.3,
+        "pick_pct": 2.68,
+        "ev_ratio": 20.98,
+        "log_ev": 3.044,
         "value_label": "  OK"
       },
       {
-        "team": "Uruguay",
-        "group": "H",
-        "survival_pct": 41.96,
-        "pick_pct": 1.96,
-        "ev_ratio": 21.36,
-        "log_ev": 3.062,
+        "team": "Iran",
+        "group": "G",
+        "survival_pct": 38.87,
+        "pick_pct": 1.86,
+        "ev_ratio": 20.92,
+        "log_ev": 3.041,
         "value_label": "  OK"
       },
       {
-        "team": "Croatia",
-        "group": "L",
-        "survival_pct": 34.69,
-        "pick_pct": 1.65,
-        "ev_ratio": 21.04,
-        "log_ev": 3.046,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Colombia",
-        "group": "K",
-        "survival_pct": 44.64,
-        "pick_pct": 2.17,
-        "ev_ratio": 20.62,
-        "log_ev": 3.026,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Switzerland",
-        "group": "B",
-        "survival_pct": 56.44,
-        "pick_pct": 2.79,
-        "ev_ratio": 20.25,
-        "log_ev": 3.008,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Mexico",
-        "group": "A",
-        "survival_pct": 38.1,
-        "pick_pct": 1.97,
-        "ev_ratio": 19.33,
-        "log_ev": 2.961,
-        "value_label": "  OK"
-      },
-      {
-        "team": "USA",
-        "group": "D",
-        "survival_pct": 46.11,
-        "pick_pct": 2.64,
-        "ev_ratio": 17.46,
-        "log_ev": 2.86,
+        "team": "Ivory Coast",
+        "group": "E",
+        "survival_pct": 51.63,
+        "pick_pct": 2.48,
+        "ev_ratio": 20.78,
+        "log_ev": 3.034,
         "value_label": "  OK"
       },
       {
         "team": "Ecuador",
         "group": "E",
-        "survival_pct": 8.77,
-        "pick_pct": 0.54,
-        "ev_ratio": 16.3,
-        "log_ev": 2.791,
+        "survival_pct": 19.14,
+        "pick_pct": 0.93,
+        "ev_ratio": 20.57,
+        "log_ev": 3.024,
         "value_label": "  OK"
       },
       {
-        "team": "Bosnia",
+        "team": "Cape Verde",
+        "group": "H",
+        "survival_pct": 7.56,
+        "pick_pct": 0.38,
+        "ev_ratio": 20.03,
+        "log_ev": 2.997,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Switzerland",
         "group": "B",
-        "survival_pct": 5.39,
-        "pick_pct": 0.35,
-        "ev_ratio": 15.36,
-        "log_ev": 2.732,
+        "survival_pct": 43.05,
+        "pick_pct": 2.18,
+        "ev_ratio": 19.71,
+        "log_ev": 2.981,
         "value_label": "  OK"
       },
       {
-        "team": "Norway",
-        "group": "I",
-        "survival_pct": 85.83,
-        "pick_pct": 5.61,
-        "ev_ratio": 15.3,
-        "log_ev": 2.728,
+        "team": "DR Congo",
+        "group": "K",
+        "survival_pct": 9.93,
+        "pick_pct": 0.51,
+        "ev_ratio": 19.64,
+        "log_ev": 2.978,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Egypt",
+        "group": "G",
+        "survival_pct": 52.74,
+        "pick_pct": 2.7,
+        "ev_ratio": 19.56,
+        "log_ev": 2.974,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Scotland",
+        "group": "C",
+        "survival_pct": 10.46,
+        "pick_pct": 0.54,
+        "ev_ratio": 19.44,
+        "log_ev": 2.967,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Japan",
+        "group": "F",
+        "survival_pct": 35.05,
+        "pick_pct": 1.82,
+        "ev_ratio": 19.25,
+        "log_ev": 2.958,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Uruguay",
+        "group": "H",
+        "survival_pct": 36.19,
+        "pick_pct": 1.98,
+        "ev_ratio": 18.24,
+        "log_ev": 2.904,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Colombia",
+        "group": "K",
+        "survival_pct": 38.99,
+        "pick_pct": 2.2,
+        "ev_ratio": 17.76,
+        "log_ev": 2.877,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Croatia",
+        "group": "L",
+        "survival_pct": 31.19,
+        "pick_pct": 1.8,
+        "ev_ratio": 17.37,
+        "log_ev": 2.854,
         "value_label": "  OK"
       },
       {
         "team": "Senegal",
         "group": "I",
-        "survival_pct": 69.34,
-        "pick_pct": 4.7,
-        "ev_ratio": 14.75,
-        "log_ev": 2.691,
+        "survival_pct": 50.3,
+        "pick_pct": 3.05,
+        "ev_ratio": 16.48,
+        "log_ev": 2.802,
         "value_label": "  OK"
       },
       {
-        "team": "Saudi Arabia",
-        "group": "H",
-        "survival_pct": 4.77,
-        "pick_pct": 0.33,
-        "ev_ratio": 14.67,
-        "log_ev": 2.686,
+        "team": "Mexico",
+        "group": "A",
+        "survival_pct": 39.61,
+        "pick_pct": 2.54,
+        "ev_ratio": 15.61,
+        "log_ev": 2.748,
         "value_label": "  OK"
       },
       {
         "team": "Belgium",
         "group": "G",
-        "survival_pct": 69.59,
-        "pick_pct": 4.83,
-        "ev_ratio": 14.39,
-        "log_ev": 2.667,
-        "value_label": "  OK"
+        "survival_pct": 53.96,
+        "pick_pct": 3.52,
+        "ev_ratio": 15.35,
+        "log_ev": 2.731,
+        "value_label": "\u2193 AVOID"
       },
       {
-        "team": "Panama",
-        "group": "L",
-        "survival_pct": 4.18,
-        "pick_pct": 0.33,
-        "ev_ratio": 12.54,
-        "log_ev": 2.529,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Brazil",
-        "group": "C",
-        "survival_pct": 40.69,
-        "pick_pct": 3.31,
-        "ev_ratio": 12.3,
-        "log_ev": 2.51,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Portugal",
-        "group": "K",
-        "survival_pct": 59.95,
-        "pick_pct": 4.92,
-        "ev_ratio": 12.19,
-        "log_ev": 2.501,
-        "value_label": "  OK"
+        "team": "USA",
+        "group": "D",
+        "survival_pct": 39.55,
+        "pick_pct": 2.6,
+        "ev_ratio": 15.22,
+        "log_ev": 2.723,
+        "value_label": "\u2193 AVOID"
       },
       {
         "team": "Netherlands",
         "group": "F",
-        "survival_pct": 66.03,
-        "pick_pct": 5.47,
-        "ev_ratio": 12.07,
-        "log_ev": 2.49,
-        "value_label": "  OK"
+        "survival_pct": 51.44,
+        "pick_pct": 4.12,
+        "ev_ratio": 12.49,
+        "log_ev": 2.525,
+        "value_label": "\u2193 AVOID"
       },
       {
-        "team": "Morocco",
-        "group": "C",
-        "survival_pct": 71.35,
-        "pick_pct": 6.0,
-        "ev_ratio": 11.88,
-        "log_ev": 2.475,
-        "value_label": "  OK"
+        "team": "Portugal",
+        "group": "K",
+        "survival_pct": 49.73,
+        "pick_pct": 4.28,
+        "ev_ratio": 11.61,
+        "log_ev": 2.452,
+        "value_label": "\u2193 AVOID"
       },
       {
         "team": "Germany",
         "group": "E",
-        "survival_pct": 58.99,
-        "pick_pct": 5.21,
-        "ev_ratio": 11.31,
-        "log_ev": 2.426,
-        "value_label": "  OK"
+        "survival_pct": 46.14,
+        "pick_pct": 4.16,
+        "ev_ratio": 11.1,
+        "log_ev": 2.407,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Morocco",
+        "group": "C",
+        "survival_pct": 64.61,
+        "pick_pct": 5.87,
+        "ev_ratio": 11.01,
+        "log_ev": 2.398,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Brazil",
+        "group": "C",
+        "survival_pct": 37.89,
+        "pick_pct": 3.69,
+        "ev_ratio": 10.27,
+        "log_ev": 2.33,
+        "value_label": "\u2193 AVOID"
       },
       {
         "team": "England",
         "group": "L",
-        "survival_pct": 57.3,
-        "pick_pct": 5.08,
-        "ev_ratio": 11.28,
-        "log_ev": 2.423,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Argentina",
-        "group": "J",
-        "survival_pct": 48.75,
-        "pick_pct": 4.48,
-        "ev_ratio": 10.89,
-        "log_ev": 2.388,
+        "survival_pct": 53.89,
+        "pick_pct": 5.55,
+        "ev_ratio": 9.71,
+        "log_ev": 2.273,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "France",
         "group": "I",
-        "survival_pct": 52.75,
-        "pick_pct": 4.86,
-        "ev_ratio": 10.85,
-        "log_ev": 2.385,
+        "survival_pct": 47.6,
+        "pick_pct": 5.01,
+        "ev_ratio": 9.5,
+        "log_ev": 2.251,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Argentina",
+        "group": "J",
+        "survival_pct": 49.27,
+        "pick_pct": 5.57,
+        "ev_ratio": 8.84,
+        "log_ev": 2.179,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "Spain",
         "group": "H",
-        "survival_pct": 70.01,
-        "pick_pct": 7.38,
-        "ev_ratio": 9.49,
-        "log_ev": 2.25,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Cape Verde",
-        "group": "H",
-        "survival_pct": 1.84,
-        "pick_pct": 0.25,
-        "ev_ratio": 7.22,
-        "log_ev": 1.977,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "DR Congo",
-        "group": "K",
-        "survival_pct": 2.17,
-        "pick_pct": 0.32,
-        "ev_ratio": 6.81,
-        "log_ev": 1.918,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Haiti",
-        "group": "C",
-        "survival_pct": 1.28,
-        "pick_pct": 0.22,
-        "ev_ratio": 5.92,
-        "log_ev": 1.779,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Jordan",
-        "group": "J",
-        "survival_pct": 1.41,
-        "pick_pct": 0.26,
-        "ev_ratio": 5.49,
-        "log_ev": 1.703,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "New Zealand",
-        "group": "G",
-        "survival_pct": 0.8,
-        "pick_pct": 0.19,
-        "ev_ratio": 4.3,
-        "log_ev": 1.46,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Paraguay",
-        "group": "D",
-        "survival_pct": 0.81,
-        "pick_pct": 0.26,
-        "ev_ratio": 3.08,
-        "log_ev": 1.124,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Scotland",
-        "group": "C",
-        "survival_pct": 0.37,
-        "pick_pct": 0.31,
-        "ev_ratio": 1.18,
-        "log_ev": 0.164,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Iraq",
-        "group": "I",
-        "survival_pct": 0.16,
-        "pick_pct": 0.27,
-        "ev_ratio": 0.6,
-        "log_ev": -0.51,
+        "survival_pct": 65.62,
+        "pick_pct": 7.8,
+        "ev_ratio": 8.41,
+        "log_ev": 2.13,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "Sweden",
         "group": "F",
-        "survival_pct": 0.01,
-        "pick_pct": 0.34,
-        "ev_ratio": 0.03,
-        "log_ev": -3.525,
+        "survival_pct": 3.2,
+        "pick_pct": 0.46,
+        "ev_ratio": 6.92,
+        "log_ev": 1.935,
         "value_label": "\u2193 AVOID"
       }
     ],
     "Round of 16": [
       {
-        "team": "Tunisia",
-        "group": "F",
-        "survival_pct": 28.98,
-        "pick_pct": 1.93,
-        "ev_ratio": 15.0,
-        "log_ev": 2.708,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
         "team": "Ghana",
         "group": "L",
-        "survival_pct": 12.63,
-        "pick_pct": 0.85,
-        "ev_ratio": 14.92,
-        "log_ev": 2.703,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Ivory Coast",
-        "group": "E",
-        "survival_pct": 25.52,
-        "pick_pct": 1.86,
-        "ev_ratio": 13.7,
-        "log_ev": 2.617,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Qatar",
-        "group": "B",
-        "survival_pct": 22.15,
-        "pick_pct": 1.63,
-        "ev_ratio": 13.61,
-        "log_ev": 2.611,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Egypt",
-        "group": "G",
-        "survival_pct": 28.56,
-        "pick_pct": 2.16,
-        "ev_ratio": 13.25,
-        "log_ev": 2.584,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Algeria",
-        "group": "J",
-        "survival_pct": 18.47,
-        "pick_pct": 1.42,
-        "ev_ratio": 12.97,
-        "log_ev": 2.563,
+        "survival_pct": 15.03,
+        "pick_pct": 1.0,
+        "ev_ratio": 15.06,
+        "log_ev": 2.712,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "Norway",
         "group": "I",
-        "survival_pct": 55.86,
-        "pick_pct": 4.53,
-        "ev_ratio": 12.34,
-        "log_ev": 2.513,
+        "survival_pct": 25.61,
+        "pick_pct": 1.8,
+        "ev_ratio": 14.25,
+        "log_ev": 2.657,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Tunisia",
+        "group": "F",
+        "survival_pct": 29.95,
+        "pick_pct": 2.17,
+        "ev_ratio": 13.78,
+        "log_ev": 2.624,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Ivory Coast",
+        "group": "E",
+        "survival_pct": 32.21,
+        "pick_pct": 2.53,
+        "ev_ratio": 12.71,
+        "log_ev": 2.542,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Egypt",
+        "group": "G",
+        "survival_pct": 29.4,
+        "pick_pct": 2.41,
+        "ev_ratio": 12.18,
+        "log_ev": 2.5,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Qatar",
+        "group": "B",
+        "survival_pct": 18.83,
+        "pick_pct": 1.59,
+        "ev_ratio": 11.87,
+        "log_ev": 2.474,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Uzbekistan",
+        "group": "K",
+        "survival_pct": 10.16,
+        "pick_pct": 0.88,
+        "ev_ratio": 11.58,
+        "log_ev": 2.449,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Algeria",
+        "group": "J",
+        "survival_pct": 16.79,
+        "pick_pct": 1.47,
+        "ev_ratio": 11.46,
+        "log_ev": 2.439,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Cura\u00e7ao",
+        "group": "E",
+        "survival_pct": 7.37,
+        "pick_pct": 0.65,
+        "ev_ratio": 11.41,
+        "log_ev": 2.434,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "T\u00fcrkiye",
+        "group": "D",
+        "survival_pct": 13.65,
+        "pick_pct": 1.23,
+        "ev_ratio": 11.06,
+        "log_ev": 2.404,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "Australia",
         "group": "D",
-        "survival_pct": 20.54,
-        "pick_pct": 1.71,
-        "ev_ratio": 12.03,
-        "log_ev": 2.488,
+        "survival_pct": 19.14,
+        "pick_pct": 1.77,
+        "ev_ratio": 10.79,
+        "log_ev": 2.379,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
         "team": "Switzerland",
         "group": "B",
-        "survival_pct": 28.19,
-        "pick_pct": 2.38,
-        "ev_ratio": 11.83,
-        "log_ev": 2.471,
+        "survival_pct": 20.89,
+        "pick_pct": 2.03,
+        "ev_ratio": 10.27,
+        "log_ev": 2.329,
         "value_label": "\u2605 GREAT VALUE"
       },
       {
-        "team": "Austria",
-        "group": "J",
-        "survival_pct": 21.17,
-        "pick_pct": 1.8,
-        "ev_ratio": 11.74,
-        "log_ev": 2.463,
-        "value_label": "\u2605 GREAT VALUE"
+        "team": "South Africa",
+        "group": "A",
+        "survival_pct": 8.77,
+        "pick_pct": 0.86,
+        "ev_ratio": 10.24,
+        "log_ev": 2.326,
+        "value_label": "  OK"
       },
       {
         "team": "Iran",
         "group": "G",
-        "survival_pct": 19.27,
-        "pick_pct": 1.73,
-        "ev_ratio": 11.13,
-        "log_ev": 2.41,
-        "value_label": "\u2605 GREAT VALUE"
+        "survival_pct": 19.0,
+        "pick_pct": 1.87,
+        "ev_ratio": 10.18,
+        "log_ev": 2.32,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Austria",
+        "group": "J",
+        "survival_pct": 16.95,
+        "pick_pct": 1.7,
+        "ev_ratio": 9.94,
+        "log_ev": 2.297,
+        "value_label": "  OK"
       },
       {
         "team": "Senegal",
         "group": "I",
-        "survival_pct": 34.52,
-        "pick_pct": 3.23,
-        "ev_ratio": 10.69,
-        "log_ev": 2.369,
-        "value_label": "\u2605 GREAT VALUE"
+        "survival_pct": 28.01,
+        "pick_pct": 2.83,
+        "ev_ratio": 9.9,
+        "log_ev": 2.293,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Panama",
+        "group": "L",
+        "survival_pct": 9.3,
+        "pick_pct": 0.94,
+        "ev_ratio": 9.86,
+        "log_ev": 2.288,
+        "value_label": "  OK"
       },
       {
         "team": "Belgium",
         "group": "G",
-        "survival_pct": 43.06,
-        "pick_pct": 4.38,
-        "ev_ratio": 9.84,
-        "log_ev": 2.286,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Uruguay",
-        "group": "H",
-        "survival_pct": 20.85,
-        "pick_pct": 2.13,
-        "ev_ratio": 9.79,
-        "log_ev": 2.281,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Colombia",
-        "group": "K",
-        "survival_pct": 19.52,
-        "pick_pct": 2.05,
-        "ev_ratio": 9.5,
-        "log_ev": 2.251,
-        "value_label": "  OK"
-      },
-      {
-        "team": "USA",
-        "group": "D",
-        "survival_pct": 21.0,
-        "pick_pct": 2.51,
-        "ev_ratio": 8.38,
-        "log_ev": 2.126,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Netherlands",
-        "group": "F",
-        "survival_pct": 32.33,
-        "pick_pct": 3.9,
-        "ev_ratio": 8.29,
-        "log_ev": 2.115,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Uzbekistan",
-        "group": "K",
-        "survival_pct": 5.76,
-        "pick_pct": 0.7,
-        "ev_ratio": 8.27,
-        "log_ev": 2.113,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Japan",
-        "group": "F",
-        "survival_pct": 12.52,
-        "pick_pct": 1.54,
-        "ev_ratio": 8.14,
-        "log_ev": 2.097,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Canada",
-        "group": "B",
-        "survival_pct": 10.62,
-        "pick_pct": 1.31,
-        "ev_ratio": 8.11,
-        "log_ev": 2.094,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Croatia",
-        "group": "L",
-        "survival_pct": 14.34,
-        "pick_pct": 1.83,
-        "ev_ratio": 7.82,
-        "log_ev": 2.057,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Morocco",
-        "group": "C",
-        "survival_pct": 49.94,
-        "pick_pct": 6.45,
-        "ev_ratio": 7.75,
-        "log_ev": 2.047,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Portugal",
-        "group": "K",
-        "survival_pct": 32.54,
-        "pick_pct": 4.32,
-        "ev_ratio": 7.53,
-        "log_ev": 2.019,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Mexico",
-        "group": "A",
-        "survival_pct": 14.92,
-        "pick_pct": 2.0,
-        "ev_ratio": 7.48,
-        "log_ev": 2.012,
-        "value_label": "  OK"
-      },
-      {
-        "team": "England",
-        "group": "L",
-        "survival_pct": 32.7,
-        "pick_pct": 4.91,
-        "ev_ratio": 6.67,
-        "log_ev": 1.897,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Germany",
-        "group": "E",
-        "survival_pct": 39.11,
-        "pick_pct": 5.89,
-        "ev_ratio": 6.64,
-        "log_ev": 1.893,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Spain",
-        "group": "H",
-        "survival_pct": 49.73,
-        "pick_pct": 8.22,
-        "ev_ratio": 6.05,
-        "log_ev": 1.799,
-        "value_label": "  OK"
-      },
-      {
-        "team": "France",
-        "group": "I",
-        "survival_pct": 23.34,
-        "pick_pct": 4.0,
-        "ev_ratio": 5.84,
-        "log_ev": 1.765,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Argentina",
-        "group": "J",
-        "survival_pct": 26.57,
-        "pick_pct": 4.68,
-        "ev_ratio": 5.67,
-        "log_ev": 1.736,
-        "value_label": "  OK"
-      },
-      {
-        "team": "T\u00fcrkiye",
-        "group": "D",
-        "survival_pct": 4.02,
-        "pick_pct": 0.82,
-        "ev_ratio": 4.89,
-        "log_ev": 1.587,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Cura\u00e7ao",
-        "group": "E",
-        "survival_pct": 2.33,
-        "pick_pct": 0.5,
-        "ev_ratio": 4.64,
-        "log_ev": 1.536,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Brazil",
-        "group": "C",
-        "survival_pct": 13.14,
-        "pick_pct": 2.89,
-        "ev_ratio": 4.54,
-        "log_ev": 1.513,
-        "value_label": "  OK"
-      },
-      {
-        "team": "South Korea",
-        "group": "A",
-        "survival_pct": 3.88,
-        "pick_pct": 0.99,
-        "ev_ratio": 3.92,
-        "log_ev": 1.365,
+        "survival_pct": 30.63,
+        "pick_pct": 3.15,
+        "ev_ratio": 9.73,
+        "log_ev": 2.275,
         "value_label": "  OK"
       },
       {
         "team": "Czechia",
         "group": "A",
-        "survival_pct": 2.98,
-        "pick_pct": 0.8,
-        "ev_ratio": 3.71,
-        "log_ev": 1.311,
+        "survival_pct": 10.2,
+        "pick_pct": 1.11,
+        "ev_ratio": 9.17,
+        "log_ev": 2.216,
         "value_label": "  OK"
-      },
-      {
-        "team": "Ecuador",
-        "group": "E",
-        "survival_pct": 2.84,
-        "pick_pct": 0.97,
-        "ev_ratio": 2.93,
-        "log_ev": 1.077,
-        "value_label": "  OK"
-      },
-      {
-        "team": "South Africa",
-        "group": "A",
-        "survival_pct": 1.75,
-        "pick_pct": 0.62,
-        "ev_ratio": 2.81,
-        "log_ev": 1.033,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Saudi Arabia",
-        "group": "H",
-        "survival_pct": 1.25,
-        "pick_pct": 0.63,
-        "ev_ratio": 1.97,
-        "log_ev": 0.68,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Bosnia",
-        "group": "B",
-        "survival_pct": 0.93,
-        "pick_pct": 0.66,
-        "ev_ratio": 1.4,
-        "log_ev": 0.338,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Panama",
-        "group": "L",
-        "survival_pct": 0.86,
-        "pick_pct": 0.65,
-        "ev_ratio": 1.31,
-        "log_ev": 0.274,
-        "value_label": "\u2193 AVOID"
       },
       {
         "team": "Jordan",
         "group": "J",
-        "survival_pct": 0.31,
-        "pick_pct": 0.54,
-        "ev_ratio": 0.57,
-        "log_ev": -0.56,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Cape Verde",
-        "group": "H",
-        "survival_pct": 0.29,
-        "pick_pct": 0.53,
-        "ev_ratio": 0.55,
-        "log_ev": -0.604,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "DR Congo",
-        "group": "K",
-        "survival_pct": 0.3,
-        "pick_pct": 0.66,
-        "ev_ratio": 0.46,
-        "log_ev": -0.783,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "New Zealand",
-        "group": "G",
-        "survival_pct": 0.13,
-        "pick_pct": 0.4,
-        "ev_ratio": 0.33,
-        "log_ev": -1.12,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Haiti",
-        "group": "C",
-        "survival_pct": 0.14,
-        "pick_pct": 0.46,
-        "ev_ratio": 0.31,
-        "log_ev": -1.181,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Paraguay",
-        "group": "D",
-        "survival_pct": 0.08,
-        "pick_pct": 0.56,
-        "ev_ratio": 0.14,
-        "log_ev": -1.952,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Scotland",
-        "group": "C",
-        "survival_pct": 0.02,
-        "pick_pct": 0.68,
-        "ev_ratio": 0.03,
-        "log_ev": -3.527,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Iraq",
-        "group": "I",
-        "survival_pct": 0.01,
-        "pick_pct": 0.58,
-        "ev_ratio": 0.02,
-        "log_ev": -4.063,
-        "value_label": "\u2193 AVOID"
-      }
-    ],
-    "Quarterfinals": [
-      {
-        "team": "Norway",
-        "group": "I",
-        "survival_pct": 39.92,
-        "pick_pct": 4.1,
-        "ev_ratio": 9.75,
-        "log_ev": 2.277,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Tunisia",
-        "group": "F",
-        "survival_pct": 13.31,
-        "pick_pct": 1.76,
-        "ev_ratio": 7.54,
-        "log_ev": 2.021,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Ivory Coast",
-        "group": "E",
-        "survival_pct": 13.38,
-        "pick_pct": 1.91,
-        "ev_ratio": 6.99,
-        "log_ev": 1.945,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Egypt",
-        "group": "G",
-        "survival_pct": 13.63,
-        "pick_pct": 2.02,
-        "ev_ratio": 6.76,
-        "log_ev": 1.91,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Belgium",
-        "group": "G",
-        "survival_pct": 24.3,
-        "pick_pct": 3.6,
-        "ev_ratio": 6.74,
-        "log_ev": 1.908,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Senegal",
-        "group": "I",
-        "survival_pct": 19.91,
-        "pick_pct": 3.05,
-        "ev_ratio": 6.52,
-        "log_ev": 1.875,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Switzerland",
-        "group": "B",
-        "survival_pct": 13.74,
-        "pick_pct": 2.27,
-        "ev_ratio": 6.06,
-        "log_ev": 1.802,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Morocco",
-        "group": "C",
-        "survival_pct": 32.55,
-        "pick_pct": 5.56,
-        "ev_ratio": 5.86,
-        "log_ev": 1.768,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Qatar",
-        "group": "B",
-        "survival_pct": 9.35,
-        "pick_pct": 1.64,
-        "ev_ratio": 5.72,
-        "log_ev": 1.744,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Algeria",
-        "group": "J",
-        "survival_pct": 8.05,
-        "pick_pct": 1.55,
-        "ev_ratio": 5.2,
-        "log_ev": 1.648,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Austria",
-        "group": "J",
-        "survival_pct": 9.48,
-        "pick_pct": 1.88,
-        "ev_ratio": 5.04,
-        "log_ev": 1.618,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Australia",
-        "group": "D",
-        "survival_pct": 8.58,
-        "pick_pct": 1.76,
-        "ev_ratio": 4.87,
-        "log_ev": 1.582,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Netherlands",
-        "group": "F",
-        "survival_pct": 16.37,
-        "pick_pct": 3.53,
-        "ev_ratio": 4.64,
-        "log_ev": 1.535,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Spain",
-        "group": "H",
-        "survival_pct": 32.71,
-        "pick_pct": 7.18,
-        "ev_ratio": 4.56,
-        "log_ev": 1.517,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Portugal",
-        "group": "K",
-        "survival_pct": 17.59,
-        "pick_pct": 4.04,
-        "ev_ratio": 4.35,
-        "log_ev": 1.471,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Germany",
-        "group": "E",
-        "survival_pct": 22.68,
-        "pick_pct": 5.24,
-        "ev_ratio": 4.33,
-        "log_ev": 1.465,
+        "survival_pct": 6.19,
+        "pick_pct": 0.72,
+        "ev_ratio": 8.61,
+        "log_ev": 2.153,
         "value_label": "  OK"
       },
       {
         "team": "Uruguay",
         "group": "H",
-        "survival_pct": 9.61,
-        "pick_pct": 2.25,
-        "ev_ratio": 4.26,
-        "log_ev": 1.45,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Iran",
-        "group": "G",
-        "survival_pct": 7.54,
-        "pick_pct": 1.8,
-        "ev_ratio": 4.19,
-        "log_ev": 1.432,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Ghana",
-        "group": "L",
-        "survival_pct": 4.09,
-        "pick_pct": 0.98,
-        "ev_ratio": 4.17,
-        "log_ev": 1.429,
+        "survival_pct": 18.22,
+        "pick_pct": 2.12,
+        "ev_ratio": 8.58,
+        "log_ev": 2.149,
         "value_label": "  OK"
       },
       {
         "team": "Colombia",
         "group": "K",
-        "survival_pct": 8.75,
-        "pick_pct": 2.21,
-        "ev_ratio": 3.96,
-        "log_ev": 1.377,
-        "value_label": "  OK"
-      },
-      {
-        "team": "England",
-        "group": "L",
-        "survival_pct": 14.81,
-        "pick_pct": 4.16,
-        "ev_ratio": 3.56,
-        "log_ev": 1.27,
-        "value_label": "  OK"
-      },
-      {
-        "team": "USA",
-        "group": "D",
-        "survival_pct": 8.86,
-        "pick_pct": 2.57,
-        "ev_ratio": 3.44,
-        "log_ev": 1.236,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Argentina",
-        "group": "J",
-        "survival_pct": 13.22,
-        "pick_pct": 4.62,
-        "ev_ratio": 2.86,
-        "log_ev": 1.052,
-        "value_label": "  OK"
-      },
-      {
-        "team": "France",
-        "group": "I",
-        "survival_pct": 10.43,
-        "pick_pct": 4.0,
-        "ev_ratio": 2.61,
-        "log_ev": 0.958,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Croatia",
-        "group": "L",
-        "survival_pct": 4.53,
-        "pick_pct": 2.04,
-        "ev_ratio": 2.23,
-        "log_ev": 0.8,
+        "survival_pct": 17.89,
+        "pick_pct": 2.12,
+        "ev_ratio": 8.45,
+        "log_ev": 2.134,
         "value_label": "  OK"
       },
       {
         "team": "Canada",
         "group": "B",
-        "survival_pct": 3.42,
-        "pick_pct": 1.58,
-        "ev_ratio": 2.16,
-        "log_ev": 0.769,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Mexico",
-        "group": "A",
-        "survival_pct": 4.41,
-        "pick_pct": 2.16,
-        "ev_ratio": 2.04,
-        "log_ev": 0.712,
+        "survival_pct": 12.26,
+        "pick_pct": 1.5,
+        "ev_ratio": 8.15,
+        "log_ev": 2.098,
         "value_label": "  OK"
       },
       {
         "team": "Japan",
         "group": "F",
-        "survival_pct": 3.24,
-        "pick_pct": 1.74,
-        "ev_ratio": 1.86,
-        "log_ev": 0.623,
+        "survival_pct": 14.34,
+        "pick_pct": 1.78,
+        "ev_ratio": 8.06,
+        "log_ev": 2.087,
         "value_label": "  OK"
       },
       {
-        "team": "Uzbekistan",
-        "group": "K",
-        "survival_pct": 1.73,
-        "pick_pct": 0.94,
-        "ev_ratio": 1.85,
-        "log_ev": 0.613,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Brazil",
+        "team": "Morocco",
         "group": "C",
-        "survival_pct": 5.48,
-        "pick_pct": 3.45,
-        "ev_ratio": 1.59,
-        "log_ev": 0.463,
+        "survival_pct": 42.23,
+        "pick_pct": 5.43,
+        "ev_ratio": 7.78,
+        "log_ev": 2.052,
         "value_label": "  OK"
       },
       {
-        "team": "Cura\u00e7ao",
-        "group": "E",
-        "survival_pct": 0.67,
-        "pick_pct": 0.73,
-        "ev_ratio": 0.92,
-        "log_ev": -0.087,
+        "team": "Bosnia",
+        "group": "B",
+        "survival_pct": 6.73,
+        "pick_pct": 0.88,
+        "ev_ratio": 7.69,
+        "log_ev": 2.039,
         "value_label": "  OK"
       },
       {
-        "team": "T\u00fcrkiye",
+        "team": "Netherlands",
+        "group": "F",
+        "survival_pct": 25.49,
+        "pick_pct": 3.38,
+        "ev_ratio": 7.54,
+        "log_ev": 2.02,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Mexico",
+        "group": "A",
+        "survival_pct": 18.2,
+        "pick_pct": 2.42,
+        "ev_ratio": 7.51,
+        "log_ev": 2.016,
+        "value_label": "  OK"
+      },
+      {
+        "team": "South Korea",
+        "group": "A",
+        "survival_pct": 9.79,
+        "pick_pct": 1.31,
+        "ev_ratio": 7.46,
+        "log_ev": 2.009,
+        "value_label": "  OK"
+      },
+      {
+        "team": "USA",
         "group": "D",
-        "survival_pct": 0.85,
-        "pick_pct": 1.14,
-        "ev_ratio": 0.75,
-        "log_ev": -0.292,
+        "survival_pct": 18.96,
+        "pick_pct": 2.55,
+        "ev_ratio": 7.44,
+        "log_ev": 2.007,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Saudi Arabia",
+        "group": "H",
+        "survival_pct": 5.88,
+        "pick_pct": 0.8,
+        "ev_ratio": 7.31,
+        "log_ev": 1.989,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Croatia",
+        "group": "L",
+        "survival_pct": 14.25,
+        "pick_pct": 1.99,
+        "ev_ratio": 7.16,
+        "log_ev": 1.968,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Portugal",
+        "group": "K",
+        "survival_pct": 26.18,
+        "pick_pct": 3.81,
+        "ev_ratio": 6.88,
+        "log_ev": 1.928,
         "value_label": "  OK"
       },
       {
         "team": "Ecuador",
         "group": "E",
-        "survival_pct": 0.92,
-        "pick_pct": 1.4,
+        "survival_pct": 8.14,
+        "pick_pct": 1.26,
+        "ev_ratio": 6.48,
+        "log_ev": 1.868,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Germany",
+        "group": "E",
+        "survival_pct": 27.28,
+        "pick_pct": 4.32,
+        "ev_ratio": 6.31,
+        "log_ev": 1.842,
+        "value_label": "  OK"
+      },
+      {
+        "team": "England",
+        "group": "L",
+        "survival_pct": 31.27,
+        "pick_pct": 5.09,
+        "ev_ratio": 6.14,
+        "log_ev": 1.815,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Spain",
+        "group": "H",
+        "survival_pct": 44.35,
+        "pick_pct": 7.48,
+        "ev_ratio": 5.93,
+        "log_ev": 1.779,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Haiti",
+        "group": "C",
+        "survival_pct": 3.15,
+        "pick_pct": 0.55,
+        "ev_ratio": 5.74,
+        "log_ev": 1.748,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Iraq",
+        "group": "I",
+        "survival_pct": 4.16,
+        "pick_pct": 0.73,
+        "ev_ratio": 5.73,
+        "log_ev": 1.745,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "France",
+        "group": "I",
+        "survival_pct": 25.27,
+        "pick_pct": 4.64,
+        "ev_ratio": 5.45,
+        "log_ev": 1.695,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Argentina",
+        "group": "J",
+        "survival_pct": 28.87,
+        "pick_pct": 5.5,
+        "ev_ratio": 5.25,
+        "log_ev": 1.657,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Brazil",
+        "group": "C",
+        "survival_pct": 15.91,
+        "pick_pct": 3.45,
+        "ev_ratio": 4.61,
+        "log_ev": 1.527,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Paraguay",
+        "group": "D",
+        "survival_pct": 2.78,
+        "pick_pct": 0.67,
+        "ev_ratio": 4.14,
+        "log_ev": 1.422,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Cape Verde",
+        "group": "H",
+        "survival_pct": 2.28,
+        "pick_pct": 0.62,
+        "ev_ratio": 3.7,
+        "log_ev": 1.307,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "New Zealand",
+        "group": "G",
+        "survival_pct": 1.67,
+        "pick_pct": 0.46,
+        "ev_ratio": 3.66,
+        "log_ev": 1.297,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "DR Congo",
+        "group": "K",
+        "survival_pct": 2.81,
+        "pick_pct": 0.78,
+        "ev_ratio": 3.62,
+        "log_ev": 1.285,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Scotland",
+        "group": "C",
+        "survival_pct": 2.85,
+        "pick_pct": 0.81,
+        "ev_ratio": 3.5,
+        "log_ev": 1.253,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Sweden",
+        "group": "F",
+        "survival_pct": 0.72,
+        "pick_pct": 0.83,
+        "ev_ratio": 0.87,
+        "log_ev": -0.141,
+        "value_label": "\u2193 AVOID"
+      }
+    ],
+    "Quarterfinals": [
+      {
+        "team": "Tunisia",
+        "group": "F",
+        "survival_pct": 16.66,
+        "pick_pct": 1.98,
+        "ev_ratio": 8.39,
+        "log_ev": 2.128,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Norway",
+        "group": "I",
+        "survival_pct": 14.5,
+        "pick_pct": 1.77,
+        "ev_ratio": 8.21,
+        "log_ev": 2.106,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Ivory Coast",
+        "group": "E",
+        "survival_pct": 18.27,
+        "pick_pct": 2.27,
+        "ev_ratio": 8.07,
+        "log_ev": 2.088,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Egypt",
+        "group": "G",
+        "survival_pct": 15.11,
+        "pick_pct": 2.13,
+        "ev_ratio": 7.09,
+        "log_ev": 1.958,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Ghana",
+        "group": "L",
+        "survival_pct": 6.67,
+        "pick_pct": 1.07,
+        "ev_ratio": 6.21,
+        "log_ev": 1.826,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Senegal",
+        "group": "I",
+        "survival_pct": 16.4,
+        "pick_pct": 2.73,
+        "ev_ratio": 6.0,
+        "log_ev": 1.792,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Morocco",
+        "group": "C",
+        "survival_pct": 26.47,
+        "pick_pct": 4.56,
+        "ev_ratio": 5.8,
+        "log_ev": 1.758,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Belgium",
+        "group": "G",
+        "survival_pct": 15.88,
+        "pick_pct": 2.74,
+        "ev_ratio": 5.8,
+        "log_ev": 1.758,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Qatar",
+        "group": "B",
+        "survival_pct": 8.5,
+        "pick_pct": 1.6,
+        "ev_ratio": 5.31,
+        "log_ev": 1.671,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Algeria",
+        "group": "J",
+        "survival_pct": 8.15,
+        "pick_pct": 1.56,
+        "ev_ratio": 5.21,
+        "log_ev": 1.651,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Switzerland",
+        "group": "B",
+        "survival_pct": 10.02,
+        "pick_pct": 2.01,
+        "ev_ratio": 4.98,
+        "log_ev": 1.605,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Australia",
+        "group": "D",
+        "survival_pct": 8.59,
+        "pick_pct": 1.77,
+        "ev_ratio": 4.84,
+        "log_ev": 1.577,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Austria",
+        "group": "J",
+        "survival_pct": 8.28,
+        "pick_pct": 1.82,
+        "ev_ratio": 4.56,
+        "log_ev": 1.517,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Spain",
+        "group": "H",
+        "survival_pct": 29.12,
+        "pick_pct": 6.41,
+        "ev_ratio": 4.54,
+        "log_ev": 1.514,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Iran",
+        "group": "G",
+        "survival_pct": 8.38,
+        "pick_pct": 1.86,
+        "ev_ratio": 4.5,
+        "log_ev": 1.503,
+        "value_label": "  OK"
+      },
+      {
+        "team": "T\u00fcrkiye",
+        "group": "D",
+        "survival_pct": 5.53,
+        "pick_pct": 1.34,
+        "ev_ratio": 4.13,
+        "log_ev": 1.418,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Netherlands",
+        "group": "F",
+        "survival_pct": 13.11,
+        "pick_pct": 3.18,
+        "ev_ratio": 4.12,
+        "log_ev": 1.416,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Uzbekistan",
+        "group": "K",
+        "survival_pct": 4.03,
+        "pick_pct": 1.02,
+        "ev_ratio": 3.96,
+        "log_ev": 1.376,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Uruguay",
+        "group": "H",
+        "survival_pct": 8.65,
+        "pick_pct": 2.2,
+        "ev_ratio": 3.94,
+        "log_ev": 1.371,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Portugal",
+        "group": "K",
+        "survival_pct": 13.67,
+        "pick_pct": 3.57,
+        "ev_ratio": 3.83,
+        "log_ev": 1.343,
+        "value_label": "  OK"
+      },
+      {
+        "team": "England",
+        "group": "L",
+        "survival_pct": 17.15,
+        "pick_pct": 4.52,
+        "ev_ratio": 3.79,
+        "log_ev": 1.333,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Colombia",
+        "group": "K",
+        "survival_pct": 8.24,
+        "pick_pct": 2.18,
+        "ev_ratio": 3.77,
+        "log_ev": 1.328,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Germany",
+        "group": "E",
+        "survival_pct": 14.67,
+        "pick_pct": 4.04,
+        "ev_ratio": 3.63,
+        "log_ev": 1.29,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Cura\u00e7ao",
+        "group": "E",
+        "survival_pct": 2.76,
+        "pick_pct": 0.79,
+        "ev_ratio": 3.5,
+        "log_ev": 1.254,
+        "value_label": "  OK"
+      },
+      {
+        "team": "USA",
+        "group": "D",
+        "survival_pct": 8.5,
+        "pick_pct": 2.56,
+        "ev_ratio": 3.32,
+        "log_ev": 1.201,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Panama",
+        "group": "L",
+        "survival_pct": 3.61,
+        "pick_pct": 1.11,
+        "ev_ratio": 3.25,
+        "log_ev": 1.179,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Mexico",
+        "group": "A",
+        "survival_pct": 7.87,
+        "pick_pct": 2.44,
+        "ev_ratio": 3.22,
+        "log_ev": 1.17,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Argentina",
+        "group": "J",
+        "survival_pct": 16.35,
+        "pick_pct": 5.16,
+        "ev_ratio": 3.17,
+        "log_ev": 1.154,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Japan",
+        "group": "F",
+        "survival_pct": 5.96,
+        "pick_pct": 1.91,
+        "ev_ratio": 3.11,
+        "log_ev": 1.136,
+        "value_label": "  OK"
+      },
+      {
+        "team": "France",
+        "group": "I",
+        "survival_pct": 14.1,
+        "pick_pct": 4.55,
+        "ev_ratio": 3.1,
+        "log_ev": 1.132,
+        "value_label": "  OK"
+      },
+      {
+        "team": "South Africa",
+        "group": "A",
+        "survival_pct": 2.94,
+        "pick_pct": 1.0,
+        "ev_ratio": 2.93,
+        "log_ev": 1.075,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Canada",
+        "group": "B",
+        "survival_pct": 4.91,
+        "pick_pct": 1.68,
+        "ev_ratio": 2.93,
+        "log_ev": 1.075,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Czechia",
+        "group": "A",
+        "survival_pct": 3.62,
+        "pick_pct": 1.27,
+        "ev_ratio": 2.85,
+        "log_ev": 1.047,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Croatia",
+        "group": "L",
+        "survival_pct": 6.13,
+        "pick_pct": 2.16,
+        "ev_ratio": 2.84,
+        "log_ev": 1.043,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Jordan",
+        "group": "J",
+        "survival_pct": 2.39,
+        "pick_pct": 0.9,
+        "ev_ratio": 2.65,
+        "log_ev": 0.976,
+        "value_label": "  OK"
+      },
+      {
+        "team": "South Korea",
+        "group": "A",
+        "survival_pct": 3.34,
+        "pick_pct": 1.51,
+        "ev_ratio": 2.22,
+        "log_ev": 0.796,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Bosnia",
+        "group": "B",
+        "survival_pct": 2.36,
+        "pick_pct": 1.08,
+        "ev_ratio": 2.19,
+        "log_ev": 0.785,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Ecuador",
+        "group": "E",
+        "survival_pct": 3.26,
+        "pick_pct": 1.52,
+        "ev_ratio": 2.15,
+        "log_ev": 0.763,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Saudi Arabia",
+        "group": "H",
+        "survival_pct": 2.08,
+        "pick_pct": 1.01,
+        "ev_ratio": 2.06,
+        "log_ev": 0.724,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Brazil",
+        "group": "C",
+        "survival_pct": 7.54,
+        "pick_pct": 3.72,
+        "ev_ratio": 2.03,
+        "log_ev": 0.707,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Iraq",
+        "group": "I",
+        "survival_pct": 1.62,
+        "pick_pct": 0.95,
+        "ev_ratio": 1.71,
+        "log_ev": 0.534,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Haiti",
+        "group": "C",
+        "survival_pct": 1.0,
+        "pick_pct": 0.73,
+        "ev_ratio": 1.38,
+        "log_ev": 0.319,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Paraguay",
+        "group": "D",
+        "survival_pct": 0.79,
+        "pick_pct": 0.89,
+        "ev_ratio": 0.88,
+        "log_ev": -0.123,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "DR Congo",
+        "group": "K",
+        "survival_pct": 0.83,
+        "pick_pct": 1.03,
+        "ev_ratio": 0.8,
+        "log_ev": -0.221,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Cape Verde",
+        "group": "H",
+        "survival_pct": 0.62,
+        "pick_pct": 0.83,
+        "ev_ratio": 0.75,
+        "log_ev": -0.292,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Scotland",
+        "group": "C",
+        "survival_pct": 0.78,
+        "pick_pct": 1.08,
+        "ev_ratio": 0.72,
+        "log_ev": -0.326,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "New Zealand",
+        "group": "G",
+        "survival_pct": 0.42,
+        "pick_pct": 0.62,
+        "ev_ratio": 0.67,
+        "log_ev": -0.394,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Sweden",
+        "group": "F",
+        "survival_pct": 0.16,
+        "pick_pct": 1.16,
+        "ev_ratio": 0.14,
+        "log_ev": -1.979,
+        "value_label": "\u2193 AVOID"
+      }
+    ],
+    "Semifinal": [
+      {
+        "team": "Ivory Coast",
+        "group": "E",
+        "survival_pct": 10.35,
+        "pick_pct": 2.09,
+        "ev_ratio": 4.96,
+        "log_ev": 1.602,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Tunisia",
+        "group": "F",
+        "survival_pct": 8.78,
+        "pick_pct": 1.83,
+        "ev_ratio": 4.8,
+        "log_ev": 1.569,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Norway",
+        "group": "I",
+        "survival_pct": 7.49,
+        "pick_pct": 1.68,
+        "ev_ratio": 4.47,
+        "log_ev": 1.498,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Morocco",
+        "group": "C",
+        "survival_pct": 16.21,
+        "pick_pct": 3.89,
+        "ev_ratio": 4.17,
+        "log_ev": 1.428,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Egypt",
+        "group": "G",
+        "survival_pct": 7.86,
+        "pick_pct": 2.01,
+        "ev_ratio": 3.92,
+        "log_ev": 1.365,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Spain",
+        "group": "H",
+        "survival_pct": 18.82,
+        "pick_pct": 5.45,
+        "ev_ratio": 3.45,
+        "log_ev": 1.24,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Senegal",
+        "group": "I",
+        "survival_pct": 8.72,
+        "pick_pct": 2.54,
+        "ev_ratio": 3.44,
+        "log_ev": 1.235,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Belgium",
+        "group": "G",
+        "survival_pct": 8.32,
+        "pick_pct": 2.55,
+        "ev_ratio": 3.26,
+        "log_ev": 1.182,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Ghana",
+        "group": "L",
+        "survival_pct": 2.94,
+        "pick_pct": 1.14,
+        "ev_ratio": 2.59,
+        "log_ev": 0.95,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Algeria",
+        "group": "J",
+        "survival_pct": 3.82,
+        "pick_pct": 1.62,
+        "ev_ratio": 2.36,
+        "log_ev": 0.857,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Qatar",
+        "group": "B",
+        "survival_pct": 3.83,
+        "pick_pct": 1.64,
+        "ev_ratio": 2.33,
+        "log_ev": 0.848,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Switzerland",
+        "group": "B",
+        "survival_pct": 4.68,
+        "pick_pct": 2.02,
+        "ev_ratio": 2.32,
+        "log_ev": 0.84,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "England",
+        "group": "L",
+        "survival_pct": 9.41,
+        "pick_pct": 4.19,
+        "ev_ratio": 2.25,
+        "log_ev": 0.809,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Australia",
+        "group": "D",
+        "survival_pct": 3.84,
+        "pick_pct": 1.82,
+        "ev_ratio": 2.11,
+        "log_ev": 0.749,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Netherlands",
+        "group": "F",
+        "survival_pct": 6.44,
+        "pick_pct": 3.05,
+        "ev_ratio": 2.11,
+        "log_ev": 0.746,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Austria",
+        "group": "J",
+        "survival_pct": 3.81,
+        "pick_pct": 1.88,
+        "ev_ratio": 2.03,
+        "log_ev": 0.708,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Portugal",
+        "group": "K",
+        "survival_pct": 6.91,
+        "pick_pct": 3.41,
+        "ev_ratio": 2.02,
+        "log_ev": 0.705,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Germany",
+        "group": "E",
+        "survival_pct": 7.68,
+        "pick_pct": 3.83,
+        "ev_ratio": 2.0,
+        "log_ev": 0.694,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Iran",
+        "group": "G",
+        "survival_pct": 3.67,
+        "pick_pct": 1.91,
+        "ev_ratio": 1.92,
+        "log_ev": 0.653,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Argentina",
+        "group": "J",
+        "survival_pct": 8.99,
+        "pick_pct": 4.84,
+        "ev_ratio": 1.86,
+        "log_ev": 0.62,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Uruguay",
+        "group": "H",
+        "survival_pct": 3.78,
+        "pick_pct": 2.24,
+        "ev_ratio": 1.69,
+        "log_ev": 0.524,
+        "value_label": "  OK"
+      },
+      {
+        "team": "France",
+        "group": "I",
+        "survival_pct": 7.32,
+        "pick_pct": 4.35,
+        "ev_ratio": 1.68,
+        "log_ev": 0.521,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Colombia",
+        "group": "K",
+        "survival_pct": 3.69,
+        "pick_pct": 2.25,
+        "ev_ratio": 1.64,
+        "log_ev": 0.495,
+        "value_label": "  OK"
+      },
+      {
+        "team": "T\u00fcrkiye",
+        "group": "D",
+        "survival_pct": 2.19,
+        "pick_pct": 1.44,
+        "ev_ratio": 1.53,
+        "log_ev": 0.422,
+        "value_label": "  OK"
+      },
+      {
+        "team": "USA",
+        "group": "D",
+        "survival_pct": 3.74,
+        "pick_pct": 2.62,
+        "ev_ratio": 1.43,
+        "log_ev": 0.357,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Uzbekistan",
+        "group": "K",
+        "survival_pct": 1.59,
+        "pick_pct": 1.12,
+        "ev_ratio": 1.41,
+        "log_ev": 0.346,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Mexico",
+        "group": "A",
+        "survival_pct": 3.53,
+        "pick_pct": 2.53,
+        "ev_ratio": 1.39,
+        "log_ev": 0.332,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Japan",
+        "group": "F",
+        "survival_pct": 2.46,
+        "pick_pct": 2.04,
+        "ev_ratio": 1.21,
+        "log_ev": 0.187,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Croatia",
+        "group": "L",
+        "survival_pct": 2.64,
+        "pick_pct": 2.3,
+        "ev_ratio": 1.15,
+        "log_ev": 0.136,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Panama",
+        "group": "L",
+        "survival_pct": 1.36,
+        "pick_pct": 1.23,
+        "ev_ratio": 1.1,
+        "log_ev": 0.097,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Canada",
+        "group": "B",
+        "survival_pct": 1.99,
+        "pick_pct": 1.82,
+        "ev_ratio": 1.09,
+        "log_ev": 0.088,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Cura\u00e7ao",
+        "group": "E",
+        "survival_pct": 0.97,
+        "pick_pct": 0.89,
+        "ev_ratio": 1.09,
+        "log_ev": 0.086,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Czechia",
+        "group": "A",
+        "survival_pct": 1.32,
+        "pick_pct": 1.41,
+        "ev_ratio": 0.94,
+        "log_ev": -0.066,
+        "value_label": "  OK"
+      },
+      {
+        "team": "South Africa",
+        "group": "A",
+        "survival_pct": 1.01,
+        "pick_pct": 1.13,
+        "ev_ratio": 0.9,
+        "log_ev": -0.11,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Brazil",
+        "group": "C",
+        "survival_pct": 3.4,
+        "pick_pct": 3.88,
+        "ev_ratio": 0.88,
+        "log_ev": -0.133,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Jordan",
+        "group": "J",
+        "survival_pct": 0.85,
+        "pick_pct": 1.03,
+        "ev_ratio": 0.83,
+        "log_ev": -0.188,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Ecuador",
+        "group": "E",
+        "survival_pct": 1.21,
+        "pick_pct": 1.7,
+        "ev_ratio": 0.71,
+        "log_ev": -0.341,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "South Korea",
+        "group": "A",
+        "survival_pct": 1.1,
+        "pick_pct": 1.68,
         "ev_ratio": 0.66,
-        "log_ev": -0.418,
+        "log_ev": -0.421,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Bosnia",
+        "group": "B",
+        "survival_pct": 0.79,
+        "pick_pct": 1.22,
+        "ev_ratio": 0.64,
+        "log_ev": -0.439,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Saudi Arabia",
+        "group": "H",
+        "survival_pct": 0.63,
+        "pick_pct": 1.15,
+        "ev_ratio": 0.55,
+        "log_ev": -0.603,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Iraq",
+        "group": "I",
+        "survival_pct": 0.55,
+        "pick_pct": 1.1,
+        "ev_ratio": 0.5,
+        "log_ev": -0.692,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Haiti",
+        "group": "C",
+        "survival_pct": 0.36,
+        "pick_pct": 0.85,
+        "ev_ratio": 0.42,
+        "log_ev": -0.862,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Paraguay",
+        "group": "D",
+        "survival_pct": 0.23,
+        "pick_pct": 1.05,
+        "ev_ratio": 0.22,
+        "log_ev": -1.519,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Scotland",
+        "group": "C",
+        "survival_pct": 0.24,
+        "pick_pct": 1.27,
+        "ev_ratio": 0.19,
+        "log_ev": -1.668,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "DR Congo",
+        "group": "K",
+        "survival_pct": 0.22,
+        "pick_pct": 1.22,
+        "ev_ratio": 0.18,
+        "log_ev": -1.709,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Cape Verde",
+        "group": "H",
+        "survival_pct": 0.16,
+        "pick_pct": 0.98,
+        "ev_ratio": 0.16,
+        "log_ev": -1.812,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "New Zealand",
+        "group": "G",
+        "survival_pct": 0.1,
+        "pick_pct": 0.74,
+        "ev_ratio": 0.14,
+        "log_ev": -2.0,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Sweden",
+        "group": "F",
+        "survival_pct": 0.02,
+        "pick_pct": 1.38,
+        "ev_ratio": 0.01,
+        "log_ev": -4.235,
+        "value_label": "\u2193 AVOID"
+      }
+    ],
+    "Final": [
+      {
+        "team": "Ivory Coast",
+        "group": "E",
+        "survival_pct": 5.78,
+        "pick_pct": 1.99,
+        "ev_ratio": 2.9,
+        "log_ev": 1.065,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Morocco",
+        "group": "C",
+        "survival_pct": 9.77,
+        "pick_pct": 3.49,
+        "ev_ratio": 2.8,
+        "log_ev": 1.029,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Tunisia",
+        "group": "F",
+        "survival_pct": 4.69,
+        "pick_pct": 1.78,
+        "ev_ratio": 2.64,
+        "log_ev": 0.97,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Spain",
+        "group": "H",
+        "survival_pct": 11.35,
+        "pick_pct": 4.73,
+        "ev_ratio": 2.4,
+        "log_ev": 0.876,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Norway",
+        "group": "I",
+        "survival_pct": 3.9,
+        "pick_pct": 1.65,
+        "ev_ratio": 2.36,
+        "log_ev": 0.857,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Egypt",
+        "group": "G",
+        "survival_pct": 3.97,
+        "pick_pct": 1.96,
+        "ev_ratio": 2.02,
+        "log_ev": 0.704,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Senegal",
+        "group": "I",
+        "survival_pct": 4.69,
+        "pick_pct": 2.47,
+        "ev_ratio": 1.9,
+        "log_ev": 0.642,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Belgium",
+        "group": "G",
+        "survival_pct": 4.05,
+        "pick_pct": 2.46,
+        "ev_ratio": 1.64,
+        "log_ev": 0.497,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "England",
+        "group": "L",
+        "survival_pct": 5.11,
+        "pick_pct": 4.04,
+        "ev_ratio": 1.26,
+        "log_ev": 0.235,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Germany",
+        "group": "E",
+        "survival_pct": 4.1,
+        "pick_pct": 3.79,
+        "ev_ratio": 1.08,
+        "log_ev": 0.079,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Ghana",
+        "group": "L",
+        "survival_pct": 1.27,
+        "pick_pct": 1.2,
+        "ev_ratio": 1.06,
+        "log_ev": 0.059,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Netherlands",
+        "group": "F",
+        "survival_pct": 3.12,
+        "pick_pct": 3.04,
+        "ev_ratio": 1.03,
+        "log_ev": 0.025,
+        "value_label": "\u2605 GREAT VALUE"
+      },
+      {
+        "team": "Switzerland",
+        "group": "B",
+        "survival_pct": 2.11,
+        "pick_pct": 2.06,
+        "ev_ratio": 1.02,
+        "log_ev": 0.022,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Argentina",
+        "group": "J",
+        "survival_pct": 4.75,
+        "pick_pct": 4.68,
+        "ev_ratio": 1.02,
+        "log_ev": 0.016,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Portugal",
+        "group": "K",
+        "survival_pct": 3.4,
+        "pick_pct": 3.38,
+        "ev_ratio": 1.01,
+        "log_ev": 0.006,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Qatar",
+        "group": "B",
+        "survival_pct": 1.67,
+        "pick_pct": 1.7,
+        "ev_ratio": 0.98,
+        "log_ev": -0.018,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Algeria",
+        "group": "J",
+        "survival_pct": 1.65,
+        "pick_pct": 1.68,
+        "ev_ratio": 0.98,
+        "log_ev": -0.018,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Austria",
+        "group": "J",
+        "survival_pct": 1.71,
+        "pick_pct": 1.95,
+        "ev_ratio": 0.88,
+        "log_ev": -0.13,
+        "value_label": "  OK"
+      },
+      {
+        "team": "France",
+        "group": "I",
+        "survival_pct": 3.73,
+        "pick_pct": 4.3,
+        "ev_ratio": 0.87,
+        "log_ev": -0.141,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Australia",
+        "group": "D",
+        "survival_pct": 1.55,
+        "pick_pct": 1.87,
+        "ev_ratio": 0.83,
+        "log_ev": -0.189,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Iran",
+        "group": "G",
+        "survival_pct": 1.62,
+        "pick_pct": 1.99,
+        "ev_ratio": 0.82,
+        "log_ev": -0.204,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Colombia",
+        "group": "K",
+        "survival_pct": 1.65,
+        "pick_pct": 2.34,
+        "ev_ratio": 0.71,
+        "log_ev": -0.349,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Uruguay",
+        "group": "H",
+        "survival_pct": 1.62,
+        "pick_pct": 2.32,
+        "ev_ratio": 0.7,
+        "log_ev": -0.358,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Mexico",
+        "group": "A",
+        "survival_pct": 1.63,
+        "pick_pct": 2.65,
+        "ev_ratio": 0.62,
+        "log_ev": -0.485,
+        "value_label": "  OK"
+      },
+      {
+        "team": "USA",
+        "group": "D",
+        "survival_pct": 1.64,
+        "pick_pct": 2.72,
+        "ev_ratio": 0.6,
+        "log_ev": -0.505,
+        "value_label": "  OK"
+      },
+      {
+        "team": "T\u00fcrkiye",
+        "group": "D",
+        "survival_pct": 0.8,
+        "pick_pct": 1.53,
+        "ev_ratio": 0.52,
+        "log_ev": -0.646,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Uzbekistan",
+        "group": "K",
+        "survival_pct": 0.6,
+        "pick_pct": 1.21,
+        "ev_ratio": 0.5,
+        "log_ev": -0.702,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Japan",
+        "group": "F",
+        "survival_pct": 0.96,
+        "pick_pct": 2.16,
+        "ev_ratio": 0.44,
+        "log_ev": -0.812,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Croatia",
+        "group": "L",
+        "survival_pct": 1.08,
+        "pick_pct": 2.44,
+        "ev_ratio": 0.44,
+        "log_ev": -0.813,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Panama",
+        "group": "L",
+        "survival_pct": 0.55,
+        "pick_pct": 1.34,
+        "ev_ratio": 0.41,
+        "log_ev": -0.889,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Brazil",
+        "group": "C",
+        "survival_pct": 1.52,
+        "pick_pct": 4.06,
+        "ev_ratio": 0.37,
+        "log_ev": -0.982,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Cura\u00e7ao",
+        "group": "E",
+        "survival_pct": 0.36,
+        "pick_pct": 0.97,
+        "ev_ratio": 0.37,
+        "log_ev": -0.992,
+        "value_label": "  OK"
+      },
+      {
+        "team": "Canada",
+        "group": "B",
+        "survival_pct": 0.71,
+        "pick_pct": 1.94,
+        "ev_ratio": 0.37,
+        "log_ev": -1.007,
         "value_label": "  OK"
       },
       {
         "team": "Czechia",
         "group": "A",
         "survival_pct": 0.47,
-        "pick_pct": 1.14,
-        "ev_ratio": 0.41,
-        "log_ev": -0.884,
+        "pick_pct": 1.53,
+        "ev_ratio": 0.31,
+        "log_ev": -1.178,
         "value_label": "  OK"
       },
       {
-        "team": "South Korea",
-        "group": "A",
-        "survival_pct": 0.52,
-        "pick_pct": 1.36,
-        "ev_ratio": 0.38,
-        "log_ev": -0.964,
-        "value_label": "\u2193 AVOID"
+        "team": "Jordan",
+        "group": "J",
+        "survival_pct": 0.31,
+        "pick_pct": 1.12,
+        "ev_ratio": 0.28,
+        "log_ev": -1.286,
+        "value_label": "  OK"
       },
       {
-        "team": "Saudi Arabia",
-        "group": "H",
-        "survival_pct": 0.26,
-        "pick_pct": 0.94,
-        "ev_ratio": 0.28,
-        "log_ev": -1.289,
+        "team": "Ecuador",
+        "group": "E",
+        "survival_pct": 0.5,
+        "pick_pct": 1.85,
+        "ev_ratio": 0.27,
+        "log_ev": -1.308,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "South Africa",
         "group": "A",
-        "survival_pct": 0.21,
-        "pick_pct": 0.91,
-        "ev_ratio": 0.23,
-        "log_ev": -1.467,
+        "survival_pct": 0.31,
+        "pick_pct": 1.23,
+        "ev_ratio": 0.25,
+        "log_ev": -1.376,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "South Korea",
+        "group": "A",
+        "survival_pct": 0.39,
+        "pick_pct": 1.82,
+        "ev_ratio": 0.21,
+        "log_ev": -1.542,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "Bosnia",
         "group": "B",
-        "survival_pct": 0.15,
-        "pick_pct": 0.99,
+        "survival_pct": 0.21,
+        "pick_pct": 1.34,
+        "ev_ratio": 0.16,
+        "log_ev": -1.852,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Saudi Arabia",
+        "group": "H",
+        "survival_pct": 0.19,
+        "pick_pct": 1.26,
         "ev_ratio": 0.15,
-        "log_ev": -1.891,
+        "log_ev": -1.895,
         "value_label": "\u2193 AVOID"
       },
       {
-        "team": "Panama",
-        "group": "L",
-        "survival_pct": 0.11,
-        "pick_pct": 0.98,
+        "team": "Iraq",
+        "group": "I",
+        "survival_pct": 0.18,
+        "pick_pct": 1.21,
+        "ev_ratio": 0.15,
+        "log_ev": -1.904,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "Haiti",
+        "group": "C",
+        "survival_pct": 0.1,
+        "pick_pct": 0.94,
         "ev_ratio": 0.11,
-        "log_ev": -2.189,
+        "log_ev": -2.242,
         "value_label": "\u2193 AVOID"
       },
       {
-        "team": "Jordan",
-        "group": "J",
+        "team": "Paraguay",
+        "group": "D",
         "survival_pct": 0.05,
-        "pick_pct": 0.83,
-        "ev_ratio": 0.06,
-        "log_ev": -2.807,
+        "pick_pct": 1.16,
+        "ev_ratio": 0.04,
+        "log_ev": -3.147,
+        "value_label": "\u2193 AVOID"
+      },
+      {
+        "team": "DR Congo",
+        "group": "K",
+        "survival_pct": 0.05,
+        "pick_pct": 1.35,
+        "ev_ratio": 0.04,
+        "log_ev": -3.292,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "Cape Verde",
         "group": "H",
         "survival_pct": 0.04,
-        "pick_pct": 0.81,
-        "ev_ratio": 0.05,
-        "log_ev": -3.007,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "DR Congo",
-        "group": "K",
-        "survival_pct": 0.04,
-        "pick_pct": 1.0,
+        "pick_pct": 1.09,
         "ev_ratio": 0.04,
-        "log_ev": -3.221,
+        "log_ev": -3.302,
         "value_label": "\u2193 AVOID"
       },
       {
-        "team": "Paraguay",
-        "group": "D",
-        "survival_pct": 0.02,
-        "pick_pct": 0.87,
-        "ev_ratio": 0.02,
-        "log_ev": -3.767,
+        "team": "Scotland",
+        "group": "C",
+        "survival_pct": 0.05,
+        "pick_pct": 1.41,
+        "ev_ratio": 0.04,
+        "log_ev": -3.337,
         "value_label": "\u2193 AVOID"
       },
       {
         "team": "New Zealand",
         "group": "G",
-        "survival_pct": 0.01,
-        "pick_pct": 0.61,
-        "ev_ratio": 0.02,
-        "log_ev": -4.112,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Haiti",
-        "group": "C",
-        "survival_pct": 0.01,
-        "pick_pct": 0.7,
-        "ev_ratio": 0.01,
-        "log_ev": -4.247,
-        "value_label": "\u2193 AVOID"
-      }
-    ],
-    "Semifinal": [
-      {
-        "team": "Norway",
-        "group": "I",
-        "survival_pct": 24.02,
-        "pick_pct": 2.96,
-        "ev_ratio": 8.12,
-        "log_ev": 2.095,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Belgium",
-        "group": "G",
-        "survival_pct": 13.95,
-        "pick_pct": 3.35,
-        "ev_ratio": 4.16,
-        "log_ev": 1.426,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Morocco",
-        "group": "C",
-        "survival_pct": 19.64,
-        "pick_pct": 4.75,
-        "ev_ratio": 4.13,
-        "log_ev": 1.419,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Senegal",
-        "group": "I",
-        "survival_pct": 10.26,
-        "pick_pct": 2.88,
-        "ev_ratio": 3.56,
-        "log_ev": 1.271,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Ivory Coast",
-        "group": "E",
-        "survival_pct": 6.4,
-        "pick_pct": 1.9,
-        "ev_ratio": 3.37,
-        "log_ev": 1.215,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Tunisia",
-        "group": "F",
-        "survival_pct": 5.64,
-        "pick_pct": 1.69,
-        "ev_ratio": 3.34,
-        "log_ev": 1.206,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Spain",
-        "group": "H",
-        "survival_pct": 21.49,
-        "pick_pct": 6.57,
-        "ev_ratio": 3.27,
-        "log_ev": 1.185,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Egypt",
-        "group": "G",
-        "survival_pct": 6.42,
-        "pick_pct": 2.0,
-        "ev_ratio": 3.2,
-        "log_ev": 1.164,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Switzerland",
-        "group": "B",
-        "survival_pct": 6.37,
-        "pick_pct": 2.28,
-        "ev_ratio": 2.79,
-        "log_ev": 1.027,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Germany",
-        "group": "E",
-        "survival_pct": 12.8,
-        "pick_pct": 4.94,
-        "ev_ratio": 2.59,
-        "log_ev": 0.952,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Qatar",
-        "group": "B",
-        "survival_pct": 3.9,
-        "pick_pct": 1.7,
-        "ev_ratio": 2.29,
-        "log_ev": 0.829,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Portugal",
-        "group": "K",
-        "survival_pct": 9.05,
-        "pick_pct": 4.02,
-        "ev_ratio": 2.25,
-        "log_ev": 0.811,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Netherlands",
-        "group": "F",
-        "survival_pct": 7.51,
-        "pick_pct": 3.46,
-        "ev_ratio": 2.17,
-        "log_ev": 0.775,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Austria",
-        "group": "J",
-        "survival_pct": 4.06,
-        "pick_pct": 2.0,
-        "ev_ratio": 2.03,
-        "log_ev": 0.706,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Algeria",
-        "group": "J",
-        "survival_pct": 3.23,
-        "pick_pct": 1.64,
-        "ev_ratio": 1.97,
-        "log_ev": 0.676,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Australia",
-        "group": "D",
-        "survival_pct": 3.68,
-        "pick_pct": 1.9,
-        "ev_ratio": 1.93,
-        "log_ev": 0.66,
-        "value_label": "  OK"
-      },
-      {
-        "team": "England",
-        "group": "L",
-        "survival_pct": 7.16,
-        "pick_pct": 4.27,
-        "ev_ratio": 1.68,
-        "log_ev": 0.516,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Uruguay",
-        "group": "H",
-        "survival_pct": 3.88,
-        "pick_pct": 2.41,
-        "ev_ratio": 1.61,
-        "log_ev": 0.477,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Colombia",
-        "group": "K",
-        "survival_pct": 3.73,
-        "pick_pct": 2.43,
-        "ev_ratio": 1.53,
-        "log_ev": 0.427,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Iran",
-        "group": "G",
-        "survival_pct": 2.85,
-        "pick_pct": 1.98,
-        "ev_ratio": 1.44,
-        "log_ev": 0.366,
-        "value_label": "  OK"
-      },
-      {
-        "team": "USA",
-        "group": "D",
-        "survival_pct": 3.78,
-        "pick_pct": 2.81,
-        "ev_ratio": 1.34,
-        "log_ev": 0.295,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Argentina",
-        "group": "J",
-        "survival_pct": 6.32,
-        "pick_pct": 4.87,
-        "ev_ratio": 1.3,
-        "log_ev": 0.26,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Ghana",
-        "group": "L",
-        "survival_pct": 1.36,
-        "pick_pct": 1.05,
-        "ev_ratio": 1.29,
-        "log_ev": 0.255,
-        "value_label": "  OK"
-      },
-      {
-        "team": "France",
-        "group": "I",
-        "survival_pct": 4.3,
-        "pick_pct": 4.35,
-        "ev_ratio": 0.99,
-        "log_ev": -0.011,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Croatia",
-        "group": "L",
-        "survival_pct": 1.52,
-        "pick_pct": 2.41,
-        "ev_ratio": 0.63,
-        "log_ev": -0.46,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Canada",
-        "group": "B",
-        "survival_pct": 1.09,
-        "pick_pct": 1.85,
-        "ev_ratio": 0.59,
-        "log_ev": -0.528,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Mexico",
-        "group": "A",
-        "survival_pct": 1.42,
-        "pick_pct": 2.54,
-        "ev_ratio": 0.56,
-        "log_ev": -0.582,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Uzbekistan",
-        "group": "K",
-        "survival_pct": 0.52,
-        "pick_pct": 1.07,
-        "ev_ratio": 0.49,
-        "log_ev": -0.718,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Brazil",
-        "group": "C",
-        "survival_pct": 1.89,
-        "pick_pct": 4.04,
-        "ev_ratio": 0.47,
-        "log_ev": -0.76,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Japan",
-        "group": "F",
-        "survival_pct": 0.86,
-        "pick_pct": 2.07,
-        "ev_ratio": 0.42,
-        "log_ev": -0.879,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Cura\u00e7ao",
-        "group": "E",
-        "survival_pct": 0.18,
-        "pick_pct": 0.82,
-        "ev_ratio": 0.22,
-        "log_ev": -1.517,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Ecuador",
-        "group": "E",
-        "survival_pct": 0.26,
-        "pick_pct": 1.74,
-        "ev_ratio": 0.15,
-        "log_ev": -1.903,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "T\u00fcrkiye",
-        "group": "D",
-        "survival_pct": 0.18,
-        "pick_pct": 1.37,
-        "ev_ratio": 0.13,
-        "log_ev": -2.031,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Czechia",
-        "group": "A",
-        "survival_pct": 0.08,
-        "pick_pct": 1.38,
-        "ev_ratio": 0.06,
-        "log_ev": -2.851,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "South Korea",
-        "group": "A",
-        "survival_pct": 0.07,
-        "pick_pct": 1.71,
-        "ev_ratio": 0.04,
-        "log_ev": -3.195,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "South Africa",
-        "group": "A",
-        "survival_pct": 0.03,
-        "pick_pct": 1.08,
-        "ev_ratio": 0.03,
-        "log_ev": -3.58,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Saudi Arabia",
-        "group": "H",
-        "survival_pct": 0.03,
-        "pick_pct": 1.12,
-        "ev_ratio": 0.03,
-        "log_ev": -3.62,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Bosnia",
-        "group": "B",
-        "survival_pct": 0.03,
-        "pick_pct": 1.2,
-        "ev_ratio": 0.03,
-        "log_ev": -3.686,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Jordan",
-        "group": "J",
-        "survival_pct": 0.01,
-        "pick_pct": 0.97,
-        "ev_ratio": 0.01,
-        "log_ev": -4.573,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Panama",
-        "group": "L",
-        "survival_pct": 0.01,
-        "pick_pct": 1.18,
-        "ev_ratio": 0.01,
-        "log_ev": -4.77,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "DR Congo",
-        "group": "K",
-        "survival_pct": 0.01,
-        "pick_pct": 1.21,
-        "ev_ratio": 0.01,
-        "log_ev": -4.797,
-        "value_label": "\u2193 AVOID"
-      }
-    ],
-    "Final": [
-      {
-        "team": "Norway",
-        "group": "I",
-        "survival_pct": 15.6,
-        "pick_pct": 2.7,
-        "ev_ratio": 5.78,
-        "log_ev": 1.755,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Morocco",
-        "group": "C",
-        "survival_pct": 12.58,
-        "pick_pct": 4.54,
-        "ev_ratio": 2.77,
-        "log_ev": 1.019,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Belgium",
-        "group": "G",
-        "survival_pct": 6.93,
-        "pick_pct": 3.2,
-        "ev_ratio": 2.16,
-        "log_ev": 0.771,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Spain",
-        "group": "H",
-        "survival_pct": 12.12,
-        "pick_pct": 5.81,
-        "ev_ratio": 2.09,
-        "log_ev": 0.735,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Senegal",
-        "group": "I",
-        "survival_pct": 5.34,
-        "pick_pct": 2.95,
-        "ev_ratio": 1.81,
-        "log_ev": 0.593,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Ivory Coast",
-        "group": "E",
-        "survival_pct": 3.3,
-        "pick_pct": 2.07,
-        "ev_ratio": 1.59,
-        "log_ev": 0.466,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Germany",
-        "group": "E",
-        "survival_pct": 7.46,
-        "pick_pct": 5.0,
-        "ev_ratio": 1.49,
-        "log_ev": 0.4,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Tunisia",
-        "group": "F",
-        "survival_pct": 2.45,
-        "pick_pct": 1.84,
-        "ev_ratio": 1.34,
-        "log_ev": 0.289,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Egypt",
-        "group": "G",
-        "survival_pct": 2.66,
-        "pick_pct": 2.14,
-        "ev_ratio": 1.25,
-        "log_ev": 0.219,
-        "value_label": "\u2605 GREAT VALUE"
-      },
-      {
-        "team": "Switzerland",
-        "group": "B",
-        "survival_pct": 2.83,
-        "pick_pct": 2.45,
-        "ev_ratio": 1.15,
-        "log_ev": 0.144,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Netherlands",
-        "group": "F",
-        "survival_pct": 3.7,
-        "pick_pct": 3.68,
-        "ev_ratio": 1.01,
-        "log_ev": 0.005,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Portugal",
-        "group": "K",
-        "survival_pct": 3.95,
-        "pick_pct": 4.1,
-        "ev_ratio": 0.96,
-        "log_ev": -0.038,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Qatar",
-        "group": "B",
-        "survival_pct": 1.48,
-        "pick_pct": 1.9,
-        "ev_ratio": 0.78,
-        "log_ev": -0.249,
-        "value_label": "  OK"
-      },
-      {
-        "team": "England",
-        "group": "L",
-        "survival_pct": 3.32,
-        "pick_pct": 4.54,
-        "ev_ratio": 0.73,
-        "log_ev": -0.314,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Australia",
-        "group": "D",
-        "survival_pct": 1.36,
-        "pick_pct": 2.13,
-        "ev_ratio": 0.64,
-        "log_ev": -0.448,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Austria",
-        "group": "J",
-        "survival_pct": 1.41,
-        "pick_pct": 2.22,
-        "ev_ratio": 0.64,
-        "log_ev": -0.453,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Algeria",
-        "group": "J",
-        "survival_pct": 1.14,
-        "pick_pct": 1.85,
-        "ev_ratio": 0.62,
-        "log_ev": -0.485,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Uruguay",
-        "group": "H",
-        "survival_pct": 1.41,
-        "pick_pct": 2.68,
-        "ev_ratio": 0.53,
-        "log_ev": -0.642,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Colombia",
-        "group": "K",
-        "survival_pct": 1.38,
-        "pick_pct": 2.72,
-        "ev_ratio": 0.51,
-        "log_ev": -0.678,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Argentina",
-        "group": "J",
-        "survival_pct": 2.63,
-        "pick_pct": 5.21,
-        "ev_ratio": 0.5,
-        "log_ev": -0.683,
-        "value_label": "  OK"
-      },
-      {
-        "team": "USA",
-        "group": "D",
-        "survival_pct": 1.33,
-        "pick_pct": 3.13,
-        "ev_ratio": 0.42,
-        "log_ev": -0.857,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Iran",
-        "group": "G",
-        "survival_pct": 0.93,
-        "pick_pct": 2.24,
-        "ev_ratio": 0.42,
-        "log_ev": -0.879,
-        "value_label": "  OK"
-      },
-      {
-        "team": "France",
-        "group": "I",
-        "survival_pct": 1.73,
-        "pick_pct": 4.82,
-        "ev_ratio": 0.36,
-        "log_ev": -1.025,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Ghana",
-        "group": "L",
-        "survival_pct": 0.38,
-        "pick_pct": 1.23,
-        "ev_ratio": 0.31,
-        "log_ev": -1.176,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Croatia",
-        "group": "L",
-        "survival_pct": 0.48,
-        "pick_pct": 2.81,
-        "ev_ratio": 0.17,
-        "log_ev": -1.767,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Brazil",
-        "group": "C",
-        "survival_pct": 0.76,
-        "pick_pct": 4.7,
-        "ev_ratio": 0.16,
-        "log_ev": -1.823,
-        "value_label": "  OK"
-      },
-      {
-        "team": "Mexico",
-        "group": "A",
-        "survival_pct": 0.48,
-        "pick_pct": 2.98,
-        "ev_ratio": 0.16,
-        "log_ev": -1.825,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Canada",
-        "group": "B",
-        "survival_pct": 0.33,
-        "pick_pct": 2.18,
-        "ev_ratio": 0.15,
-        "log_ev": -1.887,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Uzbekistan",
-        "group": "K",
-        "survival_pct": 0.14,
-        "pick_pct": 1.27,
-        "ev_ratio": 0.11,
-        "log_ev": -2.206,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Japan",
-        "group": "F",
-        "survival_pct": 0.2,
-        "pick_pct": 2.45,
-        "ev_ratio": 0.08,
-        "log_ev": -2.505,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Cura\u00e7ao",
-        "group": "E",
-        "survival_pct": 0.05,
-        "pick_pct": 0.99,
-        "ev_ratio": 0.05,
-        "log_ev": -2.983,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Ecuador",
-        "group": "E",
-        "survival_pct": 0.06,
-        "pick_pct": 2.09,
-        "ev_ratio": 0.03,
-        "log_ev": -3.552,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "T\u00fcrkiye",
-        "group": "D",
-        "survival_pct": 0.04,
-        "pick_pct": 1.65,
-        "ev_ratio": 0.02,
-        "log_ev": -3.719,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "Czechia",
-        "group": "A",
         "survival_pct": 0.02,
-        "pick_pct": 1.67,
-        "ev_ratio": 0.01,
-        "log_ev": -4.425,
-        "value_label": "\u2193 AVOID"
-      },
-      {
-        "team": "South Korea",
-        "group": "A",
-        "survival_pct": 0.01,
-        "pick_pct": 2.06,
-        "ev_ratio": 0.0,
-        "log_ev": -5.328,
+        "pick_pct": 0.82,
+        "ev_ratio": 0.02,
+        "log_ev": -3.714,
         "value_label": "\u2193 AVOID"
       }
     ]
