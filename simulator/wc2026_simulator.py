@@ -946,16 +946,18 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
             # Branch 3 (Feeds into QF Match 98)
             (s['K'][1], s['L'][1]),  # M83: 2K vs 2L
             (s['H'][0], s['J'][1]),  # M84: 1H vs 2J      -> Winner plays M83 in M93
-            
-            (s['B'][0], t3('1B')),   # M85: 1B vs best-3rd
-            (s['K'][0], t3('1K')),   # M87: 1K vs best-3rd -> Winner plays M85 in M96
-            
-            # Branch 4 (Feeds into QF Match 100)
+
             (s['D'][0], t3('1D')),   # M81: 1D vs best-3rd
             (s['G'][0], t3('1G')),   # M82: 1G vs best-3rd -> Winner plays M81 in M94
             
+            # Branch 4 (Feeds into QF Match 100)
             (s['J'][0], s['H'][1]),  # M86: 1J vs 2H
             (s['D'][1], s['G'][1]),  # M88: 2D vs 2G      -> Winner plays M86 in M95
+          
+            (s['B'][0], t3('1B')),   # M85: 1B vs best-3rd
+            (s['K'][0], t3('1K')),   # M87: 1K vs best-3rd -> Winner plays M85 in M96
+            
+
         ]
 
         # Simulate R32 → R16 → QF → SF → Final
