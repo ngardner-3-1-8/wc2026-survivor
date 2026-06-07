@@ -405,6 +405,7 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
         #   M88: 2D vs 2G
 
         def get_3rd(grp: str) -> str:
+            clean_grp = grp[-1] if grp.startswith('3') else grp
             return group_standings[grp][2]
 
         def resolve_3rd_slots(adv_groups: set) -> dict:
