@@ -16,6 +16,7 @@ on:
     paths:
       - "simulator/**"
       - "web/src/**"
+      - "web/public/**"
       - ".github/workflows/**"
 
 jobs:
@@ -54,13 +55,13 @@ jobs:
           cd simulator
           python export_json.py \
             --sims ${{ github.event.inputs.sims || '50000' }} \
-            --out-dir ../public/data
+            --out-dir ../web/public/data
 
-      - name: Commit updated data
+      - name: Commit updated simulation data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update simulation data [skip ci]"
-          file_pattern: "public/data/*.json"
+          file_pattern: "web/public/data/*.json"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
 
@@ -74,11 +75,6 @@ jobs:
       - name: Install Node dependencies
         run: npm ci
         working-directory: web
-
-      - name: Copy simulation data into web build
-        run: |
-          mkdir -p web/public/data
-          cp public/data/*.json web/public/data/
 
       - name: Build React app
         run: npm run build
