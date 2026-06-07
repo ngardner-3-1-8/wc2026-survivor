@@ -7,6 +7,7 @@ import argparse, json, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+
 sys.path.insert(0, str(Path(__file__).parent))
 from wc2026_simulator import run_simulation, GROUPS, TEAMS, BASE_RATE
 
