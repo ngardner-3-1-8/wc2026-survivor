@@ -926,35 +926,44 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
 
         # Build the 16 R32 matchups per FIFA schedule
         s = group_standings
+        # R32 ordered so sequential pairing chains correctly through R16 → QF → SF → Final:
+        #   idx [0,1]   → M89 → QF M97 ↘
+        #   idx [2,3]   → M90 → QF M97 ↗  SF M101 ↘
+        #   idx [4,5]   → M93 → QF M98 ↘               FINAL
+        #   idx [6,7]   → M94 → QF M98 ↗  SF M101 ↗
+        #   idx [8,9]   → M91 → QF M99 ↘
+        #   idx [10,11] → M92 → QF M99 ↗  SF M102 ↘
+        #   idx [12,13] → M95 → QF M100↘               FINAL
+        #   idx [14,15] → M96 → QF M100↗  SF M102 ↗
         r32_pairs = [
             # ── feeds M89 → QF M97 ──────────────────────────────
             (s['E'][0], t3('1E')),   # M74: 1E  vs best-3rd
             (s['I'][0], t3('1I')),   # M77: 1I  vs best-3rd
- 
+
             # ── feeds M90 → QF M97 ──────────────────────────────
             (s['A'][1], s['B'][1]),  # M73: 2A  vs 2B
             (s['F'][0], s['C'][1]),  # M75: 1F  vs 2C
- 
+
             # ── feeds M93 → QF M98 ──────────────────────────────
             (s['K'][1], s['L'][1]),  # M83: 2K  vs 2L
             (s['H'][0], s['J'][1]),  # M84: 1H  vs 2J
- 
+
             # ── feeds M94 → QF M98 ──────────────────────────────
             (s['D'][0], t3('1D')),   # M81: 1D  vs best-3rd
             (s['G'][0], t3('1G')),   # M82: 1G  vs best-3rd
- 
+
             # ── feeds M91 → QF M99 ──────────────────────────────
             (s['C'][0], s['F'][1]),  # M76: 1C  vs 2F
             (s['E'][1], s['I'][1]),  # M78: 2E  vs 2I
- 
+
             # ── feeds M92 → QF M99 ──────────────────────────────
             (s['A'][0], t3('1A')),   # M79: 1A  vs best-3rd
             (s['L'][0], t3('1L')),   # M80: 1L  vs best-3rd
- 
+
             # ── feeds M95 → QF M100 ─────────────────────────────
             (s['J'][0], s['H'][1]),  # M86: 1J  vs 2H
             (s['D'][1], s['G'][1]),  # M88: 2D  vs 2G
- 
+
             # ── feeds M96 → QF M100 ─────────────────────────────
             (s['B'][0], t3('1B')),   # M85: 1B  vs best-3rd
             (s['K'][0], t3('1K')),   # M87: 1K  vs best-3rd
