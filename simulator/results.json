@@ -1,3 +1,4 @@
+{
   "group_matches": [
     {"home": "Mexico", "away": "South Africa", "home_goals": 2, "away_goals": 0},
     {"home": "South Korea", "away": "Czechia", "home_goals": 2, "away_goals": 1},
@@ -54,3 +55,4 @@
     {"home": "South Africa", "away": "South Korea", "home_goals": 1, "away_goals": 0},
     {"home": "Czechia", "away": "Mexico", "home_goals": 0, "away_goals": 3}   
   ]
+}
