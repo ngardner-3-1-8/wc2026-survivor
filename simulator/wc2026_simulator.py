@@ -23,6 +23,7 @@ Usage
   python wc2026_simulator.py --seed 42        # reproducible
 """
 
+
 import argparse
 import json
 from pathlib import Path
