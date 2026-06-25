@@ -1,9 +1,3 @@
-{
-  "_instructions": {
-    "group_matches": "Add each completed group stage match. home_goals/away_goals are the actual final scores.",
-    "knockout_results": "Add each completed knockout match by match ID and winner name. Match IDs: M73-M88 (R32), M89-M96 (R16), M97-M100 (QF), M101-M102 (SF).",
-    "notes": "Delete this _instructions block before running. Results are applied every simulation run."
-  },
   "group_matches": [
     {"home": "Mexico", "away": "South Africa", "home_goals": 2, "away_goals": 0},
     {"home": "South Korea", "away": "Czechia", "home_goals": 2, "away_goals": 1},
@@ -58,27 +52,5 @@
     {"home": "Morocco", "away": "Haiti", "home_goals": 4, "away_goals": 2},
     {"home": "Scotland", "away": "Brazil", "home_goals": 0, "away_goals": 3},
     {"home": "South Africa", "away": "South Korea", "home_goals": 1, "away_goals": 0},
-    {"home": "Czechia", "away": "Mexico", "home_goals": 0, "away_goals": 3},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},
-    {"home": "TeamName", "away": "TeamName", "home_goals": 0, "away_goals": 0},    
-  ],
-  "knockout_results": [
-    {"match_id": "M74", "winner": "TeamName"}
+    {"home": "Czechia", "away": "Mexico", "home_goals": 0, "away_goals": 3}   
   ]
-}
