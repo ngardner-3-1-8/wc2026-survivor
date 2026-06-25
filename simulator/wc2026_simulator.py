@@ -24,6 +24,8 @@ Usage
 """
 
 import argparse
+import json
+from pathlib import Path
 import itertools
 import math
 import sys
@@ -208,17 +210,31 @@ def simulate_group(
     group_teams: list[Team],
     rng: np.random.Generator,
     match_trackers: dict = None,
+    locked_stats: dict = None,
+    locked_pairs: set = None,
 ) -> tuple[list[str], dict]:
     """
     Simulate a group. Returns (sorted_team_names, stats_dict).
-    sorted_team_names is sorted by standard FIFA tiebreakers: pts → gd → gf → draw.
-    stats_dict maps team_name -> TeamGroupStats.
-    Optionally accumulates match-level trackers if match_trackers dict is provided.
+    locked_stats: pre-computed pts/gf/ga from completed matches.
+    locked_pairs: set of (home,away) tuples already played — skip simulation for these.
     """
-    stats: dict[str, TeamGroupStats] = {t.name: TeamGroupStats(t.name) for t in group_teams}
+    # Seed stats from locked results if available
+    if locked_stats:
+        stats = {}
+        for t in group_teams:
+            if t.name in locked_stats:
+                stats[t.name] = locked_stats[t.name]
+            else:
+                stats[t.name] = TeamGroupStats(t.name)
+    else:
+        stats = {t.name: TeamGroupStats(t.name) for t in group_teams}
 
     fixtures = build_group_fixtures(group_teams)
     for h_name, a_name in fixtures:
+        # Skip already-played matches
+        if locked_pairs and (h_name, a_name) in locked_pairs:
+            continue
+
         h_team = TEAM_MAP[h_name]
         a_team = TEAM_MAP[a_name]
         gh, ga = simulate_match(h_team, a_team, rng)
@@ -266,11 +282,86 @@ def pick_best_third(third_place_teams: list[tuple[str, float]]) -> list[str]:
     return [t[0] for t in sorted(third_place_teams, key=lambda x: -x[1])[:8]]
 
 # ---------------------------------------------------------------------------
+# 5b. LOCKED RESULTS LOADER
+#
+# results.json (optional) lives next to the simulator and locks in completed
+# match results so the simulator treats them as facts rather than simulating.
+#
+# Format:
+# {
+#   "group_matches": [
+#     {"home": "Germany", "away": "Scotland", "home_goals": 5, "away_goals": 1},
+#     ...
+#   ],
+#   "knockout_results": [
+#     {"match_id": "M73", "winner": "Canada"},
+#     ...
+#   ]
+# }
+# ---------------------------------------------------------------------------
+
+def load_results(results_path: Path) -> dict:
+    """Load locked results from results.json if it exists."""
+    if results_path.exists():
+        with open(results_path) as f:
+            data = json.load(f)
+        group_matches = data.get("group_matches", [])
+        knockout      = data.get("knockout_results", [])
+        print(f"  [results] Loaded {len(group_matches)} completed group matches, "
+              f"{len(knockout)} knockout results from {results_path.name}")
+        return data
+    return {"group_matches": [], "knockout_results": []}
+
+def build_locked_group_stats(group_matches: list[dict]) -> dict[str, dict[str, "TeamGroupStats"]]:
+    """
+    Pre-compute pts/gf/ga from completed matches, keyed by group.
+    Returns {group_letter: {team_name: TeamGroupStats}}.
+    """
+    from collections import defaultdict
+    locked: dict[str, dict] = defaultdict(dict)
+    for m in group_matches:
+        home, away = m["home"], m["away"]
+        gh, ga     = int(m["home_goals"]), int(m["away_goals"])
+        grp = TEAM_MAP[home].group if home in TEAM_MAP else None
+        if grp is None:
+            continue
+        for name in (home, away):
+            if name not in locked[grp]:
+                locked[grp][name] = TeamGroupStats(name)
+        locked[grp][home].gf += gh
+        locked[grp][home].ga += ga
+        locked[grp][away].gf += ga
+        locked[grp][away].ga += gh
+        if gh > ga:
+            locked[grp][home].pts += 3
+        elif ga > gh:
+            locked[grp][away].pts += 3
+        else:
+            locked[grp][home].pts += 1
+            locked[grp][away].pts += 1
+    return dict(locked)
+
+def get_locked_pairs(group_matches: list[dict]) -> set[tuple[str,str]]:
+    """Return set of (home,away) pairs that are already completed."""
+    return {(m["home"], m["away"]) for m in group_matches}
+
+# ---------------------------------------------------------------------------
 # 6.  MAIN SIMULATION LOOP
 # ---------------------------------------------------------------------------
 
-def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
+def run_simulation(n_sims: int, seed: Optional[int] = None,
+                   results_path: Optional[Path] = None) -> dict:
     rng = np.random.default_rng(seed)
+
+    # Load locked results (completed matches)
+    if results_path is None:
+        results_path = Path(__file__).parent / "results.json"
+    locked_data        = load_results(results_path)
+    locked_group_matches = locked_data.get("group_matches", [])
+    locked_ko_results  = {r["match_id"]: r["winner"]
+                          for r in locked_data.get("knockout_results", [])}
+    locked_pairs       = get_locked_pairs(locked_group_matches)
+    locked_group_stats = build_locked_group_stats(locked_group_matches)
 
     # Accumulation structures
     group_names = sorted(GROUPS.keys())
@@ -324,7 +415,10 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
         for grp in group_names:
             teams_in_group = GROUPS[grp]
             sorted_names, stats_lookup = simulate_group(
-                teams_in_group, rng, match_trackers=match_trackers
+                teams_in_group, rng,
+                match_trackers=match_trackers,
+                locked_stats=locked_group_stats.get(grp),
+                locked_pairs=locked_pairs,
             )
             group_standings[grp] = sorted_names
 
@@ -926,62 +1020,66 @@ def run_simulation(n_sims: int, seed: Optional[int] = None) -> dict:
 
         # Build the 16 R32 matchups per FIFA schedule
         s = group_standings
-        # R32 ordered so sequential pairing chains correctly through R16 → QF → SF → Final:
-        #   idx [0,1]   → M89 → QF M97 ↘
-        #   idx [2,3]   → M90 → QF M97 ↗  SF M101 ↘
-        #   idx [4,5]   → M93 → QF M98 ↘               FINAL
-        #   idx [6,7]   → M94 → QF M98 ↗  SF M101 ↗
-        #   idx [8,9]   → M91 → QF M99 ↘
-        #   idx [10,11] → M92 → QF M99 ↗  SF M102 ↘
-        #   idx [12,13] → M95 → QF M100↘               FINAL
-        #   idx [14,15] → M96 → QF M100↗  SF M102 ↗
         r32_pairs = [
-            # ── feeds M89 → QF M97 ──────────────────────────────
-            (s['E'][0], t3('1E')),   # M74: 1E  vs best-3rd
-            (s['I'][0], t3('1I')),   # M77: 1I  vs best-3rd
+            # --- TOP HALF OF THE BRACKET ---
+            # Branch 1 (Feeds into QF Match 97)
+            (s['E'][0], t3('1E')),   # M74: 1E vs best-3rd
+            (s['I'][0], t3('1I')),   # M77: 1I vs best-3rd -> Winner plays M74 in M89
+            
+            (s['A'][1], s['B'][1]),  # M73: 2A vs 2B
+            (s['F'][0], s['C'][1]),  # M75: 1F vs 2C      -> Winner plays M73 in M90
+            
+            # Branch 2 (Feeds into QF Match 99)
+            (s['C'][0], s['F'][1]),  # M76: 1C vs 2F
+            (s['E'][1], s['I'][1]),  # M78: 2E vs 2I      -> Winner plays M76 in M91
+            
+            (s['A'][0], t3('1A')),   # M79: 1A vs best-3rd
+            (s['L'][0], t3('1L')),   # M80: 1L vs best-3rd -> Winner plays M79 in M92
+            
+            # --- BOTTOM HALF OF THE BRACKET ---
+            # Branch 3 (Feeds into QF Match 98)
+            (s['K'][1], s['L'][1]),  # M83: 2K vs 2L
+            (s['H'][0], s['J'][1]),  # M84: 1H vs 2J      -> Winner plays M83 in M93
 
-            # ── feeds M90 → QF M97 ──────────────────────────────
-            (s['A'][1], s['B'][1]),  # M73: 2A  vs 2B
-            (s['F'][0], s['C'][1]),  # M75: 1F  vs 2C
+            (s['D'][0], t3('1D')),   # M81: 1D vs best-3rd
+            (s['G'][0], t3('1G')),   # M82: 1G vs best-3rd -> Winner plays M81 in M94
+            
+            # Branch 4 (Feeds into QF Match 100)
+            (s['J'][0], s['H'][1]),  # M86: 1J vs 2H
+            (s['D'][1], s['G'][1]),  # M88: 2D vs 2G      -> Winner plays M86 in M95
+          
+            (s['B'][0], t3('1B')),   # M85: 1B vs best-3rd
+            (s['K'][0], t3('1K')),   # M87: 1K vs best-3rd -> Winner plays M85 in M96
+            
 
-            # ── feeds M93 → QF M98 ──────────────────────────────
-            (s['K'][1], s['L'][1]),  # M83: 2K  vs 2L
-            (s['H'][0], s['J'][1]),  # M84: 1H  vs 2J
-
-            # ── feeds M94 → QF M98 ──────────────────────────────
-            (s['D'][0], t3('1D')),   # M81: 1D  vs best-3rd
-            (s['G'][0], t3('1G')),   # M82: 1G  vs best-3rd
-
-            # ── feeds M91 → QF M99 ──────────────────────────────
-            (s['C'][0], s['F'][1]),  # M76: 1C  vs 2F
-            (s['E'][1], s['I'][1]),  # M78: 2E  vs 2I
-
-            # ── feeds M92 → QF M99 ──────────────────────────────
-            (s['A'][0], t3('1A')),   # M79: 1A  vs best-3rd
-            (s['L'][0], t3('1L')),   # M80: 1L  vs best-3rd
-
-            # ── feeds M95 → QF M100 ─────────────────────────────
-            (s['J'][0], s['H'][1]),  # M86: 1J  vs 2H
-            (s['D'][1], s['G'][1]),  # M88: 2D  vs 2G
-
-            # ── feeds M96 → QF M100 ─────────────────────────────
-            (s['B'][0], t3('1B')),   # M85: 1B  vs best-3rd
-            (s['K'][0], t3('1K')),   # M87: 1K  vs best-3rd
         ]
 
         # Simulate R32 → R16 → QF → SF → Final
         # r32_pairs is a list of 16 (team1, team2) tuples
+        # Match IDs in bracket order (not chronological)
+        r32_match_ids = ["M74","M77","M73","M75","M83","M84","M81","M82",
+                         "M76","M78","M79","M80","M86","M88","M85","M87"]
+        r16_match_ids = ["M89","M90","M93","M94","M91","M92","M95","M96"]
+        qf_match_ids  = ["M97","M98","M99","M100"]
+        sf_match_ids  = ["M101","M102"]
+        all_stage_ids = [r32_match_ids, r16_match_ids, qf_match_ids, sf_match_ids]
+
         current_pairs = r32_pairs
         stage_labels = ["r16", "qf", "sf", "final", "champion"]
         stage_idx = 0
 
         while current_pairs:
             winners = []
-            for t1_name, t2_name in current_pairs:
-                t1 = TEAM_MAP[t1_name]
-                t2 = TEAM_MAP[t2_name]
-                gh, ga = simulate_match(t1, t2, rng, knockout=True)
-                winner = t1_name if gh > ga else t2_name
+            current_ids = all_stage_ids[stage_idx] if stage_idx < len(all_stage_ids) else []
+            for pair_idx, (t1_name, t2_name) in enumerate(current_pairs):
+                mid = current_ids[pair_idx] if pair_idx < len(current_ids) else None
+                if mid and mid in locked_ko_results:
+                    winner = locked_ko_results[mid]
+                else:
+                    t1 = TEAM_MAP[t1_name]
+                    t2 = TEAM_MAP[t2_name]
+                    gh, ga = simulate_match(t1, t2, rng, knockout=True)
+                    winner = t1_name if gh > ga else t2_name
                 winners.append(winner)
 
             label = stage_labels[stage_idx] if stage_idx < len(stage_labels) else "deep"
@@ -1530,6 +1628,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="World Cup 2026 Monte Carlo Simulator")
     parser.add_argument("--sims",    type=int, default=50000, help="Number of tournament simulations")
     parser.add_argument("--seed",    type=int, default=None,  help="Random seed for reproducibility")
+    parser.add_argument("--results", type=Path, default=None, help="Path to results.json with locked match results")
     parser.add_argument("--prefix",  type=str, default="wc2026", help="Output file prefix")
     parser.add_argument("--match",   type=str, nargs=2, metavar=("HOME", "AWAY"),
                         help="Print detailed odds for a specific match, e.g. --match Argentina France")
@@ -1538,7 +1637,8 @@ if __name__ == "__main__":
     if args.match:
         print_match_odds(args.match[0], args.match[1])
     else:
-        results = run_simulation(n_sims=args.sims, seed=args.seed)
+        results = run_simulation(n_sims=args.sims, seed=args.seed,
+                             results_path=args.results)
         print_summary(results)
         save_outputs(results, prefix=args.prefix)
         print("\nDone. Good luck in your survivor league! ⚽\n")
