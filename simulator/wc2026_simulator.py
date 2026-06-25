@@ -23,7 +23,6 @@ Usage
   python wc2026_simulator.py --seed 42        # reproducible
 """
 
-
 import argparse
 import json
 from pathlib import Path
@@ -219,12 +218,15 @@ def simulate_group(
     locked_stats: pre-computed pts/gf/ga from completed matches.
     locked_pairs: set of (home,away) tuples already played — skip simulation for these.
     """
-    # Seed stats from locked results if available
+    # Seed stats from locked results if available.
+    # IMPORTANT: copy the locked TeamGroupStats so we don't mutate the shared
+    # template across simulations (each sim must start from the same locked base).
     if locked_stats:
         stats = {}
         for t in group_teams:
             if t.name in locked_stats:
-                stats[t.name] = locked_stats[t.name]
+                src = locked_stats[t.name]
+                stats[t.name] = TeamGroupStats(src.name, src.pts, src.gf, src.ga)
             else:
                 stats[t.name] = TeamGroupStats(t.name)
     else:
@@ -232,8 +234,11 @@ def simulate_group(
 
     fixtures = build_group_fixtures(group_teams)
     for h_name, a_name in fixtures:
-        # Skip already-played matches
-        if locked_pairs and (h_name, a_name) in locked_pairs:
+        # Skip already-played matches (check both home/away orderings, since
+        # build_group_fixtures order may differ from the real fixture order)
+        if locked_pairs and (
+            (h_name, a_name) in locked_pairs or (a_name, h_name) in locked_pairs
+        ):
             continue
 
         h_team = TEAM_MAP[h_name]
@@ -1643,3 +1648,4 @@ if __name__ == "__main__":
         print_summary(results)
         save_outputs(results, prefix=args.prefix)
         print("\nDone. Good luck in your survivor league! ⚽\n")
+      
