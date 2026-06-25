@@ -53,6 +53,8 @@
     {"home": "Morocco", "away": "Haiti", "home_goals": 4, "away_goals": 2},
     {"home": "Scotland", "away": "Brazil", "home_goals": 0, "away_goals": 3},
     {"home": "South Africa", "away": "South Korea", "home_goals": 1, "away_goals": 0},
-    {"home": "Czechia", "away": "Mexico", "home_goals": 0, "away_goals": 3}   
+    {"home": "Czechia", "away": "Mexico", "home_goals": 0, "away_goals": 3},
+    {"home": "Ecuador", "away": "Germany", "home_goals": 2, "away_goals": 1},
+    {"home": "Curaçao", "away": "Ivory Coast", "home_goals": 0, "away_goals": 3}
   ]
 }
