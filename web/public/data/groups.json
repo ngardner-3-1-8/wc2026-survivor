@@ -26,7 +26,7 @@
         "avg_gf": 2.0,
         "avg_ga": 3.0,
         "avg_gd": -1.0,
-        "advance_pct": 62.1
+        "advance_pct": 62.6
       },
       {
         "name": "Czechia",
@@ -251,17 +251,17 @@
         "name": "Egypt",
         "fifa_rank": 29,
         "avg_pts": 5.47,
-        "avg_gf": 5.35,
+        "avg_gf": 5.36,
         "avg_ga": 3.2,
-        "avg_gd": 2.15,
+        "avg_gd": 2.16,
         "advance_pct": 100.0
       },
       {
         "name": "Belgium",
         "fifa_rank": 9,
         "avg_pts": 4.08,
-        "avg_gf": 2.85,
-        "avg_ga": 1.81,
+        "avg_gf": 2.86,
+        "avg_ga": 1.82,
         "avg_gd": 1.04,
         "advance_pct": 83.9
       },
@@ -270,49 +270,49 @@
         "fifa_rank": 21,
         "avg_pts": 3.25,
         "avg_gf": 3.2,
-        "avg_ga": 3.35,
-        "avg_gd": -0.15,
+        "avg_ga": 3.36,
+        "avg_gd": -0.16,
         "advance_pct": 58.9
       },
       {
         "name": "New Zealand",
         "fifa_rank": 85,
-        "avg_pts": 1.68,
-        "avg_gf": 3.81,
-        "avg_ga": 6.85,
+        "avg_pts": 1.69,
+        "avg_gf": 3.82,
+        "avg_ga": 6.86,
         "avg_gd": -3.04,
-        "advance_pct": 14.9
+        "advance_pct": 15.1
       }
     ],
     "matches": [
       {
         "home": "Belgium",
         "away": "New Zealand",
-        "home_win_pct": 61.3,
-        "draw_pct": 23.9,
-        "away_win_pct": 14.9,
-        "xgf": 1.85,
-        "xga": 0.81,
-        "xg_total": 2.66,
-        "btts_pct": 46.8,
-        "home_cover_pct": 61.3,
-        "model_home_ml": -158,
-        "model_draw_ml": 318,
-        "model_away_ml": 571
+        "home_win_pct": 61.4,
+        "draw_pct": 23.5,
+        "away_win_pct": 15.1,
+        "xgf": 1.86,
+        "xga": 0.82,
+        "xg_total": 2.68,
+        "btts_pct": 47.2,
+        "home_cover_pct": 61.4,
+        "model_home_ml": -159,
+        "model_draw_ml": 326,
+        "model_away_ml": 562
       },
       {
         "home": "Egypt",
         "away": "Iran",
-        "home_win_pct": 32.0,
-        "draw_pct": 28.6,
-        "away_win_pct": 39.3,
+        "home_win_pct": 32.1,
+        "draw_pct": 28.5,
+        "away_win_pct": 39.4,
         "xgf": 1.2,
-        "xga": 1.35,
-        "xg_total": 2.55,
-        "btts_pct": 51.8,
-        "home_cover_pct": 32.0,
+        "xga": 1.36,
+        "xg_total": 2.56,
+        "btts_pct": 51.9,
+        "home_cover_pct": 32.1,
         "model_home_ml": 212,
-        "model_draw_ml": 250,
+        "model_draw_ml": 251,
         "model_away_ml": 154
       }
     ]
@@ -322,26 +322,26 @@
       {
         "name": "Spain",
         "fifa_rank": 2,
-        "avg_pts": 5.78,
+        "avg_pts": 5.79,
         "avg_gf": 5.54,
-        "avg_ga": 0.94,
-        "avg_gd": 4.59,
+        "avg_ga": 0.93,
+        "avg_gd": 4.61,
         "advance_pct": 100.0
       },
       {
         "name": "Uruguay",
         "fifa_rank": 17,
-        "avg_pts": 2.94,
-        "avg_gf": 3.94,
+        "avg_pts": 2.93,
+        "avg_gf": 3.93,
         "avg_ga": 4.54,
-        "avg_gd": -0.59,
-        "advance_pct": 48.6
+        "avg_gd": -0.61,
+        "advance_pct": 48.2
       },
       {
         "name": "Cape Verde",
         "fifa_rank": 69,
         "avg_pts": 3.29,
-        "avg_gf": 3.07,
+        "avg_gf": 3.08,
         "avg_ga": 3.15,
         "avg_gd": -0.07,
         "advance_pct": 62.6
@@ -351,7 +351,7 @@
         "fifa_rank": 61,
         "avg_pts": 2.4,
         "avg_gf": 2.15,
-        "avg_ga": 6.07,
+        "avg_ga": 6.08,
         "avg_gd": -3.93,
         "advance_pct": 36.2
       }
@@ -364,9 +364,9 @@
         "draw_pct": 31.0,
         "away_win_pct": 32.7,
         "xgf": 1.15,
-        "xga": 1.07,
-        "xg_total": 2.22,
-        "btts_pct": 44.9,
+        "xga": 1.08,
+        "xg_total": 2.23,
+        "btts_pct": 45.1,
         "home_cover_pct": 36.3,
         "model_home_ml": 175,
         "model_draw_ml": 223,
@@ -375,17 +375,17 @@
       {
         "home": "Spain",
         "away": "Uruguay",
-        "home_win_pct": 50.1,
-        "draw_pct": 27.9,
-        "away_win_pct": 22.0,
+        "home_win_pct": 50.4,
+        "draw_pct": 28.0,
+        "away_win_pct": 21.6,
         "xgf": 1.54,
-        "xga": 0.94,
-        "xg_total": 2.48,
-        "btts_pct": 47.9,
-        "home_cover_pct": 50.1,
-        "model_home_ml": -100,
-        "model_draw_ml": 258,
-        "model_away_ml": 355
+        "xga": 0.93,
+        "xg_total": 2.47,
+        "btts_pct": 47.6,
+        "home_cover_pct": 50.4,
+        "model_home_ml": -102,
+        "model_draw_ml": 257,
+        "model_away_ml": 363
       }
     ]
   },
@@ -394,10 +394,10 @@
       {
         "name": "France",
         "fifa_rank": 1,
-        "avg_pts": 7.43,
+        "avg_pts": 7.44,
         "avg_gf": 7.4,
         "avg_ga": 2.3,
-        "avg_gd": 5.1,
+        "avg_gd": 5.11,
         "advance_pct": 100.0
       },
       {
@@ -406,7 +406,7 @@
         "avg_pts": 7.29,
         "avg_gf": 8.3,
         "avg_ga": 4.4,
-        "avg_gd": 3.9,
+        "avg_gd": 3.89,
         "advance_pct": 100.0
       },
       {
@@ -414,7 +414,7 @@
         "fifa_rank": 14,
         "avg_pts": 1.93,
         "avg_gf": 4.83,
-        "avg_ga": 7.0,
+        "avg_ga": 6.99,
         "avg_gd": -2.16,
         "advance_pct": 36.1
       },
@@ -422,26 +422,26 @@
         "name": "Iraq",
         "fifa_rank": 57,
         "avg_pts": 0.82,
-        "avg_gf": 2.0,
+        "avg_gf": 1.99,
         "avg_ga": 8.83,
         "avg_gd": -6.84,
-        "advance_pct": 0.5
+        "advance_pct": 0.4
       }
     ],
     "matches": [
       {
         "home": "France",
         "away": "Norway",
-        "home_win_pct": 38.5,
-        "draw_pct": 27.6,
+        "home_win_pct": 38.8,
+        "draw_pct": 27.4,
         "away_win_pct": 33.9,
         "xgf": 1.4,
         "xga": 1.3,
         "xg_total": 2.7,
         "btts_pct": 54.8,
-        "home_cover_pct": 38.5,
-        "model_home_ml": 160,
-        "model_draw_ml": 262,
+        "home_cover_pct": 38.8,
+        "model_home_ml": 158,
+        "model_draw_ml": 265,
         "model_away_ml": 195
       },
       {
@@ -449,15 +449,15 @@
         "away": "Senegal",
         "home_win_pct": 56.3,
         "draw_pct": 24.3,
-        "away_win_pct": 19.3,
+        "away_win_pct": 19.4,
         "xgf": 1.83,
-        "xga": 1.0,
-        "xg_total": 2.83,
-        "btts_pct": 53.1,
+        "xga": 0.99,
+        "xg_total": 2.82,
+        "btts_pct": 52.8,
         "home_cover_pct": 56.3,
         "model_home_ml": -129,
         "model_draw_ml": 312,
-        "model_away_ml": 418
+        "model_away_ml": 415
       }
     ]
   },
@@ -466,37 +466,37 @@
       {
         "name": "Argentina",
         "fifa_rank": 3,
-        "avg_pts": 8.16,
+        "avg_pts": 8.17,
         "avg_gf": 6.94,
-        "avg_ga": 0.76,
-        "avg_gd": 6.18,
+        "avg_ga": 0.74,
+        "avg_gd": 6.2,
         "advance_pct": 100.0
       },
       {
         "name": "Austria",
         "fifa_rank": 24,
         "avg_pts": 4.4,
-        "avg_gf": 4.4,
-        "avg_ga": 4.35,
-        "avg_gd": 0.05,
-        "advance_pct": 86.0
+        "avg_gf": 4.41,
+        "avg_ga": 4.36,
+        "avg_gd": 0.06,
+        "advance_pct": 86.2
       },
       {
         "name": "Jordan",
         "fifa_rank": 63,
-        "avg_pts": 3.61,
-        "avg_gf": 3.76,
+        "avg_pts": 3.6,
+        "avg_gf": 3.74,
         "avg_ga": 5.94,
-        "avg_gd": -2.18,
-        "advance_pct": 45.2
+        "avg_gd": -2.2,
+        "advance_pct": 44.7
       },
       {
         "name": "Algeria",
         "fifa_rank": 28,
         "avg_pts": 1.33,
-        "avg_gf": 2.35,
-        "avg_ga": 6.4,
-        "avg_gd": -4.05,
+        "avg_gf": 2.36,
+        "avg_ga": 6.41,
+        "avg_gd": -4.06,
         "advance_pct": 10.3
       }
     ],
@@ -504,32 +504,32 @@
       {
         "home": "Algeria",
         "away": "Austria",
-        "home_win_pct": 35.4,
-        "draw_pct": 27.1,
-        "away_win_pct": 37.5,
-        "xgf": 1.35,
-        "xga": 1.4,
-        "xg_total": 2.75,
-        "btts_pct": 55.8,
-        "home_cover_pct": 35.4,
+        "home_win_pct": 35.5,
+        "draw_pct": 26.9,
+        "away_win_pct": 37.7,
+        "xgf": 1.36,
+        "xga": 1.41,
+        "xg_total": 2.77,
+        "btts_pct": 56.2,
+        "home_cover_pct": 35.5,
         "model_home_ml": 182,
-        "model_draw_ml": 269,
-        "model_away_ml": 167
+        "model_draw_ml": 272,
+        "model_away_ml": 165
       },
       {
         "home": "Argentina",
         "away": "Jordan",
-        "home_win_pct": 64.6,
-        "draw_pct": 22.6,
-        "away_win_pct": 12.8,
+        "home_win_pct": 65.0,
+        "draw_pct": 22.3,
+        "away_win_pct": 12.6,
         "xgf": 1.94,
-        "xga": 0.76,
-        "xg_total": 2.7,
-        "btts_pct": 45.6,
-        "home_cover_pct": 64.6,
-        "model_home_ml": -182,
-        "model_draw_ml": 342,
-        "model_away_ml": 681
+        "xga": 0.74,
+        "xg_total": 2.68,
+        "btts_pct": 44.8,
+        "home_cover_pct": 65.0,
+        "model_home_ml": -186,
+        "model_draw_ml": 348,
+        "model_away_ml": 694
       }
     ]
   },
@@ -541,7 +541,7 @@
         "avg_pts": 5.48,
         "avg_gf": 7.4,
         "avg_ga": 2.22,
-        "avg_gd": 5.18,
+        "avg_gd": 5.17,
         "advance_pct": 100.0
       },
       {
@@ -550,58 +550,58 @@
         "avg_pts": 4.24,
         "avg_gf": 3.22,
         "avg_ga": 4.4,
-        "avg_gd": -1.18,
-        "advance_pct": 67.3
+        "avg_gd": -1.17,
+        "advance_pct": 67.4
       },
       {
         "name": "Uzbekistan",
         "fifa_rank": 50,
-        "avg_pts": 4.4,
-        "avg_gf": 4.22,
+        "avg_pts": 4.42,
+        "avg_gf": 4.24,
         "avg_ga": 7.16,
-        "avg_gd": -2.94,
-        "advance_pct": 66.4
+        "avg_gd": -2.91,
+        "advance_pct": 66.9
       },
       {
         "name": "DR Congo",
         "fifa_rank": 46,
-        "avg_pts": 2.3,
+        "avg_pts": 2.29,
         "avg_gf": 2.16,
-        "avg_ga": 3.22,
-        "avg_gd": -1.06,
-        "advance_pct": 33.6
+        "avg_ga": 3.24,
+        "avg_gd": -1.09,
+        "advance_pct": 33.0
       }
     ],
     "matches": [
       {
         "home": "Colombia",
         "away": "Portugal",
-        "home_win_pct": 40.1,
-        "draw_pct": 28.1,
+        "home_win_pct": 40.0,
+        "draw_pct": 28.2,
         "away_win_pct": 31.8,
         "xgf": 1.4,
         "xga": 1.22,
         "xg_total": 2.62,
         "btts_pct": 53.1,
-        "home_cover_pct": 40.1,
-        "model_home_ml": 149,
-        "model_draw_ml": 256,
+        "home_cover_pct": 40.0,
+        "model_home_ml": 150,
+        "model_draw_ml": 255,
         "model_away_ml": 214
       },
       {
         "home": "DR Congo",
         "away": "Uzbekistan",
-        "home_win_pct": 36.7,
-        "draw_pct": 29.7,
-        "away_win_pct": 33.6,
-        "xgf": 1.22,
+        "home_win_pct": 37.4,
+        "draw_pct": 29.6,
+        "away_win_pct": 33.0,
+        "xgf": 1.25,
         "xga": 1.16,
-        "xg_total": 2.38,
-        "btts_pct": 48.4,
-        "home_cover_pct": 36.7,
-        "model_home_ml": 172,
-        "model_draw_ml": 237,
-        "model_away_ml": 198
+        "xg_total": 2.41,
+        "btts_pct": 49.0,
+        "home_cover_pct": 37.4,
+        "model_home_ml": 167,
+        "model_draw_ml": 238,
+        "model_away_ml": 203
       }
     ]
   },
@@ -610,10 +610,10 @@
       {
         "name": "England",
         "fifa_rank": 4,
-        "avg_pts": 5.97,
+        "avg_pts": 5.96,
         "avg_gf": 5.76,
-        "avg_ga": 2.89,
-        "avg_gd": 2.87,
+        "avg_ga": 2.9,
+        "avg_gd": 2.86,
         "advance_pct": 100.0
       },
       {
@@ -628,52 +628,52 @@
       {
         "name": "Croatia",
         "fifa_rank": 11,
-        "avg_pts": 4.75,
+        "avg_pts": 4.74,
         "avg_gf": 4.64,
         "avg_ga": 5.09,
         "avg_gd": -0.45,
-        "advance_pct": 82.3
+        "advance_pct": 82.1
       },
       {
         "name": "Panama",
         "fifa_rank": 33,
-        "avg_pts": 0.78,
-        "avg_gf": 0.89,
+        "avg_pts": 0.79,
+        "avg_gf": 0.9,
         "avg_ga": 3.76,
-        "avg_gd": -2.87,
-        "advance_pct": 3.2
+        "avg_gd": -2.86,
+        "advance_pct": 3.4
       }
     ],
     "matches": [
       {
         "home": "Croatia",
         "away": "Ghana",
-        "home_win_pct": 49.4,
+        "home_win_pct": 49.3,
         "draw_pct": 26.3,
         "away_win_pct": 24.3,
         "xgf": 1.64,
         "xga": 1.09,
         "xg_total": 2.73,
         "btts_pct": 53.5,
-        "home_cover_pct": 49.4,
-        "model_home_ml": 102,
+        "home_cover_pct": 49.3,
+        "model_home_ml": 103,
         "model_draw_ml": 280,
         "model_away_ml": 312
       },
       {
         "home": "England",
         "away": "Panama",
-        "home_win_pct": 57.3,
-        "draw_pct": 24.9,
-        "away_win_pct": 17.8,
+        "home_win_pct": 57.0,
+        "draw_pct": 25.1,
+        "away_win_pct": 17.9,
         "xgf": 1.76,
-        "xga": 0.89,
-        "xg_total": 2.65,
-        "btts_pct": 48.8,
-        "home_cover_pct": 57.3,
-        "model_home_ml": -134,
-        "model_draw_ml": 302,
-        "model_away_ml": 462
+        "xga": 0.9,
+        "xg_total": 2.66,
+        "btts_pct": 49.1,
+        "home_cover_pct": 57.0,
+        "model_home_ml": -133,
+        "model_draw_ml": 298,
+        "model_away_ml": 459
       }
     ]
   }
