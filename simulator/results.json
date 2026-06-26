@@ -55,6 +55,11 @@
     {"home": "South Africa", "away": "South Korea", "home_goals": 1, "away_goals": 0},
     {"home": "Czechia", "away": "Mexico", "home_goals": 0, "away_goals": 3},
     {"home": "Ecuador", "away": "Germany", "home_goals": 2, "away_goals": 1},
-    {"home": "Curaçao", "away": "Ivory Coast", "home_goals": 0, "away_goals": 3}
+    {"home": "Curaçao", "away": "Ivory Coast", "home_goals": 0, "away_goals": 3},
+    {"home": "Netherlands", "away": "Tunisia", "home_goals": 3, "away_goals": 1},
+    {"home": "Japan", "away": "Sweden", "home_goals": 1, "away_goals": 1},
+    {"home": "Türkiye", "away": "USA", "home_goals": 3, "away_goals": 2},
+    {"home": "Paraguay", "away": "Australia", "home_goals": 0, "away_goals": 0}
+    
   ]
 }
