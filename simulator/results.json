@@ -72,5 +72,9 @@
     {"home": "DR Congo", "away": "Uzbekistan", "home_goals": 3, "away_goals": 1},
     {"home": "Algeria", "away": "Austria", "home_goals": 3, "away_goals": 3},
     {"home": "Jordan", "away": "Argentina", "home_goals": 1, "away_goals": 3}
+  ],
+  "knockout_results": [
+    {"match_id": "M73", "winner": "Canada"},
+    {"match_id": "M76", "winner": "Brazil"}
   ]
 }
