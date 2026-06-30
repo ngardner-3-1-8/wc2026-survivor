@@ -1,5 +1,21 @@
 import { useState } from 'react'
 
+// ── Source match labels for each knockout round card ────────────────────────
+const MATCH_SOURCES = {
+  // R16 match → which two R32 matches feed it
+  M89: 'W(M74) · W(M77)', M90: 'W(M73) · W(M75)',
+  M93: 'W(M83) · W(M84)', M94: 'W(M81) · W(M82)',
+  M91: 'W(M76) · W(M78)', M92: 'W(M79) · W(M80)',
+  M95: 'W(M86) · W(M88)', M96: 'W(M85) · W(M87)',
+  // QF
+  M97: 'W(M89) · W(M90)',  M98: 'W(M93) · W(M94)',
+  M99: 'W(M91) · W(M92)',  M100:'W(M95) · W(M96)',
+  // SF
+  M101:'W(M97) · W(M98)',  M102:'W(M99) · W(M100)',
+  // Final
+  M104:'W(M101) · W(M102)',
+}
+
 // ── Layout constants ─────────────────────────────────────────────────────────
 const CARD_W   = 190   // match card width  (px)
 const CARD_H   = 72    // match card height (px)
@@ -106,8 +122,15 @@ function MatchCard({ match, highlight, onHover, showChampPct, x, y }) {
       padding: '4px 0', boxSizing: 'border-box',
       display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
     }}>
-      <div style={{ fontSize: '0.6rem', color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '0.05em', padding: '0 6px 2px' }}>
-        {match.match_id}
+      <div style={{ padding: '0 6px 2px' }}>
+        <span style={{ fontSize: '0.62rem', color: 'var(--text-muted)', fontWeight: 700, letterSpacing: '0.05em' }}>
+          {match.match_id}
+        </span>
+        {MATCH_SOURCES[match.match_id] && (
+          <span style={{ fontSize: '0.58rem', color: 'var(--text-muted)', opacity: 0.6, marginLeft: 5 }}>
+            {MATCH_SOURCES[match.match_id]}
+          </span>
+        )}
       </div>
       <div style={{ height: 2, background: 'var(--surface2)', margin: '0 6px' }}>
         <div style={{ height: '100%', background: hWin ? 'var(--green)' : 'var(--blue)', width: `${home.win_pct}%`, transition: 'width .3s' }} />
