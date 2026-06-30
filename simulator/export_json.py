@@ -664,6 +664,33 @@ def build_predicted_bracket(group_df, ko_df):
         p1 = lam1 / (lam1 + lam2)
         return round(p1*100,1), round((1-p1)*100,1)
 
+    # Locked knockout results: {match_id: winner_name}.
+    # When a match is completed, force its win% to 100/0 and propagate the
+    # actual winner forward so downstream odds reflect the real opponent.
+    import json as _json
+    from pathlib import Path as _Path
+    _results_path = _Path(__file__).parent / "results.json"
+    locked_ko = {}
+    if _results_path.exists():
+        try:
+            _data = _json.load(open(_results_path))
+            locked_ko = {r["match_id"]: r["winner"]
+                         for r in _data.get("knockout_results", [])}
+        except Exception as e:
+            print(f"  [bracket] could not read locked KO results: {e}")
+    if locked_ko:
+        print(f"  [bracket] applying {len(locked_ko)} locked knockout results")
+
+    def locked_win_prob(match_id, t1_name, t2_name):
+        """Return (p1, p2) — 100/0 if locked, else model head-to-head."""
+        if match_id in locked_ko:
+            winner = locked_ko[match_id]
+            if winner == t1_name:
+                return 100.0, 0.0
+            elif winner == t2_name:
+                return 0.0, 100.0
+        return matchup_win_prob(t1_name, t2_name)
+
     def ko_pcts(name: str):
         row = ko_df[ko_df["Team"]==name]
         if row.empty:
@@ -680,7 +707,7 @@ def build_predicted_bracket(group_df, ko_df):
     def make_matchup(match_id, slot1_label, team1_fn, slot2_label, team2_fn):
         t1 = team1_fn()
         t2 = team2_fn()
-        p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+        p1, p2 = locked_win_prob(match_id, t1["name"], t2["name"])
         return {
             "match_id":   match_id,
             "home": {**t1, "slot": slot1_label, "win_pct": p1, **ko_pcts(t1["name"])},
@@ -736,53 +763,64 @@ def build_predicted_bracket(group_df, ko_df):
                             "Best 3rd",    lambda: get_3rd_for_slot("1K")),
     ]
 
-    # Predicted R16 onward (winner of each R32 pair advances)
+    # Predicted R16 onward (winner of each R32 pair advances).
+    # If a match has a locked result, the actual winner advances.
     def predicted_winner(matchup):
         h, a = matchup["home"], matchup["away"]
+        mid = matchup.get("match_id")
+        if mid in locked_ko:
+            winner_name = locked_ko[mid]
+            if h["name"] == winner_name:
+                return h
+            elif a["name"] == winner_name:
+                return a
         return h if h["win_pct"] >= a["win_pct"] else a
 
     r16_teams = [predicted_winner(m) for m in r32]
     # pair them up: M73 winner vs M74 winner, etc.
     r16 = []
+    r16_match_ids = ["M89","M90","M93","M94","M91","M92","M95","M96"]
     for i in range(0, 16, 2):
         t1, t2 = r16_teams[i], r16_teams[i+1]
-        p1, p2 = matchup_win_prob(t1["name"], t2["name"])
-        r16_match_ids = ["M89","M90","M93","M94","M91","M92","M95","M96"]
+        mid = r16_match_ids[i//2]
+        p1, p2 = locked_win_prob(mid, t1["name"], t2["name"])
         r16.append({
-            "match_id": r16_match_ids[i//2],
+            "match_id": mid,
             "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
             "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
         })
 
     qf_teams = [predicted_winner(m) for m in r16]
     qf = []
+    qf_match_ids = ["M97","M98","M99","M100"]
     for i in range(0, 8, 2):
         t1, t2 = qf_teams[i], qf_teams[i+1]
-        p1, p2 = matchup_win_prob(t1["name"], t2["name"])
-        qf_match_ids = ["M97","M98","M99","M100"]
+        mid = qf_match_ids[i//2]
+        p1, p2 = locked_win_prob(mid, t1["name"], t2["name"])
         qf.append({
-            "match_id": qf_match_ids[i//2],
+            "match_id": mid,
             "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
             "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
         })
 
     sf_teams = [predicted_winner(m) for m in qf]
     sf = []
+    sf_match_ids = ["M101","M102"]
     for i in range(0, 4, 2):
         t1, t2 = sf_teams[i], sf_teams[i+1]
-        p1, p2 = matchup_win_prob(t1["name"], t2["name"])
-        sf_match_ids = ["M101","M102"]
+        mid = sf_match_ids[i//2]
+        p1, p2 = locked_win_prob(mid, t1["name"], t2["name"])
         sf.append({
-            "match_id": sf_match_ids[i//2],
+            "match_id": mid,
             "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
             "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
         })
 
     final_teams = [predicted_winner(m) for m in sf]
     t1, t2 = final_teams[0], final_teams[1]
-    p1, p2 = matchup_win_prob(t1["name"], t2["name"])
+    p1, p2 = locked_win_prob("M104", t1["name"], t2["name"])
     final = [{
-        "match_id": "Final",
+        "match_id": "M104",
         "home": {**t1, "win_pct": p1, **ko_pcts(t1["name"])},
         "away": {**t2, "win_pct": p2, **ko_pcts(t2["name"])},
     }]
