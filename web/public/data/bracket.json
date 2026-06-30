@@ -72,7 +72,7 @@
         "name": "Germany",
         "advance_pct": 100.0,
         "slot": "Winner E",
-        "win_pct": 63.4,
+        "win_pct": 0.0,
         "r16_pct": 0.0,
         "qf_pct": 0.0,
         "sf_pct": 0.0,
@@ -85,10 +85,10 @@
         "is_third": true,
         "group": "D",
         "slot": "Best 3rd",
-        "win_pct": 36.6,
+        "win_pct": 100.0,
         "r16_pct": 100.0,
-        "qf_pct": 36.7,
-        "sf_pct": 14.6,
+        "qf_pct": 36.9,
+        "sf_pct": 14.7,
         "final_pct": 5.3,
         "champion_pct": 1.9
       }
@@ -100,11 +100,11 @@
         "advance_pct": 100.0,
         "slot": "Winner I",
         "win_pct": 71.1,
-        "r16_pct": 75.4,
-        "qf_pct": 52.5,
-        "sf_pct": 31.6,
-        "final_pct": 17.8,
-        "champion_pct": 10.1
+        "r16_pct": 75.5,
+        "qf_pct": 52.6,
+        "sf_pct": 31.9,
+        "final_pct": 18.3,
+        "champion_pct": 10.2
       },
       "away": {
         "name": "Sweden",
@@ -113,10 +113,10 @@
         "group": "F",
         "slot": "Best 3rd",
         "win_pct": 28.9,
-        "r16_pct": 24.6,
-        "qf_pct": 10.8,
-        "sf_pct": 3.7,
-        "final_pct": 1.1,
+        "r16_pct": 24.5,
+        "qf_pct": 10.5,
+        "sf_pct": 3.5,
+        "final_pct": 1.0,
         "champion_pct": 0.3
       }
     },
@@ -126,7 +126,7 @@
         "name": "South Africa",
         "advance_pct": 100.0,
         "slot": "Runner-up A",
-        "win_pct": 42.2,
+        "win_pct": 0.0,
         "r16_pct": 0.0,
         "qf_pct": 0.0,
         "sf_pct": 0.0,
@@ -137,12 +137,12 @@
         "name": "Canada",
         "advance_pct": 100.0,
         "slot": "Runner-up B",
-        "win_pct": 57.8,
+        "win_pct": 100.0,
         "r16_pct": 100.0,
-        "qf_pct": 37.4,
-        "sf_pct": 15.7,
+        "qf_pct": 36.9,
+        "sf_pct": 15.5,
         "final_pct": 6.1,
-        "champion_pct": 2.5
+        "champion_pct": 2.3
       }
     },
     {
@@ -151,7 +151,7 @@
         "name": "Netherlands",
         "advance_pct": 100.0,
         "slot": "Winner F",
-        "win_pct": 48.7,
+        "win_pct": 0.0,
         "r16_pct": 0.0,
         "qf_pct": 0.0,
         "sf_pct": 0.0,
@@ -162,10 +162,10 @@
         "name": "Morocco",
         "advance_pct": 100.0,
         "slot": "Runner-up C",
-        "win_pct": 51.3,
+        "win_pct": 100.0,
         "r16_pct": 100.0,
-        "qf_pct": 62.6,
-        "sf_pct": 34.4,
+        "qf_pct": 63.1,
+        "sf_pct": 34.5,
         "final_pct": 17.7,
         "champion_pct": 9.0
       }
@@ -202,22 +202,22 @@
         "advance_pct": 100.0,
         "slot": "Winner H",
         "win_pct": 65.5,
-        "r16_pct": 69.6,
-        "qf_pct": 43.0,
-        "sf_pct": 29.0,
-        "final_pct": 18.6,
-        "champion_pct": 11.5
+        "r16_pct": 69.2,
+        "qf_pct": 42.6,
+        "sf_pct": 28.7,
+        "final_pct": 18.3,
+        "champion_pct": 11.2
       },
       "away": {
         "name": "Austria",
         "advance_pct": 100.0,
         "slot": "Runner-up J",
         "win_pct": 34.5,
-        "r16_pct": 30.4,
-        "qf_pct": 12.6,
-        "sf_pct": 6.0,
-        "final_pct": 2.7,
-        "champion_pct": 1.1
+        "r16_pct": 30.8,
+        "qf_pct": 12.9,
+        "sf_pct": 6.2,
+        "final_pct": 2.8,
+        "champion_pct": 1.2
       }
     },
     {
@@ -227,11 +227,11 @@
         "advance_pct": 100.0,
         "slot": "Winner D",
         "win_pct": 60.6,
-        "r16_pct": 63.2,
-        "qf_pct": 27.0,
-        "sf_pct": 10.1,
-        "final_pct": 4.3,
-        "champion_pct": 1.8
+        "r16_pct": 63.5,
+        "qf_pct": 27.1,
+        "sf_pct": 9.8,
+        "final_pct": 4.2,
+        "champion_pct": 1.6
       },
       "away": {
         "name": "Bosnia",
@@ -240,11 +240,11 @@
         "group": "B",
         "slot": "Best 3rd",
         "win_pct": 39.4,
-        "r16_pct": 36.8,
-        "qf_pct": 11.2,
+        "r16_pct": 36.5,
+        "qf_pct": 11.0,
         "sf_pct": 2.8,
         "final_pct": 0.9,
-        "champion_pct": 0.3
+        "champion_pct": 0.2
       }
     },
     {
@@ -254,11 +254,11 @@
         "advance_pct": 100.0,
         "slot": "Winner G",
         "win_pct": 49.3,
-        "r16_pct": 48.8,
-        "qf_pct": 30.1,
-        "sf_pct": 13.2,
-        "final_pct": 6.7,
-        "champion_pct": 3.2
+        "r16_pct": 49.0,
+        "qf_pct": 30.0,
+        "sf_pct": 13.3,
+        "final_pct": 6.9,
+        "champion_pct": 3.4
       },
       "away": {
         "name": "Senegal",
@@ -267,10 +267,10 @@
         "group": "I",
         "slot": "Best 3rd",
         "win_pct": 50.7,
-        "r16_pct": 51.2,
-        "qf_pct": 31.7,
-        "sf_pct": 14.3,
-        "final_pct": 7.3,
+        "r16_pct": 51.0,
+        "qf_pct": 31.9,
+        "sf_pct": 14.5,
+        "final_pct": 7.5,
         "champion_pct": 3.6
       }
     },
@@ -280,23 +280,23 @@
         "name": "Brazil",
         "advance_pct": 100.0,
         "slot": "Winner C",
-        "win_pct": 56.0,
-        "r16_pct": 157.8,
-        "qf_pct": 72.9,
-        "sf_pct": 39.2,
-        "final_pct": 20.4,
-        "champion_pct": 10.1
+        "win_pct": 100.0,
+        "r16_pct": 157.9,
+        "qf_pct": 73.1,
+        "sf_pct": 39.4,
+        "final_pct": 20.6,
+        "champion_pct": 10.3
       },
       "away": {
         "name": "Japan",
         "advance_pct": 100.0,
         "slot": "Runner-up F",
-        "win_pct": 44.0,
-        "r16_pct": 42.2,
-        "qf_pct": 17.6,
-        "sf_pct": 7.8,
-        "final_pct": 3.5,
-        "champion_pct": 1.5
+        "win_pct": 0.0,
+        "r16_pct": 42.1,
+        "qf_pct": 17.3,
+        "sf_pct": 7.6,
+        "final_pct": 3.4,
+        "champion_pct": 1.4
       }
     },
     {
@@ -307,7 +307,7 @@
         "slot": "Runner-up E",
         "win_pct": 41.4,
         "r16_pct": 38.6,
-        "qf_pct": 18.3,
+        "qf_pct": 18.0,
         "sf_pct": 8.2,
         "final_pct": 3.8,
         "champion_pct": 1.6
@@ -318,10 +318,10 @@
         "slot": "Runner-up I",
         "win_pct": 58.6,
         "r16_pct": 61.4,
-        "qf_pct": 35.6,
-        "sf_pct": 20.1,
-        "final_pct": 11.6,
-        "champion_pct": 6.2
+        "qf_pct": 36.1,
+        "sf_pct": 20.2,
+        "final_pct": 11.4,
+        "champion_pct": 6.1
       }
     },
     {
@@ -331,11 +331,11 @@
         "advance_pct": 100.0,
         "slot": "Winner A",
         "win_pct": 48.6,
-        "r16_pct": 48.4,
+        "r16_pct": 48.7,
         "qf_pct": 21.0,
         "sf_pct": 9.1,
-        "final_pct": 4.1,
-        "champion_pct": 1.7
+        "final_pct": 4.2,
+        "champion_pct": 1.8
       },
       "away": {
         "name": "Ecuador",
@@ -344,10 +344,10 @@
         "group": "E",
         "slot": "Best 3rd",
         "win_pct": 51.4,
-        "r16_pct": 51.6,
+        "r16_pct": 51.3,
         "qf_pct": 23.2,
-        "sf_pct": 10.6,
-        "final_pct": 4.9,
+        "sf_pct": 10.7,
+        "final_pct": 5.0,
         "champion_pct": 2.1
       }
     },
@@ -358,11 +358,11 @@
         "advance_pct": 100.0,
         "slot": "Winner L",
         "win_pct": 70.1,
-        "r16_pct": 74.0,
-        "qf_pct": 46.1,
-        "sf_pct": 26.4,
-        "final_pct": 15.5,
-        "champion_pct": 8.6
+        "r16_pct": 74.7,
+        "qf_pct": 46.2,
+        "sf_pct": 26.5,
+        "final_pct": 15.3,
+        "champion_pct": 8.5
       },
       "away": {
         "name": "DR Congo",
@@ -371,9 +371,9 @@
         "group": "K",
         "slot": "Best 3rd",
         "win_pct": 29.9,
-        "r16_pct": 26.0,
-        "qf_pct": 9.7,
-        "sf_pct": 3.1,
+        "r16_pct": 25.3,
+        "qf_pct": 9.5,
+        "sf_pct": 3.0,
         "final_pct": 1.0,
         "champion_pct": 0.3
       }
@@ -386,19 +386,19 @@
         "slot": "Winner J",
         "win_pct": 75.7,
         "r16_pct": 79.5,
-        "qf_pct": 53.8,
-        "sf_pct": 34.5,
-        "final_pct": 19.6,
+        "qf_pct": 53.2,
+        "sf_pct": 34.3,
+        "final_pct": 19.4,
         "champion_pct": 11.2
       },
       "away": {
         "name": "Cape Verde",
-        "advance_pct": 63.6,
+        "advance_pct": 63.3,
         "slot": "Runner-up H",
         "win_pct": 24.3,
         "r16_pct": 12.6,
-        "qf_pct": 4.2,
-        "sf_pct": 1.2,
+        "qf_pct": 4.3,
+        "sf_pct": 1.3,
         "final_pct": 0.3,
         "champion_pct": 0.1
       }
@@ -410,10 +410,10 @@
         "advance_pct": 100.0,
         "slot": "Runner-up D",
         "win_pct": 48.5,
-        "r16_pct": 47.7,
-        "qf_pct": 18.2,
-        "sf_pct": 8.3,
-        "final_pct": 3.1,
+        "r16_pct": 48.2,
+        "qf_pct": 18.6,
+        "sf_pct": 8.5,
+        "final_pct": 3.2,
         "champion_pct": 1.2
       },
       "away": {
@@ -421,11 +421,11 @@
         "advance_pct": 100.0,
         "slot": "Runner-up G",
         "win_pct": 51.5,
-        "r16_pct": 52.3,
-        "qf_pct": 20.9,
-        "sf_pct": 9.8,
+        "r16_pct": 51.8,
+        "qf_pct": 21.0,
+        "sf_pct": 10.1,
         "final_pct": 4.0,
-        "champion_pct": 1.8
+        "champion_pct": 1.7
       }
     },
     {
@@ -435,11 +435,11 @@
         "advance_pct": 100.0,
         "slot": "Winner B",
         "win_pct": 57.2,
-        "r16_pct": 59.5,
-        "qf_pct": 31.7,
+        "r16_pct": 59.2,
+        "qf_pct": 31.9,
         "sf_pct": 15.3,
-        "final_pct": 6.9,
-        "champion_pct": 3.2
+        "final_pct": 6.7,
+        "champion_pct": 3.1
       },
       "away": {
         "name": "Iran",
@@ -448,11 +448,11 @@
         "group": "G",
         "slot": "Best 3rd",
         "win_pct": 42.8,
-        "r16_pct": 40.5,
-        "qf_pct": 18.1,
-        "sf_pct": 6.9,
-        "final_pct": 2.5,
-        "champion_pct": 0.9
+        "r16_pct": 40.8,
+        "qf_pct": 18.6,
+        "sf_pct": 7.2,
+        "final_pct": 2.6,
+        "champion_pct": 1.0
       }
     },
     {
@@ -462,11 +462,11 @@
         "advance_pct": 100.0,
         "slot": "Winner K",
         "win_pct": 62.8,
-        "r16_pct": 65.9,
-        "qf_pct": 36.7,
-        "sf_pct": 18.1,
-        "final_pct": 8.4,
-        "champion_pct": 4.0
+        "r16_pct": 66.0,
+        "qf_pct": 36.3,
+        "sf_pct": 17.8,
+        "final_pct": 8.3,
+        "champion_pct": 3.9
       },
       "away": {
         "name": "Ghana",
@@ -475,10 +475,10 @@
         "group": "L",
         "slot": "Best 3rd",
         "win_pct": 37.2,
-        "r16_pct": 34.1,
-        "qf_pct": 13.5,
-        "sf_pct": 4.8,
-        "final_pct": 1.5,
+        "r16_pct": 34.0,
+        "qf_pct": 13.2,
+        "sf_pct": 4.5,
+        "final_pct": 1.6,
         "champion_pct": 0.5
       }
     }
@@ -487,26 +487,28 @@
     {
       "match_id": "M89",
       "home": {
-        "name": "Germany",
+        "name": "Paraguay",
         "advance_pct": 100.0,
-        "slot": "Winner E",
-        "win_pct": 46.7,
-        "r16_pct": 0.0,
-        "qf_pct": 0.0,
-        "sf_pct": 0.0,
-        "final_pct": 0.0,
-        "champion_pct": 0.0
+        "is_third": true,
+        "group": "D",
+        "slot": "Best 3rd",
+        "win_pct": 33.6,
+        "r16_pct": 100.0,
+        "qf_pct": 36.9,
+        "sf_pct": 14.7,
+        "final_pct": 5.3,
+        "champion_pct": 1.9
       },
       "away": {
         "name": "France",
         "advance_pct": 100.0,
         "slot": "Winner I",
-        "win_pct": 53.3,
-        "r16_pct": 75.4,
-        "qf_pct": 52.5,
-        "sf_pct": 31.6,
-        "final_pct": 17.8,
-        "champion_pct": 10.1
+        "win_pct": 66.4,
+        "r16_pct": 75.5,
+        "qf_pct": 52.6,
+        "sf_pct": 31.9,
+        "final_pct": 18.3,
+        "champion_pct": 10.2
       }
     },
     {
@@ -517,10 +519,10 @@
         "slot": "Runner-up B",
         "win_pct": 40.0,
         "r16_pct": 100.0,
-        "qf_pct": 37.4,
-        "sf_pct": 15.7,
+        "qf_pct": 36.9,
+        "sf_pct": 15.5,
         "final_pct": 6.1,
-        "champion_pct": 2.5
+        "champion_pct": 2.3
       },
       "away": {
         "name": "Morocco",
@@ -528,8 +530,8 @@
         "slot": "Runner-up C",
         "win_pct": 60.0,
         "r16_pct": 100.0,
-        "qf_pct": 62.6,
-        "sf_pct": 34.4,
+        "qf_pct": 63.1,
+        "sf_pct": 34.5,
         "final_pct": 17.7,
         "champion_pct": 9.0
       }
@@ -552,11 +554,11 @@
         "advance_pct": 100.0,
         "slot": "Winner H",
         "win_pct": 58.1,
-        "r16_pct": 69.6,
-        "qf_pct": 43.0,
-        "sf_pct": 29.0,
-        "final_pct": 18.6,
-        "champion_pct": 11.5
+        "r16_pct": 69.2,
+        "qf_pct": 42.6,
+        "sf_pct": 28.7,
+        "final_pct": 18.3,
+        "champion_pct": 11.2
       }
     },
     {
@@ -566,11 +568,11 @@
         "advance_pct": 100.0,
         "slot": "Winner D",
         "win_pct": 43.5,
-        "r16_pct": 63.2,
-        "qf_pct": 27.0,
-        "sf_pct": 10.1,
-        "final_pct": 4.3,
-        "champion_pct": 1.8
+        "r16_pct": 63.5,
+        "qf_pct": 27.1,
+        "sf_pct": 9.8,
+        "final_pct": 4.2,
+        "champion_pct": 1.6
       },
       "away": {
         "name": "Senegal",
@@ -579,10 +581,10 @@
         "group": "I",
         "slot": "Best 3rd",
         "win_pct": 56.5,
-        "r16_pct": 51.2,
-        "qf_pct": 31.7,
-        "sf_pct": 14.3,
-        "final_pct": 7.3,
+        "r16_pct": 51.0,
+        "qf_pct": 31.9,
+        "sf_pct": 14.5,
+        "final_pct": 7.5,
         "champion_pct": 3.6
       }
     },
@@ -593,11 +595,11 @@
         "advance_pct": 100.0,
         "slot": "Winner C",
         "win_pct": 46.6,
-        "r16_pct": 157.8,
-        "qf_pct": 72.9,
-        "sf_pct": 39.2,
-        "final_pct": 20.4,
-        "champion_pct": 10.1
+        "r16_pct": 157.9,
+        "qf_pct": 73.1,
+        "sf_pct": 39.4,
+        "final_pct": 20.6,
+        "champion_pct": 10.3
       },
       "away": {
         "name": "Norway",
@@ -605,10 +607,10 @@
         "slot": "Runner-up I",
         "win_pct": 53.4,
         "r16_pct": 61.4,
-        "qf_pct": 35.6,
-        "sf_pct": 20.1,
-        "final_pct": 11.6,
-        "champion_pct": 6.2
+        "qf_pct": 36.1,
+        "sf_pct": 20.2,
+        "final_pct": 11.4,
+        "champion_pct": 6.1
       }
     },
     {
@@ -620,10 +622,10 @@
         "group": "E",
         "slot": "Best 3rd",
         "win_pct": 40.4,
-        "r16_pct": 51.6,
+        "r16_pct": 51.3,
         "qf_pct": 23.2,
-        "sf_pct": 10.6,
-        "final_pct": 4.9,
+        "sf_pct": 10.7,
+        "final_pct": 5.0,
         "champion_pct": 2.1
       },
       "away": {
@@ -631,11 +633,11 @@
         "advance_pct": 100.0,
         "slot": "Winner L",
         "win_pct": 59.6,
-        "r16_pct": 74.0,
-        "qf_pct": 46.1,
-        "sf_pct": 26.4,
-        "final_pct": 15.5,
-        "champion_pct": 8.6
+        "r16_pct": 74.7,
+        "qf_pct": 46.2,
+        "sf_pct": 26.5,
+        "final_pct": 15.3,
+        "champion_pct": 8.5
       }
     },
     {
@@ -646,9 +648,9 @@
         "slot": "Winner J",
         "win_pct": 63.9,
         "r16_pct": 79.5,
-        "qf_pct": 53.8,
-        "sf_pct": 34.5,
-        "final_pct": 19.6,
+        "qf_pct": 53.2,
+        "sf_pct": 34.3,
+        "final_pct": 19.4,
         "champion_pct": 11.2
       },
       "away": {
@@ -656,11 +658,11 @@
         "advance_pct": 100.0,
         "slot": "Runner-up G",
         "win_pct": 36.1,
-        "r16_pct": 52.3,
-        "qf_pct": 20.9,
-        "sf_pct": 9.8,
+        "r16_pct": 51.8,
+        "qf_pct": 21.0,
+        "sf_pct": 10.1,
         "final_pct": 4.0,
-        "champion_pct": 1.8
+        "champion_pct": 1.7
       }
     },
     {
@@ -670,22 +672,22 @@
         "advance_pct": 100.0,
         "slot": "Winner B",
         "win_pct": 48.6,
-        "r16_pct": 59.5,
-        "qf_pct": 31.7,
+        "r16_pct": 59.2,
+        "qf_pct": 31.9,
         "sf_pct": 15.3,
-        "final_pct": 6.9,
-        "champion_pct": 3.2
+        "final_pct": 6.7,
+        "champion_pct": 3.1
       },
       "away": {
         "name": "Colombia",
         "advance_pct": 100.0,
         "slot": "Winner K",
         "win_pct": 51.4,
-        "r16_pct": 65.9,
-        "qf_pct": 36.7,
-        "sf_pct": 18.1,
-        "final_pct": 8.4,
-        "champion_pct": 4.0
+        "r16_pct": 66.0,
+        "qf_pct": 36.3,
+        "sf_pct": 17.8,
+        "final_pct": 8.3,
+        "champion_pct": 3.9
       }
     }
   ],
@@ -697,11 +699,11 @@
         "advance_pct": 100.0,
         "slot": "Winner I",
         "win_pct": 54.6,
-        "r16_pct": 75.4,
-        "qf_pct": 52.5,
-        "sf_pct": 31.6,
-        "final_pct": 17.8,
-        "champion_pct": 10.1
+        "r16_pct": 75.5,
+        "qf_pct": 52.6,
+        "sf_pct": 31.9,
+        "final_pct": 18.3,
+        "champion_pct": 10.2
       },
       "away": {
         "name": "Morocco",
@@ -709,8 +711,8 @@
         "slot": "Runner-up C",
         "win_pct": 45.4,
         "r16_pct": 100.0,
-        "qf_pct": 62.6,
-        "sf_pct": 34.4,
+        "qf_pct": 63.1,
+        "sf_pct": 34.5,
         "final_pct": 17.7,
         "champion_pct": 9.0
       }
@@ -722,11 +724,11 @@
         "advance_pct": 100.0,
         "slot": "Winner H",
         "win_pct": 60.3,
-        "r16_pct": 69.6,
-        "qf_pct": 43.0,
-        "sf_pct": 29.0,
-        "final_pct": 18.6,
-        "champion_pct": 11.5
+        "r16_pct": 69.2,
+        "qf_pct": 42.6,
+        "sf_pct": 28.7,
+        "final_pct": 18.3,
+        "champion_pct": 11.2
       },
       "away": {
         "name": "Senegal",
@@ -735,10 +737,10 @@
         "group": "I",
         "slot": "Best 3rd",
         "win_pct": 39.7,
-        "r16_pct": 51.2,
-        "qf_pct": 31.7,
-        "sf_pct": 14.3,
-        "final_pct": 7.3,
+        "r16_pct": 51.0,
+        "qf_pct": 31.9,
+        "sf_pct": 14.5,
+        "final_pct": 7.5,
         "champion_pct": 3.6
       }
     },
@@ -750,21 +752,21 @@
         "slot": "Runner-up I",
         "win_pct": 48.0,
         "r16_pct": 61.4,
-        "qf_pct": 35.6,
-        "sf_pct": 20.1,
-        "final_pct": 11.6,
-        "champion_pct": 6.2
+        "qf_pct": 36.1,
+        "sf_pct": 20.2,
+        "final_pct": 11.4,
+        "champion_pct": 6.1
       },
       "away": {
         "name": "England",
         "advance_pct": 100.0,
         "slot": "Winner L",
         "win_pct": 52.0,
-        "r16_pct": 74.0,
-        "qf_pct": 46.1,
-        "sf_pct": 26.4,
-        "final_pct": 15.5,
-        "champion_pct": 8.6
+        "r16_pct": 74.7,
+        "qf_pct": 46.2,
+        "sf_pct": 26.5,
+        "final_pct": 15.3,
+        "champion_pct": 8.5
       }
     },
     {
@@ -775,9 +777,9 @@
         "slot": "Winner J",
         "win_pct": 58.5,
         "r16_pct": 79.5,
-        "qf_pct": 53.8,
-        "sf_pct": 34.5,
-        "final_pct": 19.6,
+        "qf_pct": 53.2,
+        "sf_pct": 34.3,
+        "final_pct": 19.4,
         "champion_pct": 11.2
       },
       "away": {
@@ -785,11 +787,11 @@
         "advance_pct": 100.0,
         "slot": "Winner K",
         "win_pct": 41.5,
-        "r16_pct": 65.9,
-        "qf_pct": 36.7,
-        "sf_pct": 18.1,
-        "final_pct": 8.4,
-        "champion_pct": 4.0
+        "r16_pct": 66.0,
+        "qf_pct": 36.3,
+        "sf_pct": 17.8,
+        "final_pct": 8.3,
+        "champion_pct": 3.9
       }
     }
   ],
@@ -801,22 +803,22 @@
         "advance_pct": 100.0,
         "slot": "Winner I",
         "win_pct": 45.7,
-        "r16_pct": 75.4,
-        "qf_pct": 52.5,
-        "sf_pct": 31.6,
-        "final_pct": 17.8,
-        "champion_pct": 10.1
+        "r16_pct": 75.5,
+        "qf_pct": 52.6,
+        "sf_pct": 31.9,
+        "final_pct": 18.3,
+        "champion_pct": 10.2
       },
       "away": {
         "name": "Spain",
         "advance_pct": 100.0,
         "slot": "Winner H",
         "win_pct": 54.3,
-        "r16_pct": 69.6,
-        "qf_pct": 43.0,
-        "sf_pct": 29.0,
-        "final_pct": 18.6,
-        "champion_pct": 11.5
+        "r16_pct": 69.2,
+        "qf_pct": 42.6,
+        "sf_pct": 28.7,
+        "final_pct": 18.3,
+        "champion_pct": 11.2
       }
     },
     {
@@ -826,11 +828,11 @@
         "advance_pct": 100.0,
         "slot": "Winner L",
         "win_pct": 48.9,
-        "r16_pct": 74.0,
-        "qf_pct": 46.1,
-        "sf_pct": 26.4,
-        "final_pct": 15.5,
-        "champion_pct": 8.6
+        "r16_pct": 74.7,
+        "qf_pct": 46.2,
+        "sf_pct": 26.5,
+        "final_pct": 15.3,
+        "champion_pct": 8.5
       },
       "away": {
         "name": "Argentina",
@@ -838,26 +840,26 @@
         "slot": "Winner J",
         "win_pct": 51.1,
         "r16_pct": 79.5,
-        "qf_pct": 53.8,
-        "sf_pct": 34.5,
-        "final_pct": 19.6,
+        "qf_pct": 53.2,
+        "sf_pct": 34.3,
+        "final_pct": 19.4,
         "champion_pct": 11.2
       }
     }
   ],
   "final": [
     {
-      "match_id": "Final",
+      "match_id": "M104",
       "home": {
         "name": "Spain",
         "advance_pct": 100.0,
         "slot": "Winner H",
         "win_pct": 53.0,
-        "r16_pct": 69.6,
-        "qf_pct": 43.0,
-        "sf_pct": 29.0,
-        "final_pct": 18.6,
-        "champion_pct": 11.5
+        "r16_pct": 69.2,
+        "qf_pct": 42.6,
+        "sf_pct": 28.7,
+        "final_pct": 18.3,
+        "champion_pct": 11.2
       },
       "away": {
         "name": "Argentina",
@@ -865,9 +867,9 @@
         "slot": "Winner J",
         "win_pct": 47.0,
         "r16_pct": 79.5,
-        "qf_pct": 53.8,
-        "sf_pct": 34.5,
-        "final_pct": 19.6,
+        "qf_pct": 53.2,
+        "sf_pct": 34.3,
+        "final_pct": 19.4,
         "champion_pct": 11.2
       }
     }
