@@ -78,6 +78,7 @@
     {"match_id": "M76", "winner": "Brazil"},
     {"match_id": "M74", "winner": "Paraguay"},
     {"match_id": "M75", "winner": "Morocco"},
-    {"match_id": "M78", "winner": "Norway"}
+    {"match_id": "M78", "winner": "Norway"},
+    {"match_id": "M79", "winner": "Mexico"}
   ]
 }
