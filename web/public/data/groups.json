@@ -300,11 +300,11 @@
       {
         "name": "Cape Verde",
         "fifa_rank": 69,
-        "avg_pts": 3.34,
+        "avg_pts": 3.33,
         "avg_gf": 3.12,
-        "avg_ga": 3.13,
-        "avg_gd": -0.01,
-        "advance_pct": 65.4
+        "avg_ga": 3.14,
+        "avg_gd": -0.02,
+        "advance_pct": 64.9
       },
       {
         "name": "Uruguay",
@@ -318,27 +318,27 @@
       {
         "name": "Saudi Arabia",
         "fifa_rank": 61,
-        "avg_pts": 2.35,
-        "avg_gf": 2.13,
+        "avg_pts": 2.36,
+        "avg_gf": 2.14,
         "avg_ga": 6.12,
-        "avg_gd": -3.99,
-        "advance_pct": 34.6
+        "avg_gd": -3.98,
+        "advance_pct": 35.1
       }
     ],
     "matches": [
       {
         "home": "Cape Verde",
         "away": "Saudi Arabia",
-        "home_win_pct": 34.6,
-        "draw_pct": 31.1,
-        "away_win_pct": 34.3,
-        "xgf": 1.13,
+        "home_win_pct": 35.1,
+        "draw_pct": 30.7,
+        "away_win_pct": 34.2,
+        "xgf": 1.14,
         "xga": 1.12,
-        "xg_total": 2.25,
-        "btts_pct": 45.6,
-        "home_cover_pct": 34.6,
-        "model_home_ml": 189,
-        "model_draw_ml": 222,
+        "xg_total": 2.26,
+        "btts_pct": 45.8,
+        "home_cover_pct": 35.1,
+        "model_home_ml": 185,
+        "model_draw_ml": 226,
         "model_away_ml": 192
       }
     ]
