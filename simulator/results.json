@@ -83,6 +83,12 @@
     {"match_id": "M79", "winner": "Mexico"},
     {"match_id": "M80", "winner": "England"},
     {"match_id": "M82", "winner": "Belgium"},
-    {"match_id": "M81", "winner": "USA"}
+    {"match_id": "M81", "winner": "USA"},
+    {"match_id": "M84", "winner": "Spain"},
+    {"match_id": "M83", "winner": "Portugal"},
+    {"match_id": "M85", "winner": "Switzerland"},
+    {"match_id": "M86", "winner": "Argentina"},
+    {"match_id": "M87", "winner": "Colombia"},
+    {"match_id": "M88", "winner": "Australia"}
   ]
 }
