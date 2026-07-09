@@ -303,7 +303,7 @@
         "avg_pts": 3.33,
         "avg_gf": 3.12,
         "avg_ga": 3.14,
-        "avg_gd": -0.02,
+        "avg_gd": -0.01,
         "advance_pct": 64.8
       },
       {
@@ -321,7 +321,7 @@
         "avg_pts": 2.36,
         "avg_gf": 2.14,
         "avg_ga": 6.12,
-        "avg_gd": -3.98,
+        "avg_gd": -3.99,
         "advance_pct": 35.2
       }
     ],
@@ -331,7 +331,7 @@
         "away": "Saudi Arabia",
         "home_win_pct": 35.2,
         "draw_pct": 30.7,
-        "away_win_pct": 34.2,
+        "away_win_pct": 34.1,
         "xgf": 1.14,
         "xga": 1.12,
         "xg_total": 2.26,
@@ -339,7 +339,7 @@
         "home_cover_pct": 35.2,
         "model_home_ml": 184,
         "model_draw_ml": 226,
-        "model_away_ml": 192
+        "model_away_ml": 193
       }
     ]
   },
