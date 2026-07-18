@@ -6,9 +6,9 @@
     "r32_pct": 100.0,
     "r16_pct": 100.0,
     "qf_pct": 60.09,
-    "sf_pct": 39.48,
-    "final_pct": 24.01,
-    "champion_pct": 14.24
+    "sf_pct": 39.62,
+    "final_pct": 23.57,
+    "champion_pct": 13.83
   },
   {
     "name": "Argentina",
@@ -16,10 +16,10 @@
     "fifa_rank": 3,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 68.18,
-    "sf_pct": 41.76,
-    "final_pct": 23.42,
-    "champion_pct": 12.77
+    "qf_pct": 68.42,
+    "sf_pct": 42.55,
+    "final_pct": 24.11,
+    "champion_pct": 13.48
   },
   {
     "name": "France",
@@ -27,10 +27,10 @@
     "fifa_rank": 1,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 69.82,
-    "sf_pct": 41.19,
-    "final_pct": 22.47,
-    "champion_pct": 12.45
+    "qf_pct": 69.96,
+    "sf_pct": 41.88,
+    "final_pct": 22.85,
+    "champion_pct": 12.68
   },
   {
     "name": "England",
@@ -38,10 +38,10 @@
     "fifa_rank": 4,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 61.27,
-    "sf_pct": 32.95,
-    "final_pct": 18.07,
-    "champion_pct": 9.45
+    "qf_pct": 61.63,
+    "sf_pct": 33.15,
+    "final_pct": 18.23,
+    "champion_pct": 9.64
   },
   {
     "name": "Morocco",
@@ -49,10 +49,10 @@
     "fifa_rank": 8,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 64.29,
-    "sf_pct": 33.37,
-    "final_pct": 16.48,
-    "champion_pct": 8.13
+    "qf_pct": 63.47,
+    "sf_pct": 32.62,
+    "final_pct": 16.31,
+    "champion_pct": 8.06
   },
   {
     "name": "Norway",
@@ -60,10 +60,10 @@
     "fifa_rank": 31,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 51.97,
-    "sf_pct": 27.15,
-    "final_pct": 14.51,
-    "champion_pct": 7.33
+    "qf_pct": 51.84,
+    "sf_pct": 27.0,
+    "final_pct": 14.42,
+    "champion_pct": 7.2
   },
   {
     "name": "Brazil",
@@ -71,10 +71,10 @@
     "fifa_rank": 6,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 48.03,
-    "sf_pct": 24.0,
-    "final_pct": 12.11,
-    "champion_pct": 5.96
+    "qf_pct": 48.16,
+    "sf_pct": 23.89,
+    "final_pct": 12.05,
+    "champion_pct": 5.78
   },
   {
     "name": "Portugal",
@@ -83,9 +83,9 @@
     "r32_pct": 100.0,
     "r16_pct": 100.0,
     "qf_pct": 39.91,
-    "sf_pct": 22.31,
-    "final_pct": 11.2,
-    "champion_pct": 5.53
+    "sf_pct": 22.32,
+    "final_pct": 11.31,
+    "champion_pct": 5.42
   },
   {
     "name": "Belgium",
@@ -93,10 +93,10 @@
     "fifa_rank": 9,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 56.94,
-    "sf_pct": 23.37,
-    "final_pct": 11.0,
-    "champion_pct": 5.13
+    "qf_pct": 56.56,
+    "sf_pct": 23.22,
+    "final_pct": 11.09,
+    "champion_pct": 5.19
   },
   {
     "name": "Colombia",
@@ -104,10 +104,10 @@
     "fifa_rank": 13,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 51.42,
-    "sf_pct": 23.28,
-    "final_pct": 10.55,
-    "champion_pct": 4.78
+    "qf_pct": 51.34,
+    "sf_pct": 22.8,
+    "final_pct": 10.16,
+    "champion_pct": 4.62
   },
   {
     "name": "Switzerland",
@@ -115,10 +115,10 @@
     "fifa_rank": 19,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 48.58,
-    "sf_pct": 21.36,
-    "final_pct": 9.28,
-    "champion_pct": 4.03
+    "qf_pct": 48.66,
+    "sf_pct": 21.08,
+    "final_pct": 9.11,
+    "champion_pct": 3.89
   },
   {
     "name": "Mexico",
@@ -126,10 +126,10 @@
     "fifa_rank": 15,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 38.73,
-    "sf_pct": 15.91,
-    "final_pct": 6.93,
-    "champion_pct": 2.84
+    "qf_pct": 38.37,
+    "sf_pct": 15.96,
+    "final_pct": 6.85,
+    "champion_pct": 2.92
   },
   {
     "name": "USA",
@@ -137,10 +137,10 @@
     "fifa_rank": 16,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 43.06,
+    "qf_pct": 43.44,
     "sf_pct": 14.84,
-    "final_pct": 6.07,
-    "champion_pct": 2.36
+    "final_pct": 6.11,
+    "champion_pct": 2.38
   },
   {
     "name": "Australia",
@@ -148,10 +148,10 @@
     "fifa_rank": 27,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 31.82,
-    "sf_pct": 13.61,
-    "final_pct": 5.12,
-    "champion_pct": 1.85
+    "qf_pct": 31.58,
+    "sf_pct": 13.57,
+    "final_pct": 5.07,
+    "champion_pct": 1.89
   },
   {
     "name": "Canada",
@@ -159,10 +159,10 @@
     "fifa_rank": 30,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 35.71,
-    "sf_pct": 13.7,
-    "final_pct": 4.82,
-    "champion_pct": 1.77
+    "qf_pct": 36.53,
+    "sf_pct": 13.71,
+    "final_pct": 4.81,
+    "champion_pct": 1.7
   },
   {
     "name": "Paraguay",
@@ -170,10 +170,10 @@
     "fifa_rank": 40,
     "r32_pct": 100.0,
     "r16_pct": 100.0,
-    "qf_pct": 30.18,
-    "sf_pct": 11.74,
-    "final_pct": 3.94,
-    "champion_pct": 1.38
+    "qf_pct": 30.04,
+    "sf_pct": 11.79,
+    "final_pct": 3.95,
+    "champion_pct": 1.31
   },
   {
     "name": "T\u00fcrkiye",
@@ -355,7 +355,7 @@
     "name": "Cape Verde",
     "group": "H",
     "fifa_rank": 69,
-    "r32_pct": 64.76,
+    "r32_pct": 64.88,
     "r16_pct": 0.0,
     "qf_pct": 0.0,
     "sf_pct": 0.0,
@@ -366,7 +366,7 @@
     "name": "Saudi Arabia",
     "group": "H",
     "fifa_rank": 61,
-    "r32_pct": 35.24,
+    "r32_pct": 35.12,
     "r16_pct": 0.0,
     "qf_pct": 0.0,
     "sf_pct": 0.0,
