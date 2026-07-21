@@ -302,8 +302,8 @@
         "fifa_rank": 69,
         "avg_pts": 3.33,
         "avg_gf": 3.11,
-        "avg_ga": 3.13,
-        "avg_gd": -0.02,
+        "avg_ga": 3.14,
+        "avg_gd": -0.03,
         "advance_pct": 64.8
       },
       {
@@ -318,10 +318,10 @@
       {
         "name": "Saudi Arabia",
         "fifa_rank": 61,
-        "avg_pts": 2.36,
-        "avg_gf": 2.13,
+        "avg_pts": 2.37,
+        "avg_gf": 2.14,
         "avg_ga": 6.11,
-        "avg_gd": -3.98,
+        "avg_gd": -3.97,
         "advance_pct": 35.2
       }
     ],
@@ -330,16 +330,16 @@
         "home": "Cape Verde",
         "away": "Saudi Arabia",
         "home_win_pct": 35.2,
-        "draw_pct": 30.7,
-        "away_win_pct": 34.1,
-        "xgf": 1.13,
+        "draw_pct": 30.9,
+        "away_win_pct": 33.9,
+        "xgf": 1.14,
         "xga": 1.11,
-        "xg_total": 2.24,
-        "btts_pct": 45.4,
+        "xg_total": 2.25,
+        "btts_pct": 45.6,
         "home_cover_pct": 35.2,
         "model_home_ml": 184,
-        "model_draw_ml": 226,
-        "model_away_ml": 193
+        "model_draw_ml": 224,
+        "model_away_ml": 195
       }
     ]
   },
