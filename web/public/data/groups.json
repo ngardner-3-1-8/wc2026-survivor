@@ -330,16 +330,16 @@
         "home": "Cape Verde",
         "away": "Saudi Arabia",
         "home_win_pct": 34.6,
-        "draw_pct": 31.3,
-        "away_win_pct": 34.1,
+        "draw_pct": 31.0,
+        "away_win_pct": 34.3,
         "xgf": 1.13,
         "xga": 1.12,
         "xg_total": 2.25,
         "btts_pct": 45.6,
         "home_cover_pct": 34.6,
         "model_home_ml": 189,
-        "model_draw_ml": 219,
-        "model_away_ml": 193
+        "model_draw_ml": 223,
+        "model_away_ml": 192
       }
     ]
   },
