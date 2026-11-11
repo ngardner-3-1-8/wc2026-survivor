@@ -304,7 +304,7 @@
         "avg_gf": 3.13,
         "avg_ga": 3.14,
         "avg_gd": -0.01,
-        "advance_pct": 65.0
+        "advance_pct": 64.9
       },
       {
         "name": "Uruguay",
@@ -322,23 +322,23 @@
         "avg_gf": 2.14,
         "avg_ga": 6.13,
         "avg_gd": -3.99,
-        "advance_pct": 35.0
+        "advance_pct": 35.1
       }
     ],
     "matches": [
       {
         "home": "Cape Verde",
         "away": "Saudi Arabia",
-        "home_win_pct": 35.0,
-        "draw_pct": 30.7,
+        "home_win_pct": 35.1,
+        "draw_pct": 30.5,
         "away_win_pct": 34.3,
         "xgf": 1.14,
         "xga": 1.13,
         "xg_total": 2.27,
         "btts_pct": 46.0,
-        "home_cover_pct": 35.0,
-        "model_home_ml": 186,
-        "model_draw_ml": 226,
+        "home_cover_pct": 35.1,
+        "model_home_ml": 185,
+        "model_draw_ml": 228,
         "model_away_ml": 192
       }
     ]
